@@ -1,0 +1,38 @@
+.mapOfStations{
+    background-color: aqua;
+    width: 350px;
+    height: 600px;
+    position: relative;
+}
+.via{
+    background-color:#666 ;
+    width: 50%;
+    height: 3%;
+    position: absolute;
+}
+.via1{
+    margin-top: 5%;
+}
+.via2{
+    background-color:#333 ;
+    margin-top: 5%;
+    left:50%;
+    height: 10%;
+    width: 5%;
+}
+.station-1{
+    background-color: blue;
+    position: absolute;
+    width: 60%;
+    z-index: 10;
+    left: 20%;
+    height: 10%;
+    top: 12.5%;
+}
+.station-1-parking{
+    background-color: #333;
+    left: 35%;
+    position: absolute;
+    top: 22.5%;
+    width: 40%;
+}
