@@ -17,23 +17,10 @@ class importCustomJS {
         if (!document.getElementById(scriptId)) {
 
             let script = document.createElement('script');
-            script.src = this.url+'/js/' + file + '.js?version='+this.version ;
+            script.src = this.url + file + '.js?version='+this.version ;
             script.id = scriptId;
             document.getElementsByTagName('body').item(0).appendChild(script);
-            let these = this;
-            script.onload = function() {
-
-                console.log("Cargado: " + script.src);
-                these.nextFile();
-
-            };
-
-            script.onerror = function() {
-
-                console.log("No se pudo cargar el archivo: " + script.src);
-                these.nextFile();
-
-            };
+            this.statusOfLoad(script);
             
         }
         
@@ -43,6 +30,22 @@ class importCustomJS {
         this.count++;
         this.verifyFileToLoad();
 
+    }
+    statusOfLoad(script){
+        let these = this;
+        script.onload = function() {
+
+            console.log("Cargado: " + script.src);
+            these.nextFile();
+
+        };
+
+        script.onerror = function() {
+
+            console.log("No se pudo cargar el archivo: " + script.src);
+            these.nextFile();
+
+        };
     }
     verifyFileToLoad(){
 
