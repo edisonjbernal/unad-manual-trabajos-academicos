@@ -1,38 +1,72 @@
 .mapOfStations{
-    background-color: aqua;
-    width: 350px;
-    height: 600px;
+    background-color: rgb(29, 172, 24);
+    width: 320px;
     position: relative;
+
 }
-.via{
-    background-color:#666 ;
-    width: 50%;
-    height: 3%;
+.mapOfStations .bus{
+    background-color: yellow;
+    border-right: 4px solid;
+    height: 1rem;
     position: absolute;
+   top: 2.5%;
+    left: 0;
+  
+    width: 2.5rem;
+    z-index: 10;
 }
-.via1{
-    margin-top: 5%;
+.mapOfStations .bus.horizontal-right{
+    transform: rotate(0deg);
 }
-.via2{
-    background-color:#333 ;
-    margin-top: 5%;
-    left:50%;
-    height: 10%;
-    width: 5%;
+.mapOfStations .bus.horizontal-left{
+    transform: rotate(180deg);
 }
+.mapOfStations .bus.vertical-bottom{
+    transform: rotate(90deg);
+}
+.mapOfStations .bus.vertical-top{
+    transform: rotate(270deg);
+}
+.mapOfStations img.img-map{
+    width: 100%;
+}
+
 .station-1{
     background-color: blue;
     position: absolute;
     width: 60%;
-    z-index: 10;
+    z-index: 12;
     left: 20%;
     height: 10%;
     top: 12.5%;
 }
-.station-1-parking{
-    background-color: #333;
-    left: 35%;
+
+.station-2{
+    background-color: rgb(36, 187, 200);
     position: absolute;
-    top: 22.5%;
-    width: 40%;
+    width: 26%;
+    z-index: 12;
+    left: 3%;
+    height: 14%;
+    top: 43%;
+}
+
+.station-3{
+    background-color: rgb(200, 41, 36);
+    position: absolute;
+    width: 26%;
+    z-index: 12;
+    left: 58%;
+    height: 14%;
+    top: 52%;
+}
+
+.station-4{
+    background-color: rgb(18, 161, 66);
+    position: absolute;
+    width: 26%;
+    z-index: 12;
+    left: 20%;
+    height: 14%;
+    top: 82%;
 }

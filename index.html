@@ -16,13 +16,31 @@
         <li><a href="./estacion-4.html">Artículos para publicación - Estación 4</a></li>
     </ul>
     <div class="mapOfStations">
-        <div class="via via1"></div>
-        <div class="via via2"></div>
-        <div class="station-1">Estación 1</div>
-        <div class="station-1-parking">parqueadero</div>
+        <div id="busCar" class="bus"></div>
+        <img 
+            alt="Mapa de las estaciones"
+            class="img-map"
+            src="./images/mapaDeEstaciones.png" >
+        <a id="station1" class="station-1">Estación 1</a>
+        <a id="station2" class="station-2">Estación 2</a>
+        <a id="station3" class="station-3">Estación 3</a>
+        <a id="station4" class="station-4">Estación 4</a>
     </div>
     <script src="./js/configuration.js"></script>
     <script src="./js/importCustomJS.js"></script>
+    <script src="./js/mapOfStation.js"></script>
+
+    <script src="./js/animationStations/moveStarToTerminal.js"></script>
+    <script src="./js/animationStations/moveTerminalToStation2.js"></script>
+    <script src="./js/animationStations/moveStation2ToTerminal.js"></script>
+    <script src="./js/animationStations/moveTerminalToStation3.js"></script>
+    <script src="./js/animationStations/moveStation3ToTerminal.js"></script>
+    <script src="./js/animationStations/moveTerminalToStation4.js"></script>
+    <script src="./js/animationStations/moveStation4ToTerminal.js"></script>
+
+
     <script src="./js/index.js"></script>
+    
+    
 </body>
 </html>
