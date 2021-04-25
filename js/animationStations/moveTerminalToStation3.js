@@ -21,7 +21,7 @@ function moveTerminalToStation3(stage = 1){
         break;
            
         default:
-          
+            car.stop('station3');
             break;
     }
 }

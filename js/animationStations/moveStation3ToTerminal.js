@@ -23,5 +23,10 @@ function moveStation3ToTerminal(stage = 1){
         case 7:
             car.changePosition('right',50,animationFunction,stage);
         break;
+        default:
+            if(!nextStation(car.position.to)){
+                car.stop('terminal');
+            }
+            break;
     }
 }

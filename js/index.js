@@ -10,19 +10,23 @@ importJs.add(
 importJs.add(
     'moveStarToTerminal',
     );*/
+    let animationChageScenario = new changeScenarioAnimation;
+
+    function unloadAllScenarios(scenario) {
+        document.getElementById('mapOfStations').style.display='none';
+        document.getElementById('scenarioTerminal').style.display='none';
+        
+    }
+
+    function loadScenario(scenario){
+        unloadAllScenarios();
+        document.getElementById(scenario).style.display='block';
+    }
 
 
-let car = new busCar;
 
 
-document.getElementById('station1').addEventListener("click", 
-function(){
-    moveStartToTerminal();
-});
-document.getElementById('station2').addEventListener("click", 
-function(){
-    moveTerminalToStation2();
-});
+
 
 
 

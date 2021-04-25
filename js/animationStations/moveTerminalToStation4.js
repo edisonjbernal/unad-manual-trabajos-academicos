@@ -33,7 +33,7 @@ function moveTerminalToStation4(stage = 1){
         break;
            
         default:
-           // moveStation4ToTerminal();
+            car.stop('station4');
             break;
     }
 }

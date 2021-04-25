@@ -5,30 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual para la presentación de trabajos académicos en la UNAD</title>
+    <link rel="stylesheet" href="./css/template.css">
     <link rel="stylesheet" href="./css/mapsOFStations.css">
 </head>
 <body>
-    <h1>Manual para la presentación de trabajos académicos en la UNAD</h1>
-    <ul>
-        <li><a href="./estacion-1.html">Aspéctos técnicos - Estación 1</a></li>
-        <li><a href="./estacion-2.html">Trabajos escritos- Estación 2</a></li>
-        <li><a href="./estacion-3.html">Trabajos y proyectos investigativos- Estación 3</a></li>
-        <li><a href="./estacion-4.html">Artículos para publicación - Estación 4</a></li>
-    </ul>
-    <div class="mapOfStations">
+    <div id="scenarioTerminal" style="display: none;"><img style="width: 100%;" src="./test/ninosBus.jpg">
+    <button onclick="animationChageScenario.change('mapOfStations');">Volver al Mapa</button></div>
+<div id="changeScenarioAnimation" class="changeScenarioAnimation"></div>
+    <div id="mapOfStations" class="mapOfStations">
         <div id="busCar" class="bus"></div>
         <img 
             alt="Mapa de las estaciones"
             class="img-map"
             src="./images/mapaDeEstaciones.png" >
-        <a id="station1" class="station-1">Estación 1</a>
-        <a id="station2" class="station-2">Estación 2</a>
-        <a id="station3" class="station-3">Estación 3</a>
-        <a id="station4" class="station-4">Estación 4</a>
+        <a id="terminal" href="#terminal" class="station-1">Estación 1</a>
+        
+        
+        <a id="station2" href="#station2" class="station-2">Estación 2</a>
+        <a id="station3" href="#station3" class="station-3">Estación 3</a>
+        <a id="station4" href="#station4" class="station-4">Estación 4</a>
     </div>
     <script src="./js/configuration.js"></script>
     <script src="./js/importCustomJS.js"></script>
-    <script src="./js/mapOfStation.js"></script>
+    <script src="./js/busCarAnimation.js"></script>
 
     <script src="./js/animationStations/moveStarToTerminal.js"></script>
     <script src="./js/animationStations/moveTerminalToStation2.js"></script>
@@ -39,6 +38,8 @@
     <script src="./js/animationStations/moveStation4ToTerminal.js"></script>
 
 
+    <script src="./js/chageScenarioAnimation.js"></script>
+    <script src="./js/mapInteractions.js"></script>
     <script src="./js/index.js"></script>
     
     

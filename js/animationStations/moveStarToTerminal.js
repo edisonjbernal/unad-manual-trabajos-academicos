@@ -12,7 +12,9 @@ function moveStartToTerminal(stage = 1){
         break;
            
         default:
-           // moveTerminalToStation4();
+            car.stop('terminal');
+            car.terminalApproved=true;
+            console.log('DELETE: APROBADO auitomático');
             break;
     }
 }

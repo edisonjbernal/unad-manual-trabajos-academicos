@@ -1,13 +1,16 @@
-class busCar{
+class busCarAnimation{
     constructor(){
         this.car=document.getElementById('busCar');
         this.position={
-            station:'initial',
             currentX:0,
             currentY:10,
             numberToMove:0,
-            direction:'horizontal'
+            direction:'horizontal',
+            station:'initial',
+            to:''
         }
+        this.terminalApproved=false;
+        this.stopped=true;
         console.log(this.position);
         
     }
@@ -21,7 +24,8 @@ class busCar{
         this.moveCar();
     }
     moveCar(){
-        
+        car.stopped=false;
+        //console.log('STOP: ' + car.stopped);
         switch (this.position.direction) {
             case "right":
                 if(this.car.style.transform!= "rotate(0deg)"){
@@ -36,7 +40,7 @@ class busCar{
                 else{
                     this.nextStage();
                 }
-                console.log("horizontal-right");
+                //console.log("horizontal-right");
                 break;
             case "left":
                 if(this.car.style.transform!= "rotate(180deg)"){
@@ -50,7 +54,7 @@ class busCar{
                 else{
                     this.nextStage();
                 }
-                console.log("horizontal-left");
+                //console.log("horizontal-left");
                 break;
             case "top":
                 if(this.car.style.transform!= "rotate(270deg)"){
@@ -65,7 +69,7 @@ class busCar{
                     this.nextStage();
                 }
 
-                console.log("vertical-top");
+                //console.log("vertical-top");
                 break;
             case "bottom":
                 if(this.car.style.transform!= "rotate(90deg)"){
@@ -79,23 +83,13 @@ class busCar{
                 else{
                     this.nextStage();
                 }
-                console.log("vertical-bottom");
+                //console.log("vertical-bottom");
                 break;
             default:
-                console.log("No se selccionó");
+                //console.log("No se selccionó");
                 break;
         }
 
-       /* if(this.position.newX < this.position.lastX){
-            this.timerToMove =setTimeout(function(){
-                these.moveCar();}
-                ,500);
-        }
-
-        this.car.style.left=this.position.newX + "%";
-        this.car.style.top=this.position.newY + "%";
-        console.log('Se Movio');
-        console.log(this.position);*/
 
     }
 
@@ -115,5 +109,13 @@ class busCar{
         this.car.classList.remove('vertical-top');
         this.car.classList.remove('vertical-bottom');
     }
+    stop(station){
+        car.position.station=station;
+        car.stopped=true;
+        console.log('Station: ' + car.position.station);
+        console.log('STOP : ' + car.stopped);
+        enableAccess(station);
+    }
+    
     
 }
