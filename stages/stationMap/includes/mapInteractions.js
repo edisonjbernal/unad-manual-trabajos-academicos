@@ -32,18 +32,48 @@ function nextStation(station){
     
 }
 
+
+class mapInteractionsClass{
+
+    moveBusToStation(station){
+        switch (station) {
+            case 'terminal':
+                if(car.stopped){
+                    if(car.position.station=='initial'){
+                        waitAccess('terminal');
+                        moveStartToTerminal();
+                    }else{
+                        changeStation('terminal');
+                    }    
+                }
+                break;
+            case 'station2':
+                changeStation('station2');
+                break;
+            case 'station3':
+                changeStation('station3');
+                break;
+            case 'station4':
+                changeStation('station4');
+                break;
+        
+            default:
+                break;
+        }
+    }
+
+}
+
+const mapInteractions = new mapInteractionsClass;
+
+/*
 document.getElementById('terminal').addEventListener("click", 
 function(){
     event.preventDefault();
-    if(car.stopped){
-        if(car.position.station=='initial'){
-            waitAccess('terminal');
-            moveStartToTerminal();
-        }else{
-            changeStation('terminal');
-        }    
-    }
+    
 });
+
+
 document.getElementById('station2').addEventListener("click", 
 function(){
     event.preventDefault()
@@ -62,7 +92,7 @@ function(){
     event.preventDefault()
     changeStation('station4');
             
-});
+}); */
 
 function changeStation(station){
     if(terminalApproved()&&car.stopped){
@@ -120,7 +150,7 @@ function disableAccess(station){
 
 function enableAccess(station){
     console.log('Activar acceso a:'+station);
-    document.getElementById(station).innerHTML=`<button>Ingresar</button>`;
+    document.getElementById(station).innerHTML=`Ingresar`;
 }
 
 function waitAccess(station){
@@ -130,5 +160,5 @@ function waitAccess(station){
 
 function goIntoStation(station){
     console.log('INGREsando A:'+station);
-    animationChageScenario.change('scenarioTerminal');
+    stage.load('station1');
 }

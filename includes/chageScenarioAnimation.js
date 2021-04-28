@@ -1,10 +1,10 @@
-class changeScenarioAnimation{
+class changeScenarioAnimationClass{
     constructor(){
         this.container=document.getElementById('changeScenarioAnimation');
         this.opacity=0;
+        
     }
-    change(scenarioToShow){
-        this.scenarioToShow=scenarioToShow;
+    change(){
         this.container.style.display='block';
         this.addOpacity();
     }
@@ -14,7 +14,9 @@ class changeScenarioAnimation{
         if(this.opacity>=10){
             this.container.style.opacity="1";
             console.log('fin');
-            loadScenario(this.scenarioToShow);
+            stage.hide();
+            stage.show();
+            
             this.removeOpacity();
         }
         else{
@@ -46,3 +48,5 @@ class changeScenarioAnimation{
 
 
 }
+
+const changeScenarioAnimation = new changeScenarioAnimationClass;

@@ -1,19 +1,23 @@
 class importCustomJS {
-    constructor(url = '.',version = ''){
+    constructor(url = '.',version = '1'){
 
         this.url= url;
         this.version=version;
+        this.lastStageIdLoaded=''
 
     }
-    add(){
+    addFile(files){
 
         this.count=0;
-        this.files=arguments;
+        this.files=files;
         this.verifyFileToLoad();
 
     }
-    loadFile(file){
-        let scriptId = file + 'JS';
+    page(stage,page){
+
+    }
+    load(file){
+        let scriptId ='JS' + file.replaceAll('/','_');
         if (!document.getElementById(scriptId)) {
 
             let script = document.createElement('script');
@@ -23,6 +27,9 @@ class importCustomJS {
             this.statusOfLoad(script);
             
         }
+        else{
+            console.log('Ya está cargado');
+        }
         
     }
     nextFile(){
@@ -31,6 +38,11 @@ class importCustomJS {
         this.verifyFileToLoad();
 
     }
+/*    remove(file){
+        let scriptId ='JS' + file.replaceAll('/','_');
+        window['_test_js_test']=undefined;
+        document.getElementById(scriptId).remove();
+    }*/
     statusOfLoad(script){
         let these = this;
         script.onload = function() {
@@ -51,9 +63,11 @@ class importCustomJS {
 
         let file=this.files[this.count];
         if(file){
-            this.loadFile(file);
+            this.load(file);
         }
 
     }
     
 }
+
+const importJS = new importCustomJS;

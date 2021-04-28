@@ -1,6 +1,6 @@
 class busCarAnimation{
     constructor(){
-        this.car=document.getElementById('busCar');
+        
         this.position={
             currentX:0,
             currentY:10,
@@ -16,6 +16,7 @@ class busCarAnimation{
     }
 
     changePosition(direction,numberToMove,animationFunction,stage=1){
+        this.car=document.getElementById('busCar');
         this.stage=stage;
         this.animationFunction = animationFunction;           
         this.position.direction=direction;
