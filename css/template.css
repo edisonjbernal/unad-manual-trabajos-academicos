@@ -3,6 +3,24 @@
     margin: 0px;
     padding: 0px;
 }
+html{
+    height: 100%;
+}
 body{
     font-size: 62.5%;
+    height: 100%;
+}
+.stageMaster{
+    background-color: aqua;
+    height: 100%;
+}
+
+.stageMaster > div{
+    height: 100%;
+}
+
+.introduction-stage{
+    background-image: url("../test/fondoTemporalMundo.png");
+    background-position:center;
+    background-size:  auto 100%;
 }

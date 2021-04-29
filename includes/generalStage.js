@@ -8,18 +8,23 @@ class generalStage{
     addFunctions(){
         return false;
     }
-    container(){
-        return `<div id="${this.stageId}">${this.content()}</div>`;
+    addClassCSS(){
+        return false;
     }
     content(){
         return `hola mundo general ${this.stageId}`;
     }
-    identifyStage(){
-        this.stageDiv=document.getElementById(this.stageId);
-    }
     load(){
-        let currentContent= this.stageMaster.innerHTML;
-        this.stageMaster.innerHTML=currentContent+this.container();
+        this.stageDiv = document.createElement('div');
+        this.stageDiv.id = this.stageId;
+        this.stageDiv.innerHTML= this.content();
+        let classArray = this.addClassCSS();
+        if(classArray){
+            for (let index = 0; index < classArray.length; index++) {
+                this.stageDiv.classList.add(classArray[index]);
+            }
+        }
+        this.stageMaster.appendChild(this.stageDiv);
         
         let functionsToLoad=this.addFunctions()
         if(functionsToLoad){
@@ -27,11 +32,9 @@ class generalStage{
         }
     }
     hide(){
-        this.identifyStage();
         this.stageDiv.style.display='none';
     }
     show(){
-        this.identifyStage();
         this.stageDiv.style.display='block';
     }
 }

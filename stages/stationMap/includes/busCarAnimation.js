@@ -1,4 +1,4 @@
-class busCarAnimation{
+class busCarClass{
     constructor(){
         
         this.position={
@@ -25,7 +25,7 @@ class busCarAnimation{
         this.moveCar();
     }
     moveCar(){
-        car.stopped=false;
+        this.stopped=false;
         //console.log('STOP: ' + car.stopped);
         switch (this.position.direction) {
             case "right":
@@ -111,12 +111,14 @@ class busCarAnimation{
         this.car.classList.remove('vertical-bottom');
     }
     stop(station){
-        car.position.station=station;
-        car.stopped=true;
-        console.log('Station: ' + car.position.station);
-        console.log('STOP : ' + car.stopped);
-        enableAccess(station);
+        this.position.station=station;
+        this.stopped=true;
+        console.log('Station: ' + this.position.station);
+        console.log('STOP : ' + this.stopped);
+        mapInteractions.enableAccess(station);
     }
     
     
 }
+
+const busCar = new busCarClass;

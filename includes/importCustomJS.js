@@ -70,4 +70,4 @@ class importCustomJS {
     
 }
 
-const importJS = new importCustomJS;
+const importJS = new importCustomJS(configuration.globalURL,configuration.version);
