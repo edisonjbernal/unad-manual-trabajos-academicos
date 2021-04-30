@@ -7,7 +7,9 @@ html{
     height: 100%;
 }
 body{
+    font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
+    font-weight: 300;
     height: 100%;
 }
 .changeScenarioAnimation{
@@ -21,23 +23,26 @@ body{
     z-index: 9999;
     opacity: .2;
 }
+button.btn-general{
+    background-color: #FECB00;
+    border: 0 solid;
+    border-radius: 10px;
+    cursor: pointer ;
+    padding: 1rem;
+}
 .stageMaster{
+    background-image: url("../test/fondoTemporalMundo.png");
     background-color: aqua;
     height: 100%;
-}
-.stageMaster > div{
-    height: 100%;
-}
-.introduction-stage{
-    background-image: url("../test/fondoTemporalMundo.png");
     background-position:center;
     background-size: auto 100%;
 }
-.size-only-height-100{
+.stageMaster > div{
     height: 100%;
-    width: auto;
+    overflow: auto;
 }
-.size-only-width-100{
-    height: auto;
-    width: 100%;
+
+.stageMaster > div.introduction-stage{
+
 }
+

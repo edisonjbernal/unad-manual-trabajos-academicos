@@ -5,10 +5,13 @@ class generalStage{
         this.stageName=stageName;
         this.load();
     }
-    addFunctions(){
+    addCssClass(){
         return false;
     }
-    addClassCSS(){
+    addCssFiles(){
+        return false;
+    }
+    addFunctions(){
         return false;
     }
     content(){
@@ -17,14 +20,23 @@ class generalStage{
     load(){
         this.stageDiv = document.createElement('div');
         this.stageDiv.id = this.stageId;
-        this.stageDiv.innerHTML= this.content();
-        let classArray = this.addClassCSS();
+        let addCssFilesArray = this.addCssFiles();
+        let addContent =this.content();
+        if(addCssFilesArray){
+            for (let index = 0; index < addCssFilesArray.length; index++) {
+                addContent+=`<link rel="stylesheet" href="./stages/${this.stageName}/css/${addCssFilesArray[index]}">`;
+                
+            }
+        }
+        this.stageDiv.innerHTML= addContent;
+        let classArray = this.addCssClass();
         if(classArray){
             for (let index = 0; index < classArray.length; index++) {
                 this.stageDiv.classList.add(classArray[index]);
             }
         }
         this.stageMaster.appendChild(this.stageDiv);
+
         
         let functionsToLoad=this.addFunctions()
         if(functionsToLoad){

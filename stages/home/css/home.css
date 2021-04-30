@@ -1,0 +1,36 @@
+.stageMaster > div.introduction-stage{
+    background-color: rgba(2, 8, 29, 0.92);
+    padding: 1rem;
+    padding-top: 3rem;
+}
+
+.introduction-stage h1{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #FECB00;
+    text-align: center;
+}
+.introduction-stage h1 strong{
+    font-weight: 700;
+    display: block;
+}
+.introduction-stage .introduction-select{
+    color: #FFF;
+    display: grid;
+    justify-content:center;
+}
+
+.introduction-stage .introduction-select section{
+    color: #FFF;
+    padding: 1rem 4%;
+    text-align: center;
+}
+
+.introduction-stage .introduction-select section p{
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 2rem 0;
+}
+.introduction-stage .introduction-select section:first-child{
+    border-right: 1px solid rgb(218, 218, 218);
+}

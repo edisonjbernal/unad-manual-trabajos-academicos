@@ -2,7 +2,7 @@ class stationMapClass extends generalStage{
     constructor(generalScenario){
       super(generalScenario);
     }
-    addClassCSS(){
+    addCssClass(){
         return ['stage_stationMap'];
     }
     addFunctions(){
@@ -34,7 +34,9 @@ class stationMapClass extends generalStage{
                 <button id="station2"  class="station-2">Estación 2</button>
                 <button id="station3"  class="station-3">Estación 3</button>
                 <button id="station4"  class="station-4">Estación 4</button>
-            </div>`;
+            </div>
+            <link rel="stylesheet" href="./css/mapsOFStations.css">
+            `;
     }
 }
 
