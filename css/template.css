@@ -10,17 +10,34 @@ body{
     font-size: 62.5%;
     height: 100%;
 }
+.changeScenarioAnimation{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: .2;
+}
 .stageMaster{
     background-color: aqua;
     height: 100%;
 }
-
 .stageMaster > div{
     height: 100%;
 }
-
 .introduction-stage{
     background-image: url("../test/fondoTemporalMundo.png");
     background-position:center;
-    background-size:  auto 100%;
+    background-size: auto 100%;
+}
+.size-only-height-100{
+    height: 100%;
+    width: auto;
+}
+.size-only-width-100{
+    height: auto;
+    width: 100%;
 }

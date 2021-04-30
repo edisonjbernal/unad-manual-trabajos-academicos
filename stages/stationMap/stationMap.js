@@ -2,6 +2,9 @@ class stationMapClass extends generalStage{
     constructor(generalScenario){
       super(generalScenario);
     }
+    addClassCSS(){
+        return ['stage_stationMap'];
+    }
     addFunctions(){
         return [
             'busCarAnimation',
@@ -12,7 +15,8 @@ class stationMapClass extends generalStage{
             'moveTerminalToStation2',
             'moveTerminalToStation3',
             'moveTerminalToStation4',
-            'mapInteractions'
+            'mapInteractions',
+            'autoSizeMap'
 
 
         ];
@@ -22,6 +26,7 @@ class stationMapClass extends generalStage{
             <div id="mapOfStations" class="mapOfStations">
             <div id="busCar" class="bus"></div>
                 <img 
+                    id="imgMapOfStations"
                     alt="Mapa de las estaciones"
                     class="img-map"
                     src="./images/mapaDeEstaciones.png" >
