@@ -46,7 +46,7 @@
 }
 
 .station-1{
-    background-color: blue;
+    background-color: rgb(184, 184, 184);
     position: absolute;
     width: 60%;
     z-index: 12;
