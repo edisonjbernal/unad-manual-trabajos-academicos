@@ -59,8 +59,8 @@ class mapInteractionsClass{
         document.getElementById(station).innerHTML=`Ingresar`;
     }
     goIntoStation(station){
-        console.log('INGREsando A:'+station);
-        stage.load('station1');
+        
+        stage.load(station);
     }
     nextStation(station){
         if(!station||station=='terminal'){

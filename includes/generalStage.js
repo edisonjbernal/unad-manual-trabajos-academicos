@@ -24,8 +24,12 @@ class generalStage{
         let addContent =this.content();
         if(addCssFilesArray){
             for (let index = 0; index < addCssFilesArray.length; index++) {
-                addContent+=`<link rel="stylesheet" href="./stages/${this.stageName}/css/${addCssFilesArray[index]}">`;
-                
+                let cssArray=addCssFilesArray[index].split('|');
+                let cssMedia = cssArray[2];
+                let cssLocation = cssArray[1];
+                let cssHref = cssArray[0];
+                this.loadCss(cssHref,cssLocation,cssMedia);
+
             }
         }
         this.stageDiv.innerHTML= addContent;
@@ -42,6 +46,21 @@ class generalStage{
         if(functionsToLoad){
             stage.addFunctions(this.stageName,functionsToLoad);
         }
+    }
+    loadCss(cssHref,cssLocation,cssMedia = ''){
+        let linkCss = document.createElement('link');
+        if(cssLocation=='local'){
+            cssHref=`./stages/${this.stageName}/css/${cssHref}`;
+        }else{
+            cssHref=`./css/${cssHref}`;
+        }
+        linkCss.href = cssHref;
+        linkCss.rel="stylesheet";
+
+        if(cssMedia){
+            linkCss.media=`screen and (min-width: ${cssMedia})`;
+        }
+        document.getElementsByTagName('body').item(0).appendChild(linkCss);
     }
     hide(){
         this.stageDiv.classList.add('hide');

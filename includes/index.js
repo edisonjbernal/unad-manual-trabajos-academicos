@@ -8,4 +8,4 @@ var activities={
 }
 
 
-stage.load('home');
+stage.load('introduction');

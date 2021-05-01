@@ -5,6 +5,11 @@ class stationMapClass extends generalStage{
     addCssClass(){
         return ['stage_stationMap'];
     }
+    addCssFiles(){
+        return [
+            'stationMap.css|local'
+        ]
+    }
     addFunctions(){
         return [
             'busCarAnimation',
@@ -35,7 +40,6 @@ class stationMapClass extends generalStage{
                 <button id="station3"  class="station-3">Estación 3</button>
                 <button id="station4"  class="station-4">Estación 4</button>
             </div>
-            <link rel="stylesheet" href="./css/mapsOFStations.css">
             `;
     }
     show(){

@@ -1,2 +1,5 @@
 images/
 test/
+*.jpg
+*.png
+*.mp4

@@ -2,6 +2,7 @@
     --main-background: rgb(7, 29, 110);
     --main-font-color:#FECB00;
     --station-map-background: #117419;
+    --text-general-background: #fff;
   }
 *{
     box-sizing: border-box;
@@ -55,7 +56,12 @@ button.btn-general{
     display: none !important;
 }
 
-.stageMaster > div.introduction-stage{
-
+.text-general{
+    background-color:var(--text-general-background) ;
 }
-
+video.principal {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
