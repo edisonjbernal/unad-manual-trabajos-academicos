@@ -1,5 +1,7 @@
 :root {
-    --main-blue: rgb(7, 29, 110);;
+    --main-background: rgb(7, 29, 110);
+    --main-font-color:#FECB00;
+    --station-map-background: #117419;
   }
 *{
     box-sizing: border-box;
@@ -29,15 +31,17 @@ body{
     opacity: .2;
 }
 button.btn-general{
-    background-color: #FECB00;
+    background-color: var(--main-font-color);
     border: 0 solid;
     border-radius: 10px;
     cursor: pointer ;
     padding: 1rem;
+    font-weight: 700;
+    min-width: 11rem;
 }
 .stageMaster{
     background-image: url("../test/fondoTemporalMundo.png");
-    background-color: aqua;
+    background-color: var(--station-map-background);
     height: 100%;
     background-position:center;
     background-size: auto 100%;

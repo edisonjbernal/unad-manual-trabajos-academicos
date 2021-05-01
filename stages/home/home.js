@@ -10,7 +10,7 @@ class stageHomeClass extends generalStage{
     }
     addCssClass(){
         return [
-            'introduction-stage'
+            'stage_home'
         ]
     }
     addCssFiles(){
@@ -27,14 +27,19 @@ class stageHomeClass extends generalStage{
             Manito
             </div>
         <div class="introduction-select">
-            <section>
+            <div>
                 <p>Navegue por una breve introducción previo al viaje hacia el recurso</p>
-                <button class="btn-general" onclick="stage.load('stationMap')">Introducción</button>
-            </section>
-            <section>
+            </div>
+            <div>
                 <p>Comience su viaje aquí  y avance por las diferentes y avance por las rutas haciendo clic sobre las estaciones que encontrará</p>
+            </div>
+            <div>
+                <button class="btn-general" onclick="stage.load('stationMap')">Introducción</button>
+            </div>
+            
+            <div>
                 <button class="btn-general" onclick="stage.load('stationMap')">Comenzar</button>
-            </section>
+            </div>
         </div>
         `;
     }
