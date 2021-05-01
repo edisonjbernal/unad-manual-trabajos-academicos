@@ -42,6 +42,10 @@ button.btn-general{
     overflow: auto;
 }
 
+.stageMaster > div.hide{
+    display: none !important;
+}
+
 .stageMaster > div.introduction-stage{
 
 }

@@ -27,7 +27,7 @@ class stageLoadClass{
         window[this.lastStageIdLoaded].hide();
      }
      show(){
-         console.log('STAGE LOAd:SHOW');
+         
          if(this.stageDiv){
             console.log('STAGE LOAd:SHOW-IF');
              console.log(this.stageId);

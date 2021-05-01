@@ -44,9 +44,9 @@ class generalStage{
         }
     }
     hide(){
-        this.stageDiv.style.display='none';
+        this.stageDiv.classList.add('hide');
     }
     show(){
-        this.stageDiv.style.display='block';
+        this.stageDiv.classList.remove('hide');
     }
 }

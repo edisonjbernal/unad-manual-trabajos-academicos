@@ -38,6 +38,10 @@ class stationMapClass extends generalStage{
             <link rel="stylesheet" href="./css/mapsOFStations.css">
             `;
     }
+    show(){
+        this.stageDiv.classList.remove('hide');
+        resizeMap();
+    }
 }
 
 var stages_stationMap = new stationMapClass('stationMap');

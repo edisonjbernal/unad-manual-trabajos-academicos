@@ -1,5 +1,11 @@
 .stage_stationMap{
-    text-align: center;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+}
+
+.stage_stationMap{
+    
 }
 
 .mapOfStations{
@@ -7,6 +13,10 @@
     position: relative;
     display: inline-block;
     margin: 0 auto;
+    transition: 1s;
+}
+.mapOfStations.horizontal{
+    transform: rotate(-90deg);
 }
 .mapOfStations .bus{
     background-color: yellow;

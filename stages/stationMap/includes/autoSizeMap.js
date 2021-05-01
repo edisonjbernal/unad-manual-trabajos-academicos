@@ -1,31 +1,55 @@
- function resizeMap (){
+ function resizeMap (numOfResizesMap = 0){
+        
+    let imgOfStationsResize = document.getElementById('imgMapOfStations');
+    let mapOfStationsResize = document.getElementById('mapOfStations');
 
-    let imgOfStations = document.getElementById('imgMapOfStations');
-    
-    //imgOfStations =
-     /* console.log('IMG Height:'+imgOfStations.offsetHeight);
-    
-    console.log('Height:'+window.innerHeight);
-    console.log('IMG Width:'+imgOfStations.offsetWidth);
-    console.log('Width:'+window.innerWidth);
-    console.log(imgOfStations);  */
-
-    if(imgOfStations.offsetHeight>=window.innerHeight&&imgOfStations.offsetWidth<=window.innerWidth){
+    if(window.innerHeight>=window.innerWidth){
+        if(imgOfStationsResize.offsetHeight>=window.innerHeight&&imgOfStationsResize.offsetWidth<=window.innerWidth){
 
       
-            imgOfStations.style.width='auto';
-            imgOfStations.style.height='100vh';
-             /* console.log('Péqguelo al alto 1');  */
-
-       
-    }else if(imgOfStations.offsetHeight<=window.innerHeight&&imgOfStations.offsetWidth>=window.innerWidth){
-       
-            imgOfStations.style.width='100%';
-            imgOfStations.style.height='auto';
-             /* console.log('Péqguelo al Ancho 2');  */
+                imgOfStationsResize.style.width='auto';
+                imgOfStationsResize.style.height='100vh';
+                  /* console.log('VERTICAL:Péqguelo al alto 1');   */
+    
+           
+        }
+        else{
+                imgOfStationsResize.style.width='100%';
+                imgOfStationsResize.style.height='auto';
+                //console.log('VERTICAL: Péqguelo al Ancho 2'); 
+                
+        }
+        mapOfStationsResize.classList.remove('horizontal');
+        console.log('VERTICAL');
         
     }
-
+    else{
+        if(imgOfStationsResize.offsetHeight>=window.innerWidth&&imgOfStationsResize.offsetWidth<=window.innerHeight){
+                
+                imgOfStationsResize.style.width='auto';
+                imgOfStationsResize.style.height='100vw';
+                
+                  console.log('HORIZONTAL 1');  
+    
+           
+        }
+        else {
+                
+                        imgOfStationsResize.style.width='100vh';
+                        imgOfStationsResize.style.height='auto';
+                        console.log('HORIZONTAL 3'); 
+                
+                
+            
+        }
+        
+        mapOfStationsResize.classList.add('horizontal');
+        console.log('HORIZONTAL');
+    }
+    if(numOfResizesMap){
+        resizeMap();
+    }
 }
-resizeMap();
+
+resizeMap(1);
 window.addEventListener('resize', resizeMap);
