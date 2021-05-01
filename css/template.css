@@ -1,3 +1,6 @@
+:root {
+    --main-blue: rgb(7, 29, 110);;
+  }
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -5,8 +8,10 @@
 }
 html{
     height: 100%;
+
 }
 body{
+    background-color: var(--main-blue);
     font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
     font-weight: 300;
