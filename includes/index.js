@@ -8,4 +8,4 @@ var activities={
 }
 
 
-stage.get('home');
+stage.get('terminalContent');

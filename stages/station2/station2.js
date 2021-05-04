@@ -14,7 +14,7 @@ class station2Class extends generalStage{
             <p>Texto de ejemplo</p>
         </div>
         <button class="btn-general" onclick="stage.get('stationMap')">Volver al mapa</button>
-        <button class="btn-general" onclick="stage.get('introduction')">Comenzar</button>
+        <button class="btn-general" onclick="stage.get('station2Content')">Comenzar station2Content</button>
         `;
     }
     importCssFiles(){

@@ -20,9 +20,10 @@ class generalPage extends generalStage{
   /*       console.log(`generalPage_stageName: ${this.stageName}`);
         console.log(`generalPage_pageNamex: ${this.pageName}`);
          */
-        this.stageMaster=document.getElementById('stageMaster').querySelectorAll('main')[0];
         this.stageId=`stage_${this.stageName}`;
         this.pageId=`${this.stageId}_${this.pageName}`;
+        this.stageMaster=document.getElementById(this.stageId).querySelectorAll('main')[0];
+        
         this.divContainerId = this.pageId;
         /* console.log(`this.stageMaster:`);
         console.log(this.stageMaster); */
