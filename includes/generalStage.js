@@ -1,71 +1,76 @@
 class generalStage{
-    constructor(stageName){
-        this.stageMaster=document.getElementById('stageMaster');
-        this.stageId=`stage_${stageName}`;
-        this.stageName=stageName;
-        this.load();
+    constructor(resourceName){
+        this.preLoad(resourceName);
     }
     addCssClass(){
-        return false;
-    }
-    addCssFiles(){
-        return false;
-    }
-    addFunctions(){
         return false;
     }
     content(){
         return `hola mundo general ${this.stageId}`;
     }
+    importCssFiles(){
+        return false;
+    }
+    importCssFilesLoader(){
+        let cssLoader = new preImportCssClass(this.stageName);
+        return  cssLoader; 
+    }
+    importJSFiles(){
+        return false;
+    }
+    importJSFilesLoader(){
+        let importJS = new preImportJSClass(this.stageName);
+        return importJS;
+    }
     load(){
-        this.stageDiv = document.createElement('div');
-        this.stageDiv.id = this.stageId;
-        let addCssFilesArray = this.addCssFiles();
+
+        //CASI IGUAL PERO VARÍA UN POCO para las páginas
+        this.divContainer = document.createElement('div');
+        this.divContainer.id = this.divContainerId;
+        let addCssFilesArray = this.importCssFiles();
         let addContent =this.content();
         if(addCssFilesArray){
             for (let index = 0; index < addCssFilesArray.length; index++) {
                 let cssArray=addCssFilesArray[index].split('|');
-                let cssMedia = cssArray[2];
-                let cssLocation = cssArray[1];
-                let cssHref = cssArray[0];
-                this.loadCss(cssHref,cssLocation,cssMedia);
-
+                this.cssMedia = cssArray[2];
+                this.cssLocation = cssArray[1];
+                this.cssHref = cssArray[0];
+                //DIFERENTE
+                let cssLoader = this.importCssFilesLoader();
+                cssLoader.load(this.cssHref,this.cssLocation,this.cssMedia);
             }
         }
-        this.stageDiv.innerHTML= addContent;
+        this.divContainer.innerHTML= addContent;
         let classArray = this.addCssClass();
         if(classArray){
             for (let index = 0; index < classArray.length; index++) {
-                this.stageDiv.classList.add(classArray[index]);
+                this.divContainer.classList.add(classArray[index]);
             }
         }
-        this.stageMaster.appendChild(this.stageDiv);
+        this.stageMaster.appendChild(this.divContainer);
 
-        
-        let functionsToLoad=this.addFunctions()
-        if(functionsToLoad){
-            stage.addFunctions(this.stageName,functionsToLoad);
+        let JSFiles=this.importJSFiles()
+        if(JSFiles){
+            //DIFERENTE
+          let importJS = this.importJSFilesLoader();
+          importJS.load(JSFiles);
         }
-    }
-    loadCss(cssHref,cssLocation,cssMedia = ''){
-        let linkCss = document.createElement('link');
-        if(cssLocation=='local'){
-            cssHref=`./stages/${this.stageName}/css/${cssHref}`;
-        }else{
-            cssHref=`./css/${cssHref}`;
-        }
-        linkCss.href = cssHref;
-        linkCss.rel="stylesheet";
-
-        if(cssMedia){
-            linkCss.media=`screen and (min-width: ${cssMedia})`;
-        }
-        document.getElementsByTagName('body').item(0).appendChild(linkCss);
     }
     hide(){
-        this.stageDiv.classList.add('hide');
+        //VAria para las páginas
+        this.divContainer.innerHTML='';
+        this.divContainer.classList.add('hide');
+    }
+    preLoad(resourceName){
+        this.stageMaster=document.getElementById('stageMaster');
+        this.stageId=`stage_${resourceName}`;
+        this.stageName=resourceName;
+        this.divContainerId =this.stageId;
+        this.load();
     }
     show(){
-        this.stageDiv.classList.remove('hide');
+        //VAria para las páginas
+        this.divContainer.innerHTML=this.content();
+        this.divContainer.classList.remove('hide');
     }
 }

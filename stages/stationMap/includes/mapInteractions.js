@@ -60,7 +60,7 @@ class mapInteractionsClass{
     }
     goIntoStation(station){
         
-        stage.load(station);
+        stage.get(station);
     }
     nextStation(station){
         if(!station||station=='terminal'){

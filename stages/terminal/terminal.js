@@ -18,8 +18,9 @@ class terminalClass extends generalStage{
       <div class="text-general">
          <p>Texto de ejemplo</p>
       </div>
-      <button class="btn-general" onclick="stage.load('stationMap')">Volver al mapa</button>
-      <button class="btn-general" onclick="stage.load('introduction')">Comenzar</button>
+      <button class="btn-general" onclick="stage.get('stationMap')">Volver al mapa</button>
+      <button class="btn-general" onclick="stage.get('terminalContent')">Comenzar</button>
+      <button class="btn-general" onclick="stage.get('introduction')">Introducción</button>
       `;
   }
 }

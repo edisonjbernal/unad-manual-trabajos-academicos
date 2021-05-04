@@ -8,12 +8,6 @@ class stageHomeClass extends generalStage{
             'stage_home'
         ]
     }
-    addCssFiles(){
-        return [
-            'generalStage.css|general',
-            'home.css|local'
-        ]
-    }
     content(){
         return `
         <h1>Está a punto de iniciar un viaje por la contrucción de un gran proyecto
@@ -29,17 +23,23 @@ class stageHomeClass extends generalStage{
                 <p>Navegue por una breve introducción previo al viaje hacia el recurso</p>
             </div>
             <div class="introduction-select-button-1">
-                <button class="btn-general" onclick="stage.load('introduction')">Introducción</button>
+                <button class="btn-general" onclick="stage.get('introduction')">Introducción</button>
             </div>
             <div class="introduction-select-p-2">
                 <p>Comience su viaje aquí  y avance por las diferentes y avance por las rutas haciendo clic sobre las estaciones que encontrará</p>
             </div>
             
             <div class="introduction-select-button-2">
-                <button class="btn-general" onclick="stage.load('stationMap')">Comenzar</button>
+                <button class="btn-general" onclick="stage.get('stationMap')">Comenzar</button>
             </div>
         </div>
         `;
+    }
+    importCssFiles(){
+        return [
+            'generalStage.css|general',
+            'home.css|local'
+        ]
     }
    
 }

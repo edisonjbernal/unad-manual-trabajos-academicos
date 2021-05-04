@@ -8,26 +8,21 @@ class introductionClass extends generalStage{
             'stage_introduction'
         ]
     }
-    addCssFiles(){
-        return [
-            'generalStage.css|general'
-        ]
-    }
     content(){
         return `
         <h1>Introducción
         </h1>
-
         <video  id="stage_introduction_video" class="principal" src="./stages/introduction/documents/introduccion.mp4" controls controlsList="nodownload"  ></video>
         <div class="text-general">
            <p>Texto de ejemplo</p>
         </div>
-        <button class="btn-general" onclick="stage.load('stationMap')">Comenzar</button>
+        <button class="btn-general" onclick="stage.get('stationMap')">Comenzar</button>
         `;
     }
-    hide(){
-        document.getElementById('stage_introduction_video').pause();
-        this.stageDiv.classList.add('hide');
+    importCssFiles(){
+        return [
+            'generalStage.css|general'
+        ]
     }
 }
 

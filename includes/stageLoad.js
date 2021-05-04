@@ -1,33 +1,22 @@
 class stageLoadClass{
-    addFunctions(stageName,files){
-        let functions = [];
-        let stageRoute = `/stages/${stageName}/includes`;
-         for (let index = 0; index < files.length; index++) {
-             functions.push(`${stageRoute}/${files[index]}`);
-         }
-          importJS.addFile(functions);
-     }
-     load(stageName){
+     get(stageName){
         this.stageName=stageName;
          this.stageId = `stages_${this.stageName}`;
          this.stageDiv = document.getElementById(`stage_${this.stageName}`);
          this.stageRoute = `/stages/${this.stageName}/${this.stageName}`;
-         
-
          if(this.lastStageIdLoaded){
              changeScenarioAnimation.change();
          }
          else{
-             this.show();
+             this.load();
          }
          
-       
      }
-     hide(){
+     unload(){
         window[this.lastStageIdLoaded].hide();
      }
-     show(){
-         
+     load(){
+        this.lastStageIdLoaded = this.stageId;
          if(this.stageDiv){
             console.log('STAGE LOAd:SHOW-IF');
              console.log(this.stageId);
@@ -36,7 +25,6 @@ class stageLoadClass{
             console.log('STAGE LOAd:SHOW-ELSE');
               importJS.addFile([this.stageRoute]);
           }
-          this.lastStageIdLoaded = this.stageId;
      }
 }
 

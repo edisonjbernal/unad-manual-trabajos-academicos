@@ -5,27 +5,6 @@ class stationMapClass extends generalStage{
     addCssClass(){
         return ['stage_stationMap'];
     }
-    addCssFiles(){
-        return [
-            'stationMap.css|local'
-        ]
-    }
-    addFunctions(){
-        return [
-            'busCarAnimation',
-            'moveStarToTerminal',
-            'moveStation2ToTerminal',
-            'moveStation3ToTerminal',
-            'moveStation4ToTerminal',
-            'moveTerminalToStation2',
-            'moveTerminalToStation3',
-            'moveTerminalToStation4',
-            'mapInteractions',
-            'autoSizeMap'
-
-
-        ];
-    }
     content(){
         return `
             <div id="mapOfStations" class="mapOfStations">
@@ -42,8 +21,32 @@ class stationMapClass extends generalStage{
             </div>
             `;
     }
+    hide(){
+        this.divContainer.classList.add('hide');
+    }
+    importCssFiles(){
+        return [
+            'stationMap.css|local'
+        ]
+    }
+    importJSFiles(){
+        return [
+            'busCarAnimation',
+            'moveStarToTerminal',
+            'moveStation2ToTerminal',
+            'moveStation3ToTerminal',
+            'moveStation4ToTerminal',
+            'moveTerminalToStation2',
+            'moveTerminalToStation3',
+            'moveTerminalToStation4',
+            'mapInteractions',
+            'autoSizeMap'
+
+
+        ];
+    }
     show(){
-        this.stageDiv.classList.remove('hide');
+        this.divContainer.classList.remove('hide');
         resizeMap();
     }
 }

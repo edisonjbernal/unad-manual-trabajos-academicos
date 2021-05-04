@@ -14,8 +14,8 @@ class changeScenarioAnimationClass{
         if(this.opacity>=10){
             this.container.style.opacity="1";
             console.log('fin');
-            stage.hide();
-            stage.show();
+            stage.unload();
+            stage.load();
             
             this.removeOpacity();
         }
