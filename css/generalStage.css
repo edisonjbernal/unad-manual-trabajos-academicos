@@ -1,5 +1,4 @@
 .stageMaster > div.stage_general{
-    background-color: rgba(2, 8, 29, 0.92);
     padding: 1rem;
 }
 .stage_general .cursor-hand{
@@ -10,7 +9,6 @@
     margin: 20px auto;
     text-align: center;
 }
-
 .stage_general h1{
     font-size: 1.6rem;
     font-weight: 300;

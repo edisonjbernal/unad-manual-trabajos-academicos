@@ -6,6 +6,7 @@ class stationMapClass extends generalStage{
         return ['stage_stationMap'];
     }
     content(){
+        this.showParameters();
         return `
             <div id="mapOfStations" class="mapOfStations">
             <div id="busCar" class="bus"></div>
@@ -20,9 +21,15 @@ class stationMapClass extends generalStage{
                 <button id="station4"  class="station-4">Estación 4</button>
             </div>
             `;
+            
     }
     hide(){
         this.divContainer.classList.add('hide');
+        this.hideParameters();
+    }
+    hideParameters(){
+        document.querySelectorAll('html')[0].classList.remove('stationMap');
+        document.querySelectorAll('body')[0].classList.remove('stationMap');
     }
     importCssFiles(){
         return [
@@ -46,8 +53,13 @@ class stationMapClass extends generalStage{
         ];
     }
     show(){
+        this.showParameters()
         this.divContainer.classList.remove('hide');
         resizeMap();
+    }
+    showParameters(){
+        document.querySelectorAll('html')[0].classList.add('stationMap');
+        document.querySelectorAll('body')[0].classList.add('stationMap');
     }
 }
 

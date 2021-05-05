@@ -7,5 +7,10 @@ var activities={
     }
 }
 
+document.getElementById('map-circle-button').addEventListener('click',function(){
+    event.preventDefault();
+    stage.get('stationMap');
+}
+);
 
-stage.get('terminalContent');
+stage.get('home');

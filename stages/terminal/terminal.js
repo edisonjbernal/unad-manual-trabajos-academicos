@@ -14,7 +14,7 @@ class terminalClass extends generalStage{
   }
   content(){
       return `
-      <h1>Terminal</h1>
+      <h1>Aspectos técnicos</h1>
       <div class="text-general">
          <p>Texto de ejemplo</p>
       </div>
