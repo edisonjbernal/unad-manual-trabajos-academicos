@@ -38,7 +38,7 @@ class terminalContentClass_introducccion extends generalPage{
             estos materiales, algunos ejercicios prácticos que te irán familiarizando más con ellos. Así que adelante!</p>
       </div>
       <div class="text-center">
-      <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>
+        <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>
         <button class="btn-general" onclick="stages_terminalContent.menu.next()"">Siguiente</button>
       </div>
       `;

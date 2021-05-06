@@ -1,5 +1,56 @@
 
+.introduction-select-p-1, .introduction-select-p-2{
+    border-top: 1px solid rgb(96, 93, 129);
+}
 .introduction-select-button-1{
-    border-bottom: 1px solid rgb(96, 93, 129);
     padding: 0 0 1.5rem 0;
+}
+.stage_home .introduction-select{
+    color: #FFF;
+}
+
+.stage_home .introduction-select div{
+    color: #FFF;
+    text-align: center;
+}
+/*.stage_home .introduction-select div:nth-child(odd){
+    border-right: 1px solid rgb(218, 218, 218);
+}*/
+
+.stage_home .introduction-select div p{
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 1rem 4%;
+}
+.stage_home .cursor-hand{
+    background-color: var(--main-font-color);
+    color: black;
+    padding: 20px;
+    width: 100px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .stage_home .introduction-select{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .stage_home .introduction-select > div{
+        padding: 0 20px;
+    }
+    .introduction-select-p-1, .introduction-select-p-2{
+        border-top: 0;
+    }
+    .introduction-select-button-1{
+        grid-column: 1;
+        grid-row:2;
+        border-bottom: 0;
+        /* border-right: 1px solid rgb(96, 93, 129); */
+    }
+    .introduction-select-p-1{
+        border-right: 1px solid rgb(96, 93, 129);
+    }
 }
