@@ -9,12 +9,14 @@ class station3Class extends generalStage{
   }
   content(){
       return `
-      <h1>Estación 3</h1>
+      <h1>Trabajos y proyectos investigativos</h1>
+      <img class="responsive" src="./test/ninosBus.jpg" />
       <div class="text-general">
-         <p>Texto de ejemplo</p>
+         <p>Trabajos y proyectos investigativos: Texto de ejemplo</p>
       </div>
-      <button class="btn-general" onclick="stage.get('stationMap')">Volver al mapa</button>
-      <button class="btn-general" onclick="stage.get('introduction')">Comenzar</button>
+      <div class="text-center">
+      <button class="btn-general" onclick="stage.get('stationMap')">Ingresar</button>
+      </div>
       `;
   }
   importCssFiles(){

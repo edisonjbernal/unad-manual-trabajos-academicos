@@ -1,6 +1,26 @@
 class pageLoadClass{
     constructor(){
         this.stagePageContainer=[];
+        this.stageLastPageContainer=[];
+    }
+    pageContainerGet(pageId){
+        let values = false;
+        values  = this.stagePageContainer.find(function(pagesContainer){
+            return pagesContainer.id === pageId;
+        });
+
+        return values.container;
+  
+    }
+    pageContainerSet(pageName,container){
+        let id=`stages_${this.stageName}_${pageName}`;
+        this.stagePageContainer.push(
+            {
+                id:id,
+                container:new container(pageName)
+            }
+        );
+         
     }
     setStageContainer(type){
         let these=this;
@@ -8,53 +28,50 @@ class pageLoadClass{
         let values = false;
 
         if(type=='value'){
-            values  = this.stagePageContainer.find(function(stages){
+            values  = this.stageLastPageContainer.find(function(stages){
                 return stages.stage === these.stageName;
             });
         }
         else if(type=='index'){
-            values = this.stagePageContainer.findIndex(function(stages){
+            values = this.stageLastPageContainer.findIndex(function(stages){
                 return stages.stage === these.stageName;
             });
         }
         
-
         return values;
-
-        
          
     }
      get(pageName){
-         
+         console.log('*****NUEVA PAGINA :'+pageName);
         this.stageName=stage.stageName;
         this.pageName=pageName;
         
-        console.log(this.stagePageContainer);
+        //console.log(this.stageLastPageContainer);
         //Nombre para controlar la variable de la clase
-         this.pageId = `stages_${this.stageName}_${this.pageName}`;
+         this.pageIdCurrent = `stages_${this.stageName}_${this.pageName}`;
          this.stageContainer=this.setStageContainer('value');
         if(this.stageContainer){
-            this.lastPageIdLoaded = this.stageContainer.lastPage;
+            this.pageIdLast = this.stageContainer.lastPage;
         }
         else{
-            this.stagePageContainer.push({
+            this.stageLastPageContainer.push({
                 stage:this.stageName,
-                lastPage:this.pageId
+                lastPage:this.pageIdCurrent
             });
         }
          //Nombre para ID del DIV
          this.pageDivId=`stage_${this.stageName}_${this.pageName}`;
-         console.log(`PAGE -----this.pageId:${this.pageDivId}`);
+         //console.log(`PAGE -----this.pageIdCurrent:${this.pageDivId}`);
          this.pageDiv = document.getElementById(this.pageDivId);
          //Ruta:
          this.pageRoute = `/stages/${this.stageName}/pages/${this.pageName}/${this.pageName}`;
 
-         if(this.lastPageIdLoaded==this.pageId ){
+         if(this.pageIdLast==this.pageIdCurrent){
              //No activa nada
-             console.log("No activa nada");
+             console.log("CLIC: En la página activa no se realiza nada");
          }
-         else if(this.lastPageIdLoaded){
-             console.log('**************OCULTAR anteriorrrrrr: '+this.lastPageIdLoaded);
+         else if(this.pageIdLast){
+             console.log('** OCULTAR ANTERIOR: '+this.pageIdLast);
              this.unload();
              this.load();
              //changeScenarioAnimation.change();
@@ -67,30 +84,31 @@ class pageLoadClass{
         console.log(`pageName: ${pageName}`);
      }
      unload(){
-        window[this.lastPageIdLoaded].hide();
+        let pageId = this.pageContainerGet(this.pageIdLast);
+        pageId.hide();
      }
      load(){
-         console.log(`---this.pageDiv:${this.pageDiv}`);
+         console.log(`**EXISTE LA PÁGINA? (${this.pageName}) :${this.pageDiv}`);
          if(this.pageDiv){
-            console.log('PAGE LOAd:SHOW-IF');
-             console.log(this.pageId);
-              window[this.pageId].show();
+            console.log('**YES - IF: Activa el contenedor');
+             console.log(this.pageIdCurrent);
+             let pageId = this.pageContainerGet(this.pageIdCurrent);
+                pageId.show();
+                window.scrollTo(0, 0);
+              
           }else{
-            console.log('PAGE LOAd:SHOW-ELSE');
+            console.log('** NO - ELSE: importar desde js');
               importJS.addFile([this.pageRoute]);
           }
-          //this.setStageContainer();
-          console.log('Llegando al final'+ this.stageName);
-          
 
        
         let stageIndex = this.setStageContainer('index');
-        this.stagePageContainer[stageIndex]={
+        this.stageLastPageContainer[stageIndex]={
             stage:this.stageName,
-            lastPage:this.pageId
+            lastPage:this.pageIdCurrent
         };
         console.log(`indice: ${stageIndex}`);
-          //this.lastPageIdLoaded = this.pageId;
+          //this.pageIdLast = this.pageIdCurrent;
      }
 }
 

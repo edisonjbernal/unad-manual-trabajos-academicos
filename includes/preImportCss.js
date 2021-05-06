@@ -11,7 +11,7 @@ class preImportCssClass{
         cssId= cssId.replaceAll('/','_');
         cssId= cssId.replaceAll('.css','');
 
-        console.log('LinksID:'+cssId);
+        //console.log('LinksID:'+cssId);
 
         if(!document.getElementById(cssId)){
             let linkCss = document.createElement('link');
@@ -22,13 +22,10 @@ class preImportCssClass{
             if(cssMedia){
                 linkCss.media=`screen and (min-width: ${cssMedia})`;
             }
-            console.log('cssHref:'+cssHref);
+         
             document.getElementsByTagName('body').item(0).appendChild(linkCss);
         }
-        else{
-            console.log('ANTEs cssHref:'+cssHref);
-        }
-        
+     
     }
     loadCssHref(cssHref,cssLocation){
         //VAria para las páginas

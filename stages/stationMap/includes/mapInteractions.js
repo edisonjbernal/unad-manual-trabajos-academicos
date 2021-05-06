@@ -59,8 +59,27 @@ class mapInteractionsClass{
         document.getElementById(station).innerHTML=`Ingresar`;
     }
     goIntoStation(station){
-        
         stage.get(station);
+        let buttonGoMap = document.getElementById('map-circle-button');
+        if(!buttonGoMap){
+            let buttonGoMap = document.createElement('a');
+            buttonGoMap.classList.add('map-circle-button');
+            buttonGoMap.href = '#stationMap';
+            buttonGoMap.id = 'map-circle-button';
+            buttonGoMap.innerText = 'Ver mapa';
+            
+            document.getElementsByTagName('body').item(0).appendChild(buttonGoMap);
+
+            
+            buttonGoMap.addEventListener('click',function(){
+    event.preventDefault();
+    stage.get('stationMap');
+}
+);
+        }
+        
+        
+        
     }
     nextStation(station){
         if(!station||station=='terminal'){

@@ -13,6 +13,14 @@
     font-size: 1.6rem;
     font-weight: 300;
     color: #FECB00;
+    padding: 1rem 0;
+    text-align: center;
+}
+.stage_general h2{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #FECB00;
+    padding: 1rem 0;
     text-align: center;
 }
 .stage_general h1 strong{
@@ -35,4 +43,7 @@
     font-size: 1.1rem;
     text-align: left;
     padding: 1rem 4%;
+}
+img.responsive{
+    width: 100%;
 }

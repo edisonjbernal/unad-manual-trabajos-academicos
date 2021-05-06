@@ -58,6 +58,7 @@ class generalStage{
     }
     hide(){
         //VAria para las páginas
+        console.log('Ocultar Stage o pagina');
         this.divContainer.innerHTML='';
         this.divContainer.classList.add('hide');
     }

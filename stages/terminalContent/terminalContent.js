@@ -15,13 +15,22 @@ class terminalContentClass extends generalStage{
           <ul>
             <li><strong>Aspectos Generales</strong></li>
             <li>
-              <a href="#inicio">Inicio</a>
+              <a href="#videoInicial">Video inicial</a>
             </li>
             <li>
-              <a href="#final">Final</a>
+              <a href="#introduccion">Introducción</a>
             </li>
             <li>
-              <a href="#analisis">analisis</a>
+              <a href="#lineamientosGenerales">Lineamientos generales</a>
+            </li>
+            <li>
+              <a href="#preliminares">Preliminares</a>
+            </li>
+            <li>
+              <a href="#titulacionyTablaDeContenido">Titulación y tabla de contenido</a>
+            </li>
+            <li>
+              <a href="#ejercicios">Ejercicios</a>
             </li>
           </ul>
         </nav>
@@ -37,16 +46,14 @@ class terminalContentClass extends generalStage{
             <div class="menu-text">Menú</div>
         </a>
             <div> 
-                <h1>Terminal Content</h1>
+                <h1>Aspectos técnicos</h1>
             </div>
         </header>
         <main>
 
         </main>
       </div>
-      <button class="btn-general" onclick="stage.get('stationMap')">Volver al mapa</button>
-      <button class="btn-general" onclick="stagePage.get('inicio')">Inicio</button>
-      <button class="btn-general" onclick="stagePage.get('final')">Final</button>
+      
       `;
   }
   hide(){
@@ -59,7 +66,8 @@ class terminalContentClass extends generalStage{
     ]
   }
   importJSFiles(){
-    let pageMenuTerminal= new pageMenuListenersClass('stage_'+stage.stageName);
+    this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
+    stagePage.get('videoInicial');
    
   }
   show(){

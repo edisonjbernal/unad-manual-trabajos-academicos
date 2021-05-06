@@ -15,12 +15,14 @@ class terminalClass extends generalStage{
   content(){
       return `
       <h1>Aspectos técnicos</h1>
+      <img class="responsive" src="./test/ninosBus.jpg" />
       <div class="text-general">
-         <p>Texto de ejemplo</p>
+         <p>Aspectos técnicos: Texto de ejemplo</p>
       </div>
-      <button class="btn-general" onclick="stage.get('stationMap')">Volver al mapa</button>
-      <button class="btn-general" onclick="stage.get('terminalContent')">Comenzar</button>
-      <button class="btn-general" onclick="stage.get('introduction')">Introducción</button>
+      <div class="text-center">
+      <button class="btn-general" onclick="stage.get('terminalContent')">Ingresar</button>
+      </div>
+      
       `;
   }
 }
