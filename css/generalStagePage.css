@@ -29,21 +29,41 @@
     z-index: 1000;
     height: 100vh;
     width: 100vw;
-    left: 0;
     top: 0;
     transition: .5s;
-    transform: rotateZ(0deg);
-}
-.navigation.hide{
     left:-200vw;
     transform: rotateZ(90deg);
+    
+    overflow: auto;
 }
+.navigation::-webkit-scrollbar{
+    width:8px;
+    height:8px
+}
+.navigation::-webkit-scrollbar-thumb{
+    background:grey;
+    border-radius:4px
+}
+.navigation::-webkit-scrollbar-thumb:hover{
+    background:#919191;
+    box-shadow:0 0 2px 1px rgba(0,0,0,.2)
+}
+
 .navigation li{
     list-style: none;
 }
 
 .navigation ul li a{
     color: #fff;
+    display: block;
+    padding: 1rem 2rem;
+    border-bottom: 1px dotted #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+.navigation ul li a.active{
+    background-color: rgb(255, 217, 0);
+    color: rgb(0, 0, 0);
     display: block;
     padding: 1rem 2rem;
     border-bottom: 1px dotted #fff;
@@ -58,6 +78,41 @@
     margin: 0 auto;
     max-width: 1000px;
 }
+div.stage-pages-general.clicked-menu .navigation{
+    left: 0;
+    transform: rotateZ(0deg);
+}
 header{
     display: flex;
+}
+
+
+@media (min-width: 1000px) {
+    .navigation{
+        left:0;
+        transform: rotateZ(0deg);
+        position: fixed;
+        width: 300px;
+        float: left;
+    }
+    div.stage-pages-general.clicked-menu .navigation{
+        left:-400px;
+        transform: rotateZ(0deg);
+        position: fixed;
+        width: 300px;
+        float: left;
+    }
+    .stageMaster > div.stage-pages-general div.general{
+        margin: 0 auto;
+        max-width: 900px;
+    }
+    .stageMaster > div.stage-pages-general{
+        margin: 0 0 0 300px;
+        max-width: 100%;
+        transition: .5s;
+    }
+    .stageMaster > div.stage-pages-general.clicked-menu{
+        margin: 0;
+    }
+   
 }

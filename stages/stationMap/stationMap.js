@@ -14,7 +14,7 @@ class stationMapClass extends generalStage{
                     id="imgMapOfStations"
                     alt="Mapa de las estaciones"
                     class="img-map"
-                    src="./images/mapaDeEstaciones.png" >
+                    src="./images/mapa_estaciones.jpg" >
                 <button id="terminal"  class="station-1">Terminal</button>
                 <button id="station2"  class="station-2">Estación 2</button>
                 <button id="station3"  class="station-3">Estación 3</button>

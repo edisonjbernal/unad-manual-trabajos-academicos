@@ -2,11 +2,14 @@ class pageMenuListenersClass{
     constructor(stageId){
         this.stageId =document.getElementById(stageId);
         this.menuElements=this.stageId.querySelectorAll('nav ul li a');
+        this.menuLastElementClicked=this.menuElements[0];
         this.menuButton=this.stageId.getElementsByClassName('button-menu-principal')[0];
         this.menuNavigation=this.stageId.getElementsByClassName('navigation')[0];
+        this.menuNavigationParent=this.menuNavigation.parentElement;
         this.menuButtonListener();
         this.clickListener();
         this.dataMenuCurrentIndex=0;
+        this.menuNavigationClicked=false;
     }
     back(){
         let dataMenuCurrentIndex=this.dataMenuCurrentIndex;
@@ -25,8 +28,24 @@ class pageMenuListenersClass{
             this.menuElements[i].addEventListener('click',
              function () {
                  event.preventDefault();
+                 if(these.menuLastElementClicked==element){
+
+                 }
+                 else{
+                    these.menuLastElementClicked.classList.remove('active');
+                    element.classList.add('active');
+                    these.menuLastElementClicked=element;
+                 }
+                 
                  these.chagePage(element.href,element.getAttribute('data-menu-index'));
-                 these.hideMenuMobile();
+                 console.log("STYLE SIETH");
+                 let computedMenuNavigationLeft=window.getComputedStyle(these.menuNavigation,null).getPropertyValue('left');
+                 if(these.menuNavigationParent.classList.contains('clicked-menu')&&computedMenuNavigationLeft=='0px'){
+                    these.menuGeneralUnClicked();
+                 }
+                 console.log(these.menuNavigation.style);
+                 element.scrollIntoView({ block: 'center', behavior: 'smooth' });
+                 
              }
              
              , false);
@@ -43,7 +62,14 @@ class pageMenuListenersClass{
         this.menuButton.addEventListener('click',
         function () {
             event.preventDefault();
-            these.showMenuMobile();
+            console.log('clik');
+            if(these.menuNavigationClicked){
+                these.menuGeneralUnClicked();
+                console.log('clikUNED');
+             }else{
+                these.menuGeneralClicked();
+                console.log('clikED');
+             }
         }
         
         , false);
@@ -57,11 +83,15 @@ class pageMenuListenersClass{
             menuToSelect.click();
         }
    }
-   showMenuMobile(){
-    this.menuNavigation.classList.remove('hide');
+   menuGeneralClicked(){
+    this.menuNavigationParent.classList.add('clicked-menu');
+    this.menuNavigationClicked=true;
+    console.log('menuCliked');
+    console.log(this.menuNavigationClicked);
    }
-   hideMenuMobile(){
-    this.menuNavigation.classList.add('hide');
+   menuGeneralUnClicked(){
+    this.menuNavigationParent.classList.remove('clicked-menu');
+    this.menuNavigationClicked=false;
    }
     
 }

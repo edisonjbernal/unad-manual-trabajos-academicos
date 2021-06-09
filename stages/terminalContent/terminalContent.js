@@ -4,14 +4,78 @@ class terminalContentClass extends generalStage{
   }
   addCssClass(){
     return [
-        'stage_general'
+      'stage_general',
+        'stage-pages-general'
     ]
   }
   content(){
       return `
-      <div class="navigation hide">
+      <div class="navigation">
       
         <nav>
+          <ul>
+            <li><strong>Aspectos Generales</strong></li>
+            <li>
+              <a href="#videoInicial">Video inicial</a>
+            </li>
+            <li>
+              <a href="#introduccion">Introducción</a>
+            </li>
+            <li>
+              <a href="#lineamientosGenerales">Lineamientos generales</a>
+            </li>
+            <li>
+              <a href="#preliminares">Preliminares</a>
+            </li>
+            <li>
+              <a href="#titulacionyTablaDeContenido">Titulación y tabla de contenido</a>
+            </li>
+            <li>
+              <a href="#ejercicios">Ejercicios</a>
+            </li>
+          </ul>
+          <ul>
+            <li><strong>Aspectos Generales</strong></li>
+            <li>
+              <a href="#videoInicial">Video inicial</a>
+            </li>
+            <li>
+              <a href="#introduccion">Introducción</a>
+            </li>
+            <li>
+              <a href="#lineamientosGenerales">Lineamientos generales</a>
+            </li>
+            <li>
+              <a href="#preliminares">Preliminares</a>
+            </li>
+            <li>
+              <a href="#titulacionyTablaDeContenido">Titulación y tabla de contenido</a>
+            </li>
+            <li>
+              <a href="#ejercicios">Ejercicios</a>
+            </li>
+          </ul>
+          <ul>
+            <li><strong>Aspectos Generales</strong></li>
+            <li>
+              <a href="#videoInicial">Video inicial</a>
+            </li>
+            <li>
+              <a href="#introduccion">Introducción</a>
+            </li>
+            <li>
+              <a href="#lineamientosGenerales">Lineamientos generales</a>
+            </li>
+            <li>
+              <a href="#preliminares">Preliminares</a>
+            </li>
+            <li>
+              <a href="#titulacionyTablaDeContenido">Titulación y tabla de contenido</a>
+            </li>
+            <li>
+              <a href="#ejercicios">Ejercicios</a>
+            </li>
+          </ul>
           <ul>
             <li><strong>Aspectos Generales</strong></li>
             <li>
