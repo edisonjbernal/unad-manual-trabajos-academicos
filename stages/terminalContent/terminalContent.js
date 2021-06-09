@@ -10,97 +10,9 @@ class terminalContentClass extends generalStage{
   }
   content(){
       return `
-      <div class="navigation">
-      
-        <nav>
-          <ul>
-            <li><strong>Aspectos Generales</strong></li>
-            <li>
-              <a href="#videoInicial">Video inicial</a>
-            </li>
-            <li>
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li>
-              <a href="#lineamientosGenerales">Lineamientos generales</a>
-            </li>
-            <li>
-              <a href="#preliminares">Preliminares</a>
-            </li>
-            <li>
-              <a href="#titulacionyTablaDeContenido">Titulación y tabla de contenido</a>
-            </li>
-            <li>
-              <a href="#ejercicios">Ejercicios</a>
-            </li>
-          </ul>
-          <ul>
-            <li><strong>Aspectos Generales</strong></li>
-            <li>
-              <a href="#videoInicial">Video inicial</a>
-            </li>
-            <li>
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li>
-              <a href="#lineamientosGenerales">Lineamientos generales</a>
-            </li>
-            <li>
-              <a href="#preliminares">Preliminares</a>
-            </li>
-            <li>
-              <a href="#titulacionyTablaDeContenido">Titulación y tabla de contenido</a>
-            </li>
-            <li>
-              <a href="#ejercicios">Ejercicios</a>
-            </li>
-          </ul>
-          <ul>
-            <li><strong>Aspectos Generales</strong></li>
-            <li>
-              <a href="#videoInicial">Video inicial</a>
-            </li>
-            <li>
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li>
-              <a href="#lineamientosGenerales">Lineamientos generales</a>
-            </li>
-            <li>
-              <a href="#preliminares">Preliminares</a>
-            </li>
-            <li>
-              <a href="#titulacionyTablaDeContenido">Titulación y tabla de contenido</a>
-            </li>
-            <li>
-              <a href="#ejercicios">Ejercicios</a>
-            </li>
-          </ul>
-          <ul>
-            <li><strong>Aspectos Generales</strong></li>
-            <li>
-              <a href="#videoInicial">Video inicial</a>
-            </li>
-            <li>
-              <a href="#introduccion">Introducción</a>
-            </li>
-            <li>
-              <a href="#lineamientosGenerales">Lineamientos generales</a>
-            </li>
-            <li>
-              <a href="#preliminares">Preliminares</a>
-            </li>
-            <li>
-              <a href="#titulacionyTablaDeContenido">Titulación y tabla de contenido</a>
-            </li>
-            <li>
-              <a href="#ejercicios">Ejercicios</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
       <div class="general">
         <header>
+        <div id="ghost-mobile-menu" class="ghost-mobile-menu">Hola</div>
         <a href="#menu" class="button-menu-principal">
             <div class="hamburguer">
               <div></div>
@@ -110,12 +22,94 @@ class terminalContentClass extends generalStage{
             <div class="menu-text">Menú</div>
         </a>
             <div> 
-                <h1>Aspectos técnicos</h1>
+                <h1>Statement of the Research Problem</h1>
             </div>
         </header>
+        <a id="accesibility-main-menu-access" class="accesibility-main-menu-access" href="#">Navegar directamente en el menú</a>  
         <main>
 
         </main>
+      </div>
+      <div class="navigation">
+      
+        <nav>
+        <img class="responsive logo-unad" src="./images/logoUNAD.png" />
+          <ul>
+            <li><strong>Statement of the Research Problem</strong></li>
+            <li>
+              <a href="#technicalData" class="active">Technical data</a>
+            </li>
+            <li>
+              <a href="#learningGoalsOfThisResource">Learning goals of this resource</a>
+            </li>
+            <li>
+              <a href="#theResearchProblemAndTheResearchTopic">The Research Problem and the Research Topic</a>
+            </li>
+            <li>
+              <a href="#typologiesOfResearchProblems">Typologies of research problems</a>
+            </li>
+            <li>
+              <a href="#describingTheResearchProblem">Describing the research problem</a>
+            </li>
+            <li>
+              <a href="#theResearchQuestions">The research questions</a>
+            </li>
+            <li>
+              <a href="#criteriaOfGoodResearchQuestions">Criteria of good research questions</a>
+            </li>
+            <li>
+              <a href="#criteriaOfGoodResearchQuestionsExercise">Criteria of good research questions Exercise</a>
+            </li>
+            <li>
+              <a href="#theResearchObjectives">The research objectives</a>
+            </li>
+            <li>
+              <a href="#examplesOfResearchObjectives">Examples of research objectives</a>
+            </li>
+            <li>
+              <a href="#researchProblemsQuestionsAndObjectivesExercise">Research problems, questions and objectives: exercise</a>
+            </li>
+            <li>
+              <a href="#theResearchHypothesis">The research hypothesis</a>
+            </li>
+            <li>
+              <a href="#onetailedAndTwotailedAlternativeHypothesis">One-tailed and two-tailed alternative hypothesis</a>
+            </li>
+            <li>
+              <a href="#theVariablesInResearch">The variables in research</a>
+            </li>
+            <li>
+              <a href="#theVariablesInResearchAnotherExample">The variables in research - another example</a>
+            </li>
+            <li>
+              <a href="#hypothesisAndVariablesExercise">Hypothesis and variables:<br/><br/>- Exercise 1</a>
+            </li>
+            <li>
+              <a href="#hypothesisAndVariablesExercise2">- Exercise 2</a>
+            </li>
+            <li>
+              <a href="#hypothesisAndVariablesExercise3">- Exercise 3</a>
+            </li>
+            <li>
+              <a href="#hypothesisAndVariablesExercise4">- Exercise 4</a>
+            </li>
+            <li>
+              <a href="#otherTypesOfVariables">Other types of variables</a>
+            </li>
+            <li>
+              <a href="#rationalejustificationOfAResearchStudy">Rationale/Justification of a research study</a>
+            </li>
+            <li>
+              <a href="#samplesOfResearchStudiesRationale">Samples of research studies rationale</a>
+            </li>
+            <li>
+              <a href="#bibliography">Bibliography</a>
+            </li>
+            <li>
+              <a href="#credits">Credits</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       
       `;
