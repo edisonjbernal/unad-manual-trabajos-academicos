@@ -68,10 +68,10 @@ class pageLoadClass{
 
          if(this.pageIdLast==this.pageIdCurrent){
              //No activa nada
-             console.log("CLIC: En la página activa no se realiza nada");
+            // console.log("CLIC: En la página activa no se realiza nada");
          }
          else if(this.pageIdLast){
-             console.log('** OCULTAR ANTERIOR: '+this.pageIdLast);
+            // console.log('** OCULTAR ANTERIOR: '+this.pageIdLast);
              this.unload();
              this.load();
              //changeScenarioAnimation.change();
@@ -80,24 +80,24 @@ class pageLoadClass{
              this.load();
          }
 
-         console.log(`stageName: ${this.stageName}`);
-        console.log(`pageName: ${pageName}`);
+        /*  console.log(`stageName: ${this.stageName}`);
+        console.log(`pageName: ${pageName}`); */
      }
      unload(){
         let pageId = this.pageContainerGet(this.pageIdLast);
         pageId.hide();
      }
      load(){
-         console.log(`**EXISTE LA PÁGINA? (${this.pageName}) :${this.pageDiv}`);
+         //console.log(`**EXISTE LA PÁGINA? (${this.pageName}) :${this.pageDiv}`);
          if(this.pageDiv){
-            console.log('**YES - IF: Activa el contenedor');
+            //console.log('**YES - IF: Activa el contenedor');
              console.log(this.pageIdCurrent);
              let pageId = this.pageContainerGet(this.pageIdCurrent);
                 pageId.show();
                 window.scrollTo(0, 0);
               
           }else{
-            console.log('** NO - ELSE: importar desde js');
+            //console.log('** NO - ELSE: importar desde js');
               importJS.addFile([this.pageRoute]);
           }
 
@@ -107,8 +107,9 @@ class pageLoadClass{
             stage:this.stageName,
             lastPage:this.pageIdCurrent
         };
-        console.log(`indice: ${stageIndex}`);
+        //console.log(`indice: ${stageIndex}`);
           //this.pageIdLast = this.pageIdCurrent;
+          document.querySelectorAll('.button-menu-principal')[0].focus();   
      }
 }
 
