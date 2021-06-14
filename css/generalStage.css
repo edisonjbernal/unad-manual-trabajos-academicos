@@ -1,17 +1,20 @@
+audio.general{
+    width: 100%;
+}
 .stageMaster > div.stage_general{
     padding: 1rem;
 }
 .stage_general h1{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 300;
-    color: #FECB00;
+    color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 .stage_general h2{
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     font-weight: 300;
-    color: #FECB00;
+    color: var(--main-font-color);
     padding: 1rem 0;
     text-align: center;
 }
@@ -20,5 +23,56 @@
     display: block;
 }
 img.responsive{
+    width: 100%;
+}
+.text-show-content{
+    background-color: rgb(36, 36, 36);
+   
+    color: #fff;
+    
+    -webkit-box-shadow: inset 0px 4px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 4px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 4px 15px 0px rgba(0,0,0,0.75);
+    height: 0px;
+    opacity: 1;
+    width: 0px;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 auto;
+}
+.text-show-content.show{
+    padding: 20px;
+    border: 1px solid var(--main-button-background);
+    height: auto;
+    opacity: 1;
+    width: auto;
+}
+.text-show-content.show p{
+    padding: 10px;
+}
+.popUpToDiscover{
+    background-color: black;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    transition: .3s;
+}
+.popUpToDiscover.show{
+    background-color: rgb(245, 245, 245);
+    padding: 40px 20px;
+    height: auto;
+    width: auto;
+}
+.popUpToDiscover.show .text-popUpToDiscover{
+    background-color: #fff;
+    border: 1px solid var(--main-button-background);
+    border-left: 5px solid var(--main-button-background);
+    padding: 20px;
+    -webkit-box-shadow: 0 0.4rem 1.2rem 0.2rem rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0 0.4rem 1.2rem 0.2rem rgb(0 0 0 / 5%);
+    box-shadow: 0 0.4rem 1.2rem 0.2rem rgb(0 0 0 / 5%);
+    transition: transform .25s cubic-bezier(0,0,.3,1);
+}
+video{
     width: 100%;
 }

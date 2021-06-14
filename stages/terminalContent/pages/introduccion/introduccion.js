@@ -10,7 +10,7 @@ class terminalContentClass_introducccion extends generalPage{
   content(){
       return `
       <h2>Introducción</h2>
-      <img class="responsive" src="./test/videoFaltante.png" />
+      <video class="responsive" src="./images/aspectos-tecnicos/aspectos-generales/introduccion.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-general">
             <p>Esteban: Buenos días, Marcela. ¿Me escuchas y me ves bien?
             Marcela: Sí, profesor. Perfectamente.

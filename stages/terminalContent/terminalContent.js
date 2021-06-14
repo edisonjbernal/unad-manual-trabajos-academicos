@@ -23,7 +23,7 @@ class terminalContentClass extends generalStage{
             <div class="menu-text">Menú</div>
         </a>
             <div> 
-                <h1>Statement of the Research Problem</h1>
+                <h1>Aspectos Técnicos</h1>
             </div>
         </header>
         <a id="accesibility-main-menu-access" class="accesibility-main-menu-access" href="#">Navegar directamente en el menú</a>  
@@ -39,78 +39,40 @@ class terminalContentClass extends generalStage{
         <nav>
         
           <ul>
-            <li><strong>Statement of the Research Problem</strong></li>
+            <li><strong>Aspectos generales</strong></li>
             <li>
-              <a href="#technicalData" class="active">Technical data</a>
+              <a href="#introduccion" class="active">Introducción</a>
             </li>
             <li>
-              <a href="#learningGoalsOfThisResource">Learning goals of this resource</a>
+              <a href="#learningGoalsOfThisResource">Aspectos estructurales de los trabajos académicos</a>
             </li>
             <li>
-              <a href="#theResearchProblemAndTheResearchTopic">The Research Problem and the Research Topic</a>
+              <a href="#theResearchProblemAndTheResearchTopic">Lineamientos general</a>
             </li>
             <li>
-              <a href="#typologiesOfResearchProblems">Typologies of research problems</a>
+              <a href="#typologiesOfResearchProblems">Preliminares</a>
             </li>
             <li>
-              <a href="#describingTheResearchProblem">Describing the research problem</a>
+              <a href="#describingTheResearchProblem">Titulación y tabla de contenido</a>
             </li>
             <li>
-              <a href="#theResearchQuestions">The research questions</a>
+              <a href="#theResearchQuestions">Ejercicios</a>
+            </li>
+            <li><strong>Propiedad intelectual y referenciación</strong></li>
+            <li>
+              <a href="#criteriaOfGoodResearchQuestions">Introducción</a>
             </li>
             <li>
-              <a href="#criteriaOfGoodResearchQuestions">Criteria of good research questions</a>
+              <a href="#criteriaOfGoodResearchQuestionsExercise">Propiedad intelectual y plagio</a>
             </li>
             <li>
-              <a href="#criteriaOfGoodResearchQuestionsExercise">- Exercise</a>
+              <a href="#theResearchObjectives">Citación (Normas APA)</a>
             </li>
             <li>
-              <a href="#theResearchObjectives">The research objectives</a>
+              <a href="#examplesOfResearchObjectives">Referenciación (Normas APA)</a>
             </li>
             <li>
-              <a href="#examplesOfResearchObjectives">Examples of research objectives</a>
-            </li>
-            <li>
-              <a href="#researchProblemsQuestionsAndObjectivesExercise">Research problems, questions and objectives: exercise</a>
-            </li>
-            <li>
-              <a href="#theResearchHypothesis">The research hypothesis</a>
-            </li>
-            <li>
-              <a href="#onetailedAndTwotailedAlternativeHypothesis">One-tailed and two-tailed alternative hypothesis</a>
-            </li>
-            <li>
-              <a href="#theVariablesInResearch">The variables in research</a>
-            </li>
-            <li>
-              <a href="#theVariablesInResearchAnotherExample">The variables in research - another example</a>
-            </li>
-            <li>
-              <a href="#hypothesisAndVariablesExercise">Hypothesis and variables:<br/><br/>- Exercise 1</a>
-            </li>
-            <li>
-              <a href="#hypothesisAndVariablesExercise2">- Exercise 2</a>
-            </li>
-            <li>
-              <a href="#hypothesisAndVariablesExercise3">- Exercise 3</a>
-            </li>
-            <li>
-              <a href="#hypothesisAndVariablesExercise4">- Exercise 4</a>
-            </li>
-            <li>
-              <a href="#otherTypesOfVariables">Other types of variables</a>
-            </li>
-            <li>
-              <a href="#rationalejustificationOfAResearchStudy">Rationale/Justification of a research study</a>
-            </li>
-            <li>
-              <a href="#samplesOfResearchStudiesRationale">Samples of research studies rationale</a>
-            </li>
-            <li>
-              <a href="#bibliography">Bibliography</a>
-            </li>
-            <li>
-              <a href="#credits">Credits</a>
+              <a href="#researchProblemsQuestionsAndObjectivesExercise">Tablas y figuras</a>
             </li>
           </ul>
         </nav>
@@ -129,7 +91,7 @@ class terminalContentClass extends generalStage{
   }
   importJSFiles(){
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
-    stagePage.get('videoInicial');
+    stagePage.get('introduccion');
    
   }
   show(){
