@@ -23,7 +23,7 @@
     padding: 0 0.2rem;
 }
 .navigation{
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgb(60, 60, 60);
     display: block;
     position: fixed;
     z-index: 1000;
@@ -31,10 +31,10 @@
     width: 100vw;
     top: 0;
     transition: .5s;
-    left:-200vw;
+    left:-300vw;
     transform: rotateZ(90deg);
-    
     overflow: auto;
+    padding: 200px 0 0 0;
 }
 .navigation::-webkit-scrollbar{
     width:8px;
@@ -57,7 +57,7 @@
     color: #fff;
     display: block;
     padding: 1rem 2rem;
-    border-bottom: 1px dotted #fff;
+    border-bottom: 1px dotted #585858;
     text-decoration: none;
     transition: .5s;
 }
@@ -82,12 +82,241 @@ div.stage-pages-general.clicked-menu .navigation{
     left: 0;
     transform: rotateZ(0deg);
 }
+.logo-UNAD-container{
+    background-color: rgb(60, 60, 60);
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    z-index: 2000;
+    transition: .5s;
+    text-align: center;
+    width: 97%;
+    -webkit-box-shadow: -1px 17px 17px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 17px 17px -13px rgba(0,0,0,0.75);
+    box-shadow: -1px 17px 17px -13px rgba(0,0,0,0.75);
+}
+
+div.stage-pages-general.clicked-menu .logo-UNAD-container{
+    left: 0;
+}
+
+img.logo-unad{
+    max-width: 300px;
+}
 header{
     display: flex;
 }
+.accesibility-main-menu-access{
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    display: block;
+    right: -500px;
+    color: #fff;
+    transition: .5s;
+}
+.accesibility-main-menu-access:focus{
+    left: auto;
+    right: 0;   
+    width: auto ;
+    z-index: 999;
+}
+.ghost-mobile-menu{
+    position: fixed;
+    left: -50px;
+    width: 0px;
+}
+.answer-text{
+    transition: .3s;
+}
+.answer-text .answer-text-selected{
+    padding: 20px 10px;
+}
+.answer-text .answer-text-feedback{
+    padding: 10px;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: normal;
+}
+.answer-text.correct .answer-text-feedback{
+    border-top: 1px solid rgb(159, 235, 199);
+}
+.answer-text.incorrect .answer-text-feedback{
+    border-top: 1px solid rgb(235, 159, 159);
+}
+.answer-text.correct,
+.answer-text.incorrect{
+    font-weight: bold;
+    padding: 5px 20px;
+}
+.answer-text.correct{
+    background-color: rgb(199, 255, 199);
+    transition: .3s;
+    text-align: center;
+}
+.answer-text.incorrect{
+    background-color: rgb(255, 231, 231);
+    border: 1px solid red;
+    transition: .3s;
+}
 
+.answer-text img.alert-image{
+    height: 150px;
+}
+
+.answer-text-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.answer-text-grid-row-1{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-text-grid-row-2{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.answer-text-grid-row-3{
+    grid-column: 1/5;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drag-and-drop-element{
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    margin: 40px auto;
+}
+.drag-and-drop-element select{
+    background-color: rgb(60, 60, 60);
+    color: #fff;
+    margin: 20px auto;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.drag-and-drop-title{
+    background-color: #dbdbdb;
+    -webkit-box-shadow: 10px 10px 20px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 20px -13px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 20px -13px rgba(0,0,0,0.75);
+}
+
+.btn-acordeon{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 30px 20px;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+.btn-acordeon::after{
+    content: '+';
+    font-weight: normal;
+    font-size: 1.4rem;
+    float: right;
+    transition: .5s;
+}
+.main-container-acordeon{
+    -webkit-box-shadow: 0 0.4rem 1.2rem 0.2rem rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0 0.4rem 1.2rem 0.2rem rgb(0 0 0 / 5%);
+    box-shadow: 0 0.4rem 1.2rem 0.2rem rgb(0 0 0 / 5%);
+    border-bottom: 1px solid #ddd;
+    margin: 40px 20px;
+}
+
+.container-acordeon{
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    transition: .5s;
+}
+.container-acordeon.show{
+    border-left: 5px solid var(--main-button-background);
+}
+.text-acordeon{
+    overflow: hidden;
+    height: 0;
+    transition: .5s;
+    width: 0;
+    opacity: 0;
+}
+.container-acordeon.show .btn-acordeon::after{
+    content: '_';
+}
+.container-acordeon.show .text-acordeon{
+    padding: 0 20px 0 20px;
+    height: auto;
+    width: auto;
+    opacity: 1;
+}
+
+ul.ul-input li label{
+    cursor: pointer;
+}
+
+ul.ul-input li{
+    list-style: none;
+    padding: 10px;
+}
+ul.ul-input li:hover{
+    background: #c7c7c7;
+    cursor: pointer;
+}
+ul.ul-input li.danger{
+    background-color: rgb(255, 231, 231);
+    border: 1px solid red;
+    cursor: pointer;
+}
+ul.ul-input li.danger::after,
+ul.ul-input li.success::after{
+    border: 1px solid red;
+    content: attr(data-feedback);
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+}
+ul.ul-input li.success::after{
+    border: 1px solid rgb(9, 255, 0);
+}
+
+ul.ul-input li.success{
+    background-color: rgb(231, 255, 231);
+    border: 1px solid rgb(9, 255, 0);
+    cursor: pointer;
+}
+table.table-general{
+    -webkit-box-shadow: 0 0.4rem 1.2rem 0.2rem rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0 0.4rem 1.2rem 0.2rem rgb(0 0 0 / 5%);
+    box-shadow: 0 0.4rem 1.2rem 0.2rem rgb(0 0 0 / 5%);
+    margin: 40px 20px;
+}
+table.table-general tr td,
+table.table-general tr th{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
 
 @media (min-width: 1000px) {
+    .ghost-mobile-menu{
+        width: 1px;
+    }
     .navigation{
         left:0;
         transform: rotateZ(0deg);
@@ -101,6 +330,15 @@ header{
         position: fixed;
         width: 300px;
         float: left;
+    }
+    .logo-UNAD-container{
+        
+        width: 292px;
+        left: 0;
+    }
+    
+    div.stage-pages-general.clicked-menu .logo-UNAD-container{
+        left: -1000px;
     }
     .stageMaster > div.stage-pages-general div.general{
         margin: 0 auto;

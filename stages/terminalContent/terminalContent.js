@@ -10,6 +10,7 @@ class terminalContentClass extends generalStage{
   }
   content(){
       return `
+      
       <div class="general">
         <header>
         <div id="ghost-mobile-menu" class="ghost-mobile-menu">Hola</div>
@@ -30,10 +31,13 @@ class terminalContentClass extends generalStage{
 
         </main>
       </div>
+      <div class="logo-UNAD-container">
+          <img class="responsive logo-unad" src="./images/logoUNAD.png" />
+        </div>
       <div class="navigation">
       
         <nav>
-        <img class="responsive logo-unad" src="./images/logoUNAD.png" />
+        
           <ul>
             <li><strong>Statement of the Research Problem</strong></li>
             <li>
@@ -58,7 +62,7 @@ class terminalContentClass extends generalStage{
               <a href="#criteriaOfGoodResearchQuestions">Criteria of good research questions</a>
             </li>
             <li>
-              <a href="#criteriaOfGoodResearchQuestionsExercise">Criteria of good research questions Exercise</a>
+              <a href="#criteriaOfGoodResearchQuestionsExercise">- Exercise</a>
             </li>
             <li>
               <a href="#theResearchObjectives">The research objectives</a>
