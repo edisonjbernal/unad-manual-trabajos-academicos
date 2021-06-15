@@ -11,35 +11,27 @@ class terminalContentClass_titulacionyTablaDeContenido extends generalPage{
       return `
       <h2>Titulación y tabla de contenido</h2>
       <img class="responsive" src="./test/videoFaltante.png" />
-      <div class="text-general">
-            <p>Esteban: Buenos días, Marcela. ¿Me escuchas y me ves bien?
-            Marcela: Sí, profesor. Perfectamente.
-            Esteban: Qué bien Marcela, mi nombre es Esteban y soy tu profesor consejero asignado. Dime en qué te puedo servir.
-            Marcela: Profesor, soy estudiante de primer semestre, y en esta semana ya nos están asignando los primeros trabajos y
-            tareas. Los profesores nos dicen que es muy importante aplicar los parámetros propuestos por la Universidad para
-            entregarlos de manera correcta. ¿A qué se refieren?
-            Esteban: Muy bien, tus profesores están haciendo referencia a diferentes aspectos formales que deben cumplir todos los
-            trabajos escritos que desarrollemos dentro de nuestro quehacer académico en la UNAD. Varios de estos parámetros son
-            comunes a todos los tipos de trabajo que pueden ir desde trabajos cotidianos como consultas, resúmenes y ensayos
-            críticos hasta los más avanzados como proyectos investigativos y artículos para ser publicados en revistas especializadas.
-            Marcela: Ah, ya comienzo a entender, ¿son esas cosas como las normas APA?
-            Esteban: (En tono muy amable, y con una sutil sonrisa) jejeje. Bueno, las normas APA son uno de los diferentes aspectos
-            formales a tener en cuenta, y hay otros más para considerar que son una especie de marca registrada dentro de nuestra
-            Universidad; y a la vez, habrá algunos parámetros que también varían y son acordes a la complejidad del trabajo y el nivel
-            en el que se desarrollen; es decir que hay algunas especificaciones para trabajos de posgrados y niveles superiores a los
-            programas de grado.
-            Marcela: Ay profesor, pero se oye muy complicado.
-            Esteban: Para nada Marcela, contigo nos enfocaremos solo en los parámetros comunes, y particularmente en aquellos
-            pertinentes a tu nivel actual como estudiante de primeros semestres. Verás que son muy específicos y útiles, y podrás
-            aplicarlos con facilidad a tus trabajos de aquí hasta el final de tus estudios de grado. ¿Te parece bien si empezamos?
-            Marcela: Bueno profesor, Esteban. Ya me tranquiliza bastante, y claro que sí, comencemos.
-            Esteban: Excelente, Marcela. Te voy a compartir la pantalla con un menú de materiales y actividades en las que te iré
-            explicando los primeros aspectos técnicos que deberás aplicar para el desarrollo de tus trabajos. También encontrarás en
-            estos materiales, algunos ejercicios prácticos que te irán familiarizando más con ellos. Así que adelante!</p>
-      </div>
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>
         <button class="btn-general" onclick="stages_terminalContent.menu.next()"">Siguiente</button>
+        <button class="btn-general btn-show-content" onclick="stages_terminalContent.menu.showContentInText(this,'none')">Mostar en texto</button>
+      </div>
+      <div class="text-show-content">
+        <h3>Transcripción del video</h3>
+        <p><strong>Titulación</strong></p>
+        <p>Los títulos son esenciales en la elaboración de un trabajo escrito, pues además de orientar a quien lee un texto académico permite que la escritura se exponga de manera organizada. Para la realización de los trabajos académicos elaborados por estudiantes de la UNAD se deben considerar los siguientes lineamientos:</p>
+        <p><strong>Título de Primer Nivel</strong></p>
+        <p>Es el encabezado de los capítulos que se escribe centrado al inicio de una nueva página, en negrilla, con tamaño de letra 13 y cada palabra iniciando en Mayúscula. Este título se escribe dejando dos espacios dobles después de la margen superior de la hoja. Entre el título de primer nivel y el texto o cuerpo del trabajo se dejan dos espacios de 1,5; el texto que prosigue se escribe en un nuevo párrafo.</p>
+        <p><strong>Título de Segundo Nivel</strong></p>
+        <p>También denominado subtítulo; se ubica a la izquierda de la hoja, tamaño de letra 13, y en negrilla. Únicamente la primera letra del título va en mayúscula y lo demás en minúscula; no debe tener punto final. Este título va dentro de los textos, así que entre el texto que le precede y este título se dejan dos espacios de 1.5., mientras que entre este título y el texto que prosigue debe ir un (1) espacio doble.</p>
+        <p><strong>Título de Tercer Nivel</strong></p>
+        <p>Se ubica a la izquierda de la hoja sin sangría, iniciando un nuevo renglón, sin mayúscula sostenida, en letra negrilla y cursiva, con tamaño de letra 13, y con punto al finalizar el título. El texto inicia en un nuevo párrafo dejando un espacio doble entre el título y el texto.</p>
+        <p><strong>Títulos de Cuarto Nivel</strong></p>
+        <p>Se ubica a la izquierda de la hoja con sangría, iniciando un nuevo renglón, en negrilla, sin mayúscula sostenida, con tamaño de letra 12, y con punto al finalizar el título. Este título da continuidad al texto en el mismo renglón.</p>
+        <p><strong>Títulos de Quinto Nivel</strong></p>
+        <p>Se ubica a la izquierda de la hoja con sangría, iniciando un nuevo renglón, en negrilla y cursiva, sin mayúscula sostenida, con tamaño de letra 12, y con punto al finalizar el título. Este título da continuidad al texto en el mismo renglón.</p>
+        <p><strong>Tabla de contenidos</strong></p>
+        <p>A pesar de ser un elemento que se visualiza en los contenidos preliminares del trabajo, la tabla de contenidos se consolida una vez finalizado el trabajo puesto que deberá incluir la paginación de los diferentes componentes de este.</p>
       </div>
       `;
   }

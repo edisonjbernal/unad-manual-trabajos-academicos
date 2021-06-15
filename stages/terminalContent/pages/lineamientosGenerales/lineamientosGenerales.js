@@ -9,37 +9,27 @@ class terminalContentClass_lineamientosGenerales extends generalPage{
   }
   content(){
       return `
-      <h2>Lineaminetos Generales</h2>
-      <img class="responsive" src="./test/videoFaltante.png" />
+      <h2>Lineaminetos generales</h2>
       <div class="text-general">
-            <p>Esteban: Buenos días, Marcela. ¿Me escuchas y me ves bien?
-            Marcela: Sí, profesor. Perfectamente.
-            Esteban: Qué bien Marcela, mi nombre es Esteban y soy tu profesor consejero asignado. Dime en qué te puedo servir.
-            Marcela: Profesor, soy estudiante de primer semestre, y en esta semana ya nos están asignando los primeros trabajos y
-            tareas. Los profesores nos dicen que es muy importante aplicar los parámetros propuestos por la Universidad para
-            entregarlos de manera correcta. ¿A qué se refieren?
-            Esteban: Muy bien, tus profesores están haciendo referencia a diferentes aspectos formales que deben cumplir todos los
-            trabajos escritos que desarrollemos dentro de nuestro quehacer académico en la UNAD. Varios de estos parámetros son
-            comunes a todos los tipos de trabajo que pueden ir desde trabajos cotidianos como consultas, resúmenes y ensayos
-            críticos hasta los más avanzados como proyectos investigativos y artículos para ser publicados en revistas especializadas.
-            Marcela: Ah, ya comienzo a entender, ¿son esas cosas como las normas APA?
-            Esteban: (En tono muy amable, y con una sutil sonrisa) jejeje. Bueno, las normas APA son uno de los diferentes aspectos
-            formales a tener en cuenta, y hay otros más para considerar que son una especie de marca registrada dentro de nuestra
-            Universidad; y a la vez, habrá algunos parámetros que también varían y son acordes a la complejidad del trabajo y el nivel
-            en el que se desarrollen; es decir que hay algunas especificaciones para trabajos de posgrados y niveles superiores a los
-            programas de grado.
-            Marcela: Ay profesor, pero se oye muy complicado.
-            Esteban: Para nada Marcela, contigo nos enfocaremos solo en los parámetros comunes, y particularmente en aquellos
-            pertinentes a tu nivel actual como estudiante de primeros semestres. Verás que son muy específicos y útiles, y podrás
-            aplicarlos con facilidad a tus trabajos de aquí hasta el final de tus estudios de grado. ¿Te parece bien si empezamos?
-            Marcela: Bueno profesor, Esteban. Ya me tranquiliza bastante, y claro que sí, comencemos.
-            Esteban: Excelente, Marcela. Te voy a compartir la pantalla con un menú de materiales y actividades en las que te iré
-            explicando los primeros aspectos técnicos que deberás aplicar para el desarrollo de tus trabajos. También encontrarás en
-            estos materiales, algunos ejercicios prácticos que te irán familiarizando más con ellos. Así que adelante!</p>
+        <p>Para la elaboración de los trabajos académicos en la UNAD, se deben tener en cuenta los siguientes aspectos técnicos formales:</p>
       </div>
+      <video class="responsive" src="./images/aspectos-tecnicos/aspectos-generales/lineamientosGenerales.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>
         <button class="btn-general" onclick="stages_terminalContent.menu.next()"">Siguiente</button>
+        <button class="btn-general btn-show-content" onclick="stages_terminalContent.menu.showContentInText(this,'none')">Mostar en texto</button>
+      </div>
+      <div class="text-show-content">
+        <h3>Transcripción del video</h3>
+        <p><strong>Tamaño de Papel</strong></p>
+        <p>Al presentar un trabajo académico escrito, el formato de hoja ha de ser de tamaño carta de color blanco. Deberá ir en orientación vertical, ya que en caso de que el trabajo deba imprimirse, será posible almacenarlo en archivadores, folders o libreros. Algunas entregas pueden utilizar otros formatos siempre y cuando el contenido y la instrucción explícita docente así lo requieran.</p>
+        <p><strong>Tipo de letra</strong></p>
+        <p>La elección de la letra es esencial para la elaboración de un trabajo escrito, pues su tipo, tamaño y color sirven de apoyo para la expresión de las ideas escritas. Las regulaciones universitarias permiten el uso de las fuentes Times New Roman, Calibri y Arial que pueden ser combinadas siempre y cuando faciliten y organicen visualmente el cuerpo del texto. Por ejemplo: títulos, subtítulos, pies de página, pies de gráficos o figuras.</p>
+        <p>El escrito de todos los párrafos de un solo trabajo debe mantener un (1) solo tipo de letra durante todo su contenido.El color de la letra debe ser negro, y en caso de impresión, ésta deberá hacerse por una sola cara de la hoja, a menos que por orientaciones docentes se requiera algo diferente.</p>
+        <p><strong>Alineación de los párrafos</strong></p>
+        <p>El espacio entre línea y línea permite una lectura más clara, además de brindar los descansos gramaticales que una lectura requiere.De tal manera, los párrafos de todos los trabajos académicos en la UNAD deben tener un espacio doble entre sus renglones con un tamaño de letra 12. Para iniciar un nuevo párrafo se requiere dejar una (1) sangría al lado izquierdo de la página, y el espacio entre párrafos es de un (1) solo renglón. Esto indica además que una nueva idea relacionada con el escrito está por comenzar. Los párrafos de todos los textos deben estar en formato justificado de tal manera que todos los renglones tengan una adecuada organización. Todos los procesadores de textos brindan la opción justificación de párrafos en las opciones de alineación de textos.</p>
+        <p><strong>Márgenes</strong></p>
+        <p>Las márgenes son un componente básico y de gran importancia para la elaboración de un escrito académico; ellas reflejan el orden del escrito que el autor quiere presentar, y además orientan al lector al hacer pausas debidas para llevar a cabo una mejor comprensión de las ideas. Todos los trabajos escritos académicos de la UNAD deben tener un espacio de 2,54 cm en todos los costados de las hojas.</p>
       </div>
       `;
   }

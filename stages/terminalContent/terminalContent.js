@@ -44,35 +44,38 @@ class terminalContentClass extends generalStage{
               <a href="#introduccion" class="active">Introducción</a>
             </li>
             <li>
-              <a href="#learningGoalsOfThisResource">Aspectos estructurales de los trabajos académicos</a>
+              <a href="#aspectosEstructuralesTrabajosAcademicos">Aspectos estructurales de los trabajos académicos</a>
             </li>
             <li>
-              <a href="#theResearchProblemAndTheResearchTopic">Lineamientos general</a>
+              <a href="#lineamientosGenerales">Lineamientos generales</a>
             </li>
             <li>
-              <a href="#typologiesOfResearchProblems">Preliminares</a>
+              <a href="#preliminares">Preliminares</a>
             </li>
             <li>
-              <a href="#describingTheResearchProblem">Titulación y tabla de contenido</a>
+              <a href="#titulacionyTablaDeContenido">Titulación y tabla de contenido</a>
             </li>
-            <li>
+           <!-- <li>
               <a href="#theResearchQuestions">Ejercicios</a>
-            </li>
+            </li>-->
             <li><strong>Propiedad intelectual y referenciación</strong></li>
             <li>
-              <a href="#criteriaOfGoodResearchQuestions">Introducción</a>
+              <a href="#introduccionPropiedadIntelectual">Introducción</a>
             </li>
             <li>
-              <a href="#criteriaOfGoodResearchQuestionsExercise">Propiedad intelectual y plagio</a>
+              <a href="#conceptosPropiedadIntelectualYReferenciacion">Conceptos Propiedad Intelectual y Referenciación</a>
             </li>
             <li>
-              <a href="#theResearchObjectives">Citación (Normas APA)</a>
+              <a href="#propiedadIntelectualYPlagio">Propiedad intelectual y plagio</a>
             </li>
             <li>
-              <a href="#examplesOfResearchObjectives">Referenciación (Normas APA)</a>
+              <a href="#citacionNormasAPA">Citación (Normas APA)</a>
             </li>
             <li>
-              <a href="#researchProblemsQuestionsAndObjectivesExercise">Tablas y figuras</a>
+              <a href="#referenciacionNormasAPA">Referenciación (Normas APA)</a>
+            </li>
+            <li>
+              <a href="#tablasyFiguras">Tablas y figuras</a>
             </li>
           </ul>
         </nav>
