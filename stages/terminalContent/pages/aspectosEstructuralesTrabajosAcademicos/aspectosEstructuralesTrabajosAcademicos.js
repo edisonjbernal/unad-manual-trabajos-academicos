@@ -26,22 +26,41 @@ class terminalContentClass_aspectosEstructuralesTrabajosAcademicos extends gener
       <div class="text-general">
         Selecciona la opción que desees revisar primero:
       </div>
-      <div class="eCards">
-        <button class="card">
-            Lineamientos generales
-        </button>
-        <button class="card">
-            Preliminares
-        </button>
-        <button class="card">
-            Titulación y tabla de contenido
-        </button>
+      <div class="cards">
+        <a href="#lineamientosGenerales" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
+            <figure class="card">
+                
+                    <img src="./test/ninosBus.jpg" alt="Lineamientos generales">
+                
+                <figcaption>
+                    Lineamientos generales
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#preliminares" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
+            <figure class="card">
+                
+                <img src="./test/ninosBus.jpg" alt="Preliminares">
+                <figcaption>
+                Preliminares
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#titulacionyTablaDeContenido" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
+            <figure class="card">
+                <img src="./test/ninosBus.jpg" alt="Titulación y tabla de contenido">
+                <figcaption>
+                Titulación y tabla de contenido
+                </figcaption>
+            </figure>
+        </a>
       </div>
       `;
   }
   importCssFiles(){
     return [
-        'generalStage.css|general'
+        'generalStage.css|general',
+        'ecards.css|local'
     ]
 }
 }

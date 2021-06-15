@@ -1,0 +1,124 @@
+.card a{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.cards .card figcaption,
+.cards .card:after {
+  position: absolute;
+}
+.cards .card {
+  position: relative;
+}
+.cards {
+  display: flex;
+}
+.cards,
+.news {
+  flex-flow: row wrap;
+  /*si incluye el justify-content*/
+  justify-content: center; 
+}
+.cards .card,
+.news .card {
+  /*si incluye el margin
+  margin: auto;*/
+  margin: 20px;
+  width: 312px;
+  height: 420px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  transition: 0.3s;
+}
+.cards .card img,
+.news .card img {
+  /*si incluye el margin*/
+  margin: auto;
+  width: 100%;
+  min-height: 100%;
+}
+.cards .card figcaption {
+  /*si incluye el margin*/
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  background: none;
+  color: #fff;
+  transform: translateY(0%);
+  transition: 0.3s;
+}
+.cards .card:after,
+.news .card:after {
+  /*si incluye el margin*/
+  margin: auto;
+  content: '';
+  z-index: 10;
+  width: 200%;
+  height: 100%;
+  top: -90%;
+  left: -20px;
+  opacity: 0.1;
+  transform: rotate(45deg);
+  background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+  transition: 0.3s;
+}
+.cards .card:hover,
+.news .card:hover,
+.cards .card:focus,
+.news .card:focus,
+.cards .card:active,
+.news .card:active {
+  /*si incluye el margin
+  margin: auto;*/
+  box-shadow: 0 8px 16px 3px rgba(0,0,0,0.6);
+  transform: translateY(-3px) scale(1.05) rotateX(15deg);
+}
+.cards a:hover .card figcaption,
+.cards a:focus .card figcaption,
+.cards a:active .card figcaption {
+  transform: translateY(-20%);
+}
+.cards a:hover .card:after,
+.news .card:hover:after,
+.cards a:focus .card:after,
+.news .card:focus:after,
+.cards .card:active:after,
+.news .card:active:after {
+  transform: rotate(25deg);
+  top: -40%;
+  opacity: 0.15;
+}
+.news .article {
+  overflow: hidden;
+  width: 500px;
+  height: 333px;
+  margin: 20px;
+}
+.news .article img {
+  width: 100%;
+  min-height: 100%;
+  transition: 0.2s;
+}
+.news .article figcaption {
+  font-size: 14px;
+  text-shadow: 0 1px 0 rgba(51,51,51,0.3);
+  color: #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 40px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  background: rgba(6,18,53,0.6);
+  opacity: 0;
+  transform: scale(1.15);
+  transition: 0.2s;
+}

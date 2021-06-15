@@ -24,19 +24,42 @@ class terminalContentClass_conceptosPropiedadIntelectualYReferenciacion extends 
       <div class="text-general">
         Selecciona la opción que desees revisar primero:
       </div>
-      <div class="eCards">
-        <button class="card">
-          Propiedad intelectual y plagio
-        </button>
-        <button class="card">
-          Citación (Normas APA)
-        </button>
-        <button class="card">
-          Referenciación (Normas APA)
-        </button>
-        <button class="card">
-          Tablas y Figuras
-        </button>
+      <div class="cards">
+        <a href="#propiedadIntelectualYPlagio" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
+            <figure class="card">
+                
+                    <img src="./test/ninosBus.jpg" alt="Propiedad intelectual y plagio">
+                
+                <figcaption>
+                  Propiedad intelectual y plagio
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#citacionNormasAPA" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
+            <figure class="card">
+                
+                <img src="./test/ninosBus.jpg" alt="Citación (Normas APA)">
+                <figcaption>
+                  Citación (Normas APA)
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#referenciacionNormasAPA" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
+            <figure class="card">
+                <img src="./test/ninosBus.jpg" alt="Referenciación (Normas APA)">
+                <figcaption>
+                  Referenciación (Normas APA)
+                </figcaption>
+            </figure>
+        </a>
+        <a href="#tablasyFiguras" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
+            <figure class="card">
+                <img src="./test/ninosBus.jpg" alt="Tablas y Figuras">
+                <figcaption>
+                  Tablas y Figuras
+                </figcaption>
+            </figure>
+        </a>
       </div>
       `;
   }

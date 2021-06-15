@@ -185,5 +185,11 @@ class pageMenuListenersClass{
         }
        
     }
+    getFromPageName(e,element){
+        e.preventDefault();
+        let page= element.getAttribute('href');
+        let menuTempSelected= this.stageId.getElementsByClassName('navigation')[0].querySelectorAll(`a[href="${page}"]`)[0];
+        menuTempSelected.click();
+    }
     
 }
