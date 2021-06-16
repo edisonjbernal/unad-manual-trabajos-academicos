@@ -20,7 +20,7 @@
                 
         }
         mapOfStationsResize.classList.remove('horizontal');
-        console.log('VERTICAL');
+       // console.log('VERTICAL');
         
     }
     else{
@@ -29,7 +29,7 @@
                 imgOfStationsResize.style.width='auto';
                 imgOfStationsResize.style.height='100vw';
                 
-                  console.log('HORIZONTAL 1');  
+                 // console.log('HORIZONTAL 1');  
     
            
         }
@@ -37,14 +37,14 @@
                 
                         imgOfStationsResize.style.width='100vh';
                         imgOfStationsResize.style.height='auto';
-                        console.log('HORIZONTAL 3'); 
+                      //  console.log('HORIZONTAL 3'); 
                 
                 
             
         }
         
         mapOfStationsResize.classList.add('horizontal');
-        console.log('HORIZONTAL');
+        //console.log('HORIZONTAL');
     }
     if(numOfResizesMap){
         resizeMap();
