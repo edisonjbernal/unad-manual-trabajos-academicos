@@ -51,12 +51,16 @@ class mapInteractionsClass{
     }
     disableAccess(station){
         console.log('DESACTIVARr acceso a:'+station);
-        document.getElementById(station).innerHTML=`Estación ${station}`;
+        document.getElementById(station).innerHTML=`<div class="display-station">
+        ${this.stationName(station)}
+    </div> `;
     }
     
     enableAccess(station){
         console.log('Activar acceso a:'+station);
-        document.getElementById(station).innerHTML=`Ingresar`;
+        document.getElementById(station).innerHTML=`<div class="display-station display-station-success">
+        Ingresar a ${this.stationName(station)}
+    </div> `;
     }
     goIntoStation(station){
         stage.get(station);
@@ -101,6 +105,29 @@ class mapInteractionsClass{
             }
         }
     }
+    stationName(station){
+        let name = '';
+        switch (station) {
+            case 'terminal':
+                name = "Aspectos técnicos";
+                break;
+            case 'station2':
+                name = "Trabajos escritos";
+                break;
+            case 'station3':
+                name = "Trabajos y proyectos investigativos";
+                break;
+            case 'station4':
+                name = "Artículos para publicación";
+                break;
+        
+            default:
+                break;
+
+                
+        }
+        return name;
+    }
     terminalApproved(){
         if(busCar.terminalApproved){
             return true;
@@ -112,7 +139,9 @@ class mapInteractionsClass{
     }
     waitAccess(station){
         console.log('Esperando....a:'+station);
-        document.getElementById(station).innerHTML=`Esperndo el bus de ${station}`;
+        document.getElementById(station).innerHTML=`<div class="display-station display-station-danger">
+        Esperando ...
+    </div> `;
     }
 
 }
@@ -126,7 +155,7 @@ const mapInteractions = new mapInteractionsClass;
 
 
 document.getElementById('terminal').addEventListener("click", 
-function(){
+function(event){
     event.preventDefault();
     if(busCar.stopped){
         if(busCar.position.station=='initial'){
@@ -140,20 +169,20 @@ function(){
 
 
 document.getElementById('station2').addEventListener("click", 
-function(){
+function(event){
     event.preventDefault()
     mapInteractions.changeStation('station2');
 
 });
 
 document.getElementById('station3').addEventListener("click", 
-function(){
+function(event){
     event.preventDefault()
     mapInteractions.changeStation('station3');
 });
 
 document.getElementById('station4').addEventListener("click", 
-function(){
+function(event){
     event.preventDefault()
     mapInteractions.changeStation('station4');
             

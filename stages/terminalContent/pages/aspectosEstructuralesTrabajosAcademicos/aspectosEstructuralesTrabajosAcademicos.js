@@ -30,7 +30,7 @@ class terminalContentClass_aspectosEstructuralesTrabajosAcademicos extends gener
         <a href="#lineamientosGenerales" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
             <figure class="card">
                 
-                    <img src="./test/ninosBus.jpg" alt="Lineamientos generales">
+                    <img src="./images/aspectos-tecnicos/aspectos-generales/lineamientosGenerales.png" alt="Lineamientos generales">
                 
                 <figcaption>
                     Lineamientos generales
@@ -40,7 +40,7 @@ class terminalContentClass_aspectosEstructuralesTrabajosAcademicos extends gener
         <a href="#preliminares" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
             <figure class="card">
                 
-                <img src="./test/ninosBus.jpg" alt="Preliminares">
+                <img src="./images/aspectos-tecnicos/aspectos-generales/preliminares.png" alt="Preliminares">
                 <figcaption>
                 Preliminares
                 </figcaption>
@@ -48,7 +48,7 @@ class terminalContentClass_aspectosEstructuralesTrabajosAcademicos extends gener
         </a>
         <a href="#titulacionyTablaDeContenido" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
             <figure class="card">
-                <img src="./test/ninosBus.jpg" alt="Titulación y tabla de contenido">
+                <img src="./images/aspectos-tecnicos/aspectos-generales/titulacionytabladecontenido.png" alt="Titulación y tabla de contenido">
                 <figcaption>
                 Titulación y tabla de contenido
                 </figcaption>
@@ -60,7 +60,7 @@ class terminalContentClass_aspectosEstructuralesTrabajosAcademicos extends gener
   importCssFiles(){
     return [
         'generalStage.css|general',
-        'ecards.css|local'
+        'ecards.css|general'
     ]
 }
 }

@@ -15,13 +15,13 @@ function moveStation4ToTerminal(stage = 1){
             busCar.changePosition('top',71 ,animationFunction,stage);
         break;
         case 5:
-            busCar.changePosition('left',16 ,animationFunction,stage);
+            busCar.changePosition('left',19 ,animationFunction,stage);
         break;
         case 6:
             busCar.changePosition('top',64 ,animationFunction,stage);
         break;
         case 7:
-            busCar.changePosition('right',40 ,animationFunction,stage);
+            busCar.changePosition('right',43 ,animationFunction,stage);
         break;
         case 8:
             busCar.changePosition('top',25 ,animationFunction,stage);

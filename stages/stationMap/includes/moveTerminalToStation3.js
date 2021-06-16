@@ -17,7 +17,7 @@ function moveTerminalToStation3(stage = 1){
             busCar.changePosition('left',81 ,animationFunction,stage);
         break;
         case 6:
-            busCar.changePosition('bottom',62 ,animationFunction,stage);
+            busCar.changePosition('bottom',60 ,animationFunction,stage);
         break;
            
         default:

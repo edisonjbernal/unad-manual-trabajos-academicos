@@ -28,7 +28,7 @@ class terminalContentClass_conceptosPropiedadIntelectualYReferenciacion extends 
         <a href="#propiedadIntelectualYPlagio" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
             <figure class="card">
                 
-                    <img src="./test/ninosBus.jpg" alt="Propiedad intelectual y plagio">
+                    <img src="./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/propiedadintelectualyplagio.png" alt="Propiedad intelectual y plagio">
                 
                 <figcaption>
                   Propiedad intelectual y plagio
@@ -37,8 +37,7 @@ class terminalContentClass_conceptosPropiedadIntelectualYReferenciacion extends 
         </a>
         <a href="#citacionNormasAPA" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
             <figure class="card">
-                
-                <img src="./test/ninosBus.jpg" alt="Citación (Normas APA)">
+                <img src="./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/citacion.png" alt="Citación (Normas APA)">
                 <figcaption>
                   Citación (Normas APA)
                 </figcaption>
@@ -46,7 +45,7 @@ class terminalContentClass_conceptosPropiedadIntelectualYReferenciacion extends 
         </a>
         <a href="#referenciacionNormasAPA" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
             <figure class="card">
-                <img src="./test/ninosBus.jpg" alt="Referenciación (Normas APA)">
+                <img src="./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/referenciacion.png" alt="Referenciación (Normas APA)">
                 <figcaption>
                   Referenciación (Normas APA)
                 </figcaption>
@@ -54,7 +53,7 @@ class terminalContentClass_conceptosPropiedadIntelectualYReferenciacion extends 
         </a>
         <a href="#tablasyFiguras" onclick="stages_terminalContent.menu.getFromPageName(event,this);">
             <figure class="card">
-                <img src="./test/ninosBus.jpg" alt="Tablas y Figuras">
+                <img src="./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/tablasyfiguras.png" alt="Tablas y Figuras">
                 <figcaption>
                   Tablas y Figuras
                 </figcaption>
@@ -65,7 +64,8 @@ class terminalContentClass_conceptosPropiedadIntelectualYReferenciacion extends 
   }
   importCssFiles(){
     return [
-        'generalStage.css|general'
+        'generalStage.css|general',
+        'ecards.css|general'
     ]
 }
 }

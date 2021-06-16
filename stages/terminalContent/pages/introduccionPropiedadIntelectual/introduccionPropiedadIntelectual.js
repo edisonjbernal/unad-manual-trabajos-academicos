@@ -10,7 +10,9 @@ class terminalContentClass_introduccionPropiedadIntelectual extends generalPage{
   content(){
       return `
       <h2>Propiedad intelectual y referenciación</h2>
-      <img class="responsive" src="./test/videoFaltante.png" />
+      <video class="responsive" src="./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/introduccion.mp4" controls="" controlslist="nodownload"></video>
+
+      
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>
         <button class="btn-general" onclick="stages_terminalContent.menu.next()"">Siguiente</button>

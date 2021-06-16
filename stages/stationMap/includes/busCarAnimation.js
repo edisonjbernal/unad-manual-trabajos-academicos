@@ -2,14 +2,14 @@ class busCarClass{
     constructor(){
         
         this.position={
-            currentX:0,
-            currentY:10,
+            currentX:50,
+            currentY:30,
             numberToMove:0,
             direction:'horizontal',
-            station:'initial',
+            station:'terminal',
             to:''
         }
-        this.terminalApproved=false;
+        this.terminalApproved=true;
         this.stopped=true;
         console.log(this.position);
         

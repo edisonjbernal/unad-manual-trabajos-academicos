@@ -20,12 +20,12 @@
 }
 .mapOfStations .bus{
     background-color: yellow;
-    border-right: 4px solid;
+    border:1px solid ;
+    border-right: 10px solid;
     height: 2.2%;
     position: absolute;
-   top: 2.5%;
-    left: 0;
-  
+    top: 25.5%;
+    left: 53%;
     width: 8%;
     z-index: 10;
 }
@@ -44,43 +44,82 @@
 .mapOfStations img.img-map{
     width: 100%;
 }
+.station-base{
+    border: 2px solid rgb(116, 116, 116) ;
+    position: absolute;
+    z-index: 12;
+    transition: 1s;
+}
+
+.horizontal .station-base {
+    transform:rotate(90deg);
+}
+.station-base .display-station{
+    background-color: rgba(0, 0, 0, 0.883);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight:600 ;
+    padding: 10px;
+}
+
+.station-base .display-station-success{
+    background-color: rgba(0, 124, 0,1);
+}
+.station-base .display-station-danger{
+    background-color: rgb(179, 0, 0);
+}
+
+
+
 
 .station-1{
-    background-color: rgb(184, 184, 184);
-    position: absolute;
-    width: 60%;
-    z-index: 12;
-    left: 20%;
-    height: 10%;
-    top: 12.5%;
+    width: 70%;
+    left: 22%;
+    height: 19%;
+    top: 4.5%;
+    display: block;
+}
+
+.horizontal  .station-1{
+    width: 29%;
+    left: 44%;
+    height: 43%;
+    top: -4.5%;
+    display: block;
 }
 
 .station-2{
-    background-color: rgb(36, 187, 200);
-    position: absolute;
-    width: 26%;
-    z-index: 12;
-    left: 3%;
-    height: 14%;
-    top: 43%;
+    width: 38%;
+    left: 2%;
+    height: 23%;
+    top: 36%;
 }
 
 .station-3{
-    background-color: rgb(200, 41, 36);
-    position: absolute;
-    width: 26%;
-    z-index: 12;
-    left: 58%;
-    height: 14%;
-    top: 52%;
+    width: 49%;
+    left: 50%;
+    height: 26%;
+    top: 41%;
 }
 
-.station-4{
-    background-color: rgb(18, 161, 66);
-    position: absolute;
-    width: 26%;
-    z-index: 12;
-    left: 20%;
-    height: 14%;
-    top: 82%;
+.horizontal .station-3{
+  
+    width: 38%;
+    left: 55%;
+    height: 28%;
+    top: 39%;
 }
+
+
+.station-4{
+    width: 37%;
+    left: 20%;
+    height: 23%;
+    top: 74%;
+}
+
+
