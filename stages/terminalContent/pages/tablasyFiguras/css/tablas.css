@@ -1,0 +1,8 @@
+.table-tablasyFiguras {
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+
+.table-tablasyFiguras-figure th{
+    text-align: left;
+}

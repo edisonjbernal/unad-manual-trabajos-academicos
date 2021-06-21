@@ -72,6 +72,9 @@ class terminalContentClass extends generalStage{
               <a href="#citacionNormasAPA">Citación (Normas APA)</a>
             </li>
             <li>
+              <a href="#infograficasSobreCitacion">Infografías sobre citación</a>
+            </li>
+            <li>
               <a href="#referenciacionNormasAPA">Referenciación (Normas APA)</a>
             </li>
             <li>
@@ -94,6 +97,7 @@ class terminalContentClass extends generalStage{
   }
   importJSFiles(){
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
+    this.acordeonList= new acordeonListClass;
     stagePage.get('introduccion');
    
   }
