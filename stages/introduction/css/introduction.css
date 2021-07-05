@@ -1,0 +1,40 @@
+.stage_introduction{
+    background-color: #fff;
+    color: #333;
+    -webkit-box-shadow: -13px -10px 16px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: -13px -10px 16px -9px rgba(0,0,0,0.75);
+box-shadow: -13px -10px 16px -9px rgba(0,0,0,0.75);
+}
+
+.stage_introduction h1,
+.stage_introduction h3,
+.stage_introduction h4
+{
+    /* color: #a28b0f; */
+    color: #015784;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    margin: 20px 0;
+}
+
+.stage_introduction h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    margin: 20px 0;
+}
+.stage_introduction h4{
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 0;
+    margin: 20px 0;
+}
+.stage_introduction .text-general{
+    padding: 100px 10px 10px 10px;
+    margin: 20px 0 0 0 ;
+    background-image: url('./../../../images/LogoUNADColores.png');
+    background-repeat: no-repeat;
+    background-position:  20px 10px;
+    
+}

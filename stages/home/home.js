@@ -10,8 +10,8 @@ class stageHomeClass extends generalStage{
     }
     content(){
         return `
-        <h1>Está a punto de iniciar un viaje por la contrucción de un gran proyecto
-        <strong>¡Bienveni@!</strong>
+        <h1>Iniciarán un recorrido por el Manual de Trabajos Académicos de la UNAD.
+        <strong>¡Bienvenidas y Bienvenidos!</strong>
         </h1>
 
         <div class="cursor-hand">

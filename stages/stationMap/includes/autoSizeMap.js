@@ -20,6 +20,7 @@
                 
         }
         mapOfStationsResize.classList.remove('horizontal');
+        imgOfStationsResize.setAttribute('src','./images/mapa_estaciones.jpg');
        // console.log('VERTICAL');
         
     }
@@ -44,6 +45,8 @@
         }
         
         mapOfStationsResize.classList.add('horizontal');
+        imgOfStationsResize.setAttribute('src','./images/mapa_estaciones_horizontal.jpg');
+        
         //console.log('HORIZONTAL');
     }
     if(numOfResizesMap){

@@ -58,12 +58,13 @@
     background-color: rgba(0, 0, 0, 0.883);
     color: #fff;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
-    font-weight:600 ;
-    padding: 10px;
+    font-weight:normal;
+    font-size: .7rem;
+    padding: 5px;
 }
 
 .station-base .display-station-success{
@@ -77,49 +78,79 @@
 
 
 .station-1{
-    width: 70%;
-    left: 22%;
-    height: 19%;
+    width: 82%;
+    left: 10%;
+    height: 21%;
     top: 4.5%;
     display: block;
 }
 
 .horizontal  .station-1{
-    width: 29%;
-    left: 44%;
-    height: 43%;
-    top: -4.5%;
+    width: 42%;
+    left: 37%;
+    height: 27%;
+    top: -0.5%;
     display: block;
 }
 
 .station-2{
     width: 38%;
     left: 2%;
-    height: 23%;
+    height: 26%;
     top: 36%;
+}
+
+.horizontal .station-2{
+    width: 41%;
+    left: 2%;
+    height: 17%;
+    top: 39%;
 }
 
 .station-3{
     width: 49%;
     left: 50%;
-    height: 26%;
+    height: 29%;
     top: 41%;
 }
 
 .horizontal .station-3{
   
-    width: 38%;
-    left: 55%;
-    height: 28%;
-    top: 39%;
+    width: 44%;
+    left: 58%;
+    height: 19%;
+    top: 45%;
 }
 
 
 .station-4{
-    width: 37%;
+    width: 54%;
     left: 20%;
-    height: 23%;
+    height: 24%;
     top: 74%;
+}
+
+.horizontal .station-4{
+    width: 52%;
+    left: 35%;
+    height: 34%;
+    top: 66%;
+}
+
+@media (min-width: 500px) and (orientation: portrait){
+    .station-base .display-station{
+   
+        font-weight:normal;
+        font-size: 1rem;
+    }
+}
+
+@media (min-height: 500px) and (orientation: landscape){
+    .station-base .display-station{
+   
+        font-weight:normal;
+        font-size: 1rem;
+    }
 }
 
 

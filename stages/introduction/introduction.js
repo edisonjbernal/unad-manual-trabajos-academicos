@@ -9,8 +9,17 @@ class introductionClass extends generalStage{
         ]
     }
     content(){
+        let customStyle = `
+        <style>
+        .stageMaster{
+            background-color: rgba(255,255,255,0.9) !important;
+        }
+        </style>`;
+
+
         return `
-        <h1>Introducción
+        ${customStyle}
+        <h1>Introducción al Manual de Trabajos Académicos de la UNAD.
         </h1>
         <video  id="stage_introduction_video" class="principal" src="./stages/introduction/documents/introduccion.mp4" controls controlsList="nodownload"  ></video>
         <div class="text-general">
@@ -41,7 +50,8 @@ class introductionClass extends generalStage{
     }
     importCssFiles(){
         return [
-            'generalStage.css|general'
+            'generalStage.css|general',
+            'introduction.css|local'
         ]
     }
 }
