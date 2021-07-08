@@ -80,6 +80,66 @@ class terminalContentClass extends generalStage{
             <li>
               <a href="#tablasyFiguras">Tablas y figuras</a>
             </li>
+            <li><strong>Retos</strong></li>
+            <li><strong>- Sección 1</strong></li>
+            <li>
+              <a href="#sec_1_Introduccion">Introducción</a>
+            </li>
+            <li>
+              <a href="#sec_1_Reto_1">-- Reto 1</a>
+            </li>
+            <li>
+              <a href="#sec_1_Video_1">Video 1</a>
+            </li>
+            <li>
+              <a href="#sec_1_Reto_2">-- Reto 2</a>
+            </li>
+            <li>
+              <a href="#sec_1_Video_2">Video 2</a>
+            </li>
+            <li>
+              <a href="#sec_1_Reto_3">-- Reto 3</a>
+            </li>
+            <li>
+              <a href="#sec_1_Video_3">Video 3</a>
+            </li>
+            <li>
+              <a href="#sec_1_Reto_4">-- Reto 4</a>
+            </li>
+            <li>
+              <a href="#sec_1_Video_4">Video 4</a>
+            </li>
+            <li><strong>- Sección 2</strong></li>
+            <li>
+              <a href="#sec_2_Introduccion">Introducción</a>
+            </li>
+            <li>
+              <a href="#sec_2_Video_1">Video 1</a>
+            </li>
+            <li>
+              <a href="#sec_2_Reto_1">-- Reto 1</a>
+            </li>
+            <li>
+              <a href="#sec_2_Video_2">Video 2</a>
+            </li>
+            <li>
+              <a href="#sec_2_Reto_2">-- Reto 2</a>
+            </li>
+            <li>
+              <a href="#sec_2_Video_3">Video 3</a>
+            </li>
+            <li>
+              <a href="#sec_2_Reto_3">-- Reto 3</a>
+            </li>
+            <li>
+              <a href="#sec_2_Video_4">Video 4</a>
+            </li>
+            <li>
+              <a href="#sec_2_Reto_4">-- Reto 4</a>
+            </li>
+            <li>
+              <a href="#sec_2_Video_5">Video 5</a>
+            </li>
           </ul>
         </nav>
       </div>
