@@ -1,0 +1,9 @@
+div.space-p{
+    padding: 0 0 0 10px;
+}
+
+@media (min-width: 1000px) {
+    div.space-p{
+        padding: 0 0 0 45px;
+    }
+}

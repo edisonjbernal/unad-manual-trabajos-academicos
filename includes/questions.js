@@ -1,5 +1,6 @@
 class questionsClass{
-    constructor(id){
+    constructor(id,autosubmit = false){
+        this.autosubmit=autosubmit;
         this.id=id;
         this.feedback={
             type:'general',
@@ -9,6 +10,10 @@ class questionsClass{
         this.questions=[];
         this.form=document.getElementById('form-'+this.id);
         this.formCreate();
+    }
+    alertMessage(type,text){
+        alertMessaje.show(type,text);
+        
     }
     add(description,answerCorrect,feedbackCorrect=null,feedbackIncorrect=null){
         console.log('feedbackIncorrect'+feedbackIncorrect);
@@ -36,7 +41,10 @@ class questionsClass{
         this.form.addEventListener(
             'submit',function (event) {
                 event.preventDefault();
-                these.verifyAnswers();
+                if(these.autosubmit){
+                    these.verifyAnswers();
+                }
+                //these.verifyAnswers();
             }
         );
     }
@@ -105,6 +113,7 @@ class questionsClass{
         let answersIncorrect=false;
         for (let index = 0; index < questionsNumber; index++) {
             let answerCorrect= this.questions[index].answer.correct;
+            console.log(`p${index+1}-${this.id}`);
             let answerUser= this.form.elements[`p${index+1}-${this.id}`].value;
             
             if(!answerUser){
@@ -145,7 +154,7 @@ class questionsClass{
             
         }
         if(answersVoid){
-            this.alertMessage('warning','There are empty answers');
+            this.alertMessage('warning','Hay preguntas sin responder');
         }
         else if(answersIncorrect){
             this.alertMessage('warning',this.feedback.incorrect);
@@ -156,8 +165,5 @@ class questionsClass{
         
         
     }
-    alertMessage(type,text){
-        alertMessaje.show(type,text);
-        
-    }
 }
+

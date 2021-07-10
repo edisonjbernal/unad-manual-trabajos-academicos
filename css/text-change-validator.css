@@ -1,0 +1,57 @@
+.text-change-validator{
+    background-color: rgb(231 252 253);
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+.text-change-validator h3{
+    color: cadetblue;
+    text-align: center;
+}
+
+.text-change-validator .feedback.success,
+.text-change-validator .feedback.danger{
+    padding: 20px;
+    border:2px solid red;
+    transition: .3s;
+}
+
+.text-change-validator .feedback.success{
+    border:2px solid green;
+}
+
+.text-change-validator button.success,
+.text-change-validator button.danger{
+    background-color: transparent;
+    border:2px solid green;
+    color: black;
+    transition: .3s;
+}
+.text-change-validator button.danger{
+    border:2px solid red;
+}
+
+.text-change-validator .btn-general{
+    background-color: cadetblue;
+    color: #fff;
+    padding: 10px;
+}
+.strong-text-change{
+    padding: 2px 5px;
+    margin: 0 5px;
+    border:2px solid transparent;
+    display: inline-block;
+    
+}
+.strong-text-change.success,
+.strong-text-change.danger{
+    padding: 2px 5px;
+    margin: 0 5px;
+    border:2px solid red;
+    display: inline-block;
+    transition: .5s;
+}
+.strong-text-change.success{
+    border:2px solid green;
+}

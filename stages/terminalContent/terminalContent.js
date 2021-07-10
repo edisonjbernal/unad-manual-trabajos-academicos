@@ -86,13 +86,22 @@ class terminalContentClass extends generalStage{
               <a href="#sec_1_Introduccion">Introducción</a>
             </li>
             <li>
-              <a href="#sec_1_Reto_1">-- Reto 1</a>
+              <a href="#sec_1_Reto_1">-- Selección múltiple</a>
             </li>
             <li>
               <a href="#sec_1_Video_1">Video 1</a>
             </li>
             <li>
-              <a href="#sec_1_Reto_2">-- Reto 2</a>
+              <a href="#sec_1_Reto_2_falsoVerdadero">-- Falso / Verdadero</a>
+            </li>
+            <li>
+              <a href="#sec_1_Reto_2_lista_3">-- Seleccionar texto</a>
+            </li>
+            <li>
+              <a href="#sec_1_Reto_2_ubicarLaRespuesta">-- Ubicar la respuesta</a>
+            </li>
+            <li>
+              <a href="#sec_1_Reto_2_unicaRespuesta">-- Única respuesta</a>
             </li>
             <li>
               <a href="#sec_1_Video_2">Video 2</a>
@@ -104,7 +113,7 @@ class terminalContentClass extends generalStage{
               <a href="#sec_1_Video_3">Video 3</a>
             </li>
             <li>
-              <a href="#sec_1_Reto_4">-- Reto 4</a>
+              <a href="#sec_1_Reto_4">-- Selección múltiple de única respuesta</a>
             </li>
             <li>
               <a href="#sec_1_Video_4">Video 4</a>
