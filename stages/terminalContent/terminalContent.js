@@ -107,7 +107,10 @@ class terminalContentClass extends generalStage{
               <a href="#sec_1_Video_2">Video 2</a>
             </li>
             <li>
-              <a href="#sec_1_Reto_3">-- Reto 3</a>
+              <a href="#sec_1_Reto_3_emparejamiento">-- Emparejamiento</a>
+            </li>
+            <li>
+              <a href="#sec_1_Reto_3_listaDesplegable">-- Lista desplegable</a>
             </li>
             <li>
               <a href="#sec_1_Video_3">Video 3</a>
@@ -167,9 +170,14 @@ class terminalContentClass extends generalStage{
   importJSFiles(){
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
     this.acordeonList= new acordeonListClass;
-    stagePage.get('introduccion');
+    stagePage.get('sec_1_Reto_3_emparejamiento');
    
   }
+  importJSGlobalFiles(){
+    return [
+        'listMoveOptions'
+    ]
+} 
   show(){
     this.divContainer.classList.remove('hide');
   }

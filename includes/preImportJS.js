@@ -2,6 +2,7 @@ class preImportJSClass{
     constructor(stageName,pageName = ''){
         this.stageName=stageName;
         this.pageName=pageName;
+        this.globalLoader=false;
     }
     load(files){
         let functions = [];
@@ -13,12 +14,18 @@ class preImportJSClass{
      }
      importJSRoute(){
         let stageRoute ='';
-         if(this.pageName){
-            stageRoute = `/stages/${this.stageName}/pages/${this.pageName}/includes`;
-         }
-         else{
-            stageRoute = `/stages/${this.stageName}/includes`;
-         }
+        if(this.globalLoader){
+            stageRoute = `/includes`;
+        }else{
+            //La carga es local
+            if(this.pageName){
+                stageRoute = `/stages/${this.stageName}/pages/${this.pageName}/includes`;
+             }
+             else{
+                stageRoute = `/stages/${this.stageName}/includes`;
+             }
+        }
+         
         
         return stageRoute;
      }

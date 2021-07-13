@@ -10,7 +10,7 @@ class terminalContentClass_referenciacionNormasAPA extends generalPage{
   content(){
       return `
       <h2>Referenciación (Normas APA)</h2>
-      <img class="responsive" src="./test/videoFaltante.png" />
+      <video class="responsive" src="./images/aspectos-tecnicos/aspectos-generales/referenciacionNormasAPA.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>
         <button class="btn-general" onclick="stages_terminalContent.menu.next()"">Siguiente</button>

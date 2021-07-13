@@ -28,7 +28,7 @@ class importCustomJS {
             
         }
         else{
-            console.log('Ya está cargado');
+            console.log('Ya está cargado :'+scriptId);
         }
         
     }
