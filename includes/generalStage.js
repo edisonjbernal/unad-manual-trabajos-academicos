@@ -20,8 +20,8 @@ class generalStage{
         return false;
     }
     importJSFilesLoader(){
-        let importJS = new preImportJSClass(this.stageName);
-        return importJS;
+        let importJSLocal = new preImportJSClass(this.stageName);
+        return importJSLocal;
     }
     //Importa archivos JS a nivel GLOBAL
     importJSGlobalFiles(){
@@ -59,19 +59,21 @@ class generalStage{
         }
         this.stageMaster.appendChild(this.divContainer);
 
-        let JSFilesGlobal=this.importJSGlobalFiles()
-        if(JSFilesGlobal){
-            //DIFERENTE
-          let importJSGlobal = this.importJSGlobalFilesLoader();
-          importJSGlobal.load(JSFilesGlobal);
-        }
+        
 
 
         let JSFiles=this.importJSFiles()
         if(JSFiles){
             //DIFERENTE
-          let importJS = this.importJSFilesLoader();
-          importJS.load(JSFiles);
+          let importJSLocal = this.importJSFilesLoader();
+          importJSLocal.load(JSFiles);
+        }
+
+        let JSFilesGlobal=this.importJSGlobalFiles()
+        if(JSFilesGlobal){
+            //DIFERENTE
+          let importJSGlobal = this.importJSGlobalFilesLoader();
+          importJSGlobal.load(JSFilesGlobal);
         }
     }
     hide(){

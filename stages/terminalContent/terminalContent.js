@@ -181,8 +181,10 @@ class terminalContentClass extends generalStage{
   }
   importJSGlobalFiles(){
     return [
-        'listMoveOptions'
-    ]
+        'listMoveOptions',
+        'question_CheckboxVerify',
+        'textChangeCustom'
+    ];
 } 
   show(){
     this.divContainer.classList.remove('hide');

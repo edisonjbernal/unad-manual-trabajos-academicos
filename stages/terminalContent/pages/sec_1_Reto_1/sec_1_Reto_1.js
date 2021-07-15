@@ -75,8 +75,7 @@ class terminalContentClass_sec_1_Reto_1 extends generalPage{
   }
   importCssFiles(){
     return [
-        'generalStage.css|general',
-        'topics-choose.css|local'
+        'generalStage.css|general'
     ]
     }        
 }

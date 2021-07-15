@@ -67,8 +67,6 @@ class stationMapClass extends generalStage{
             'moveTerminalToStation4',
             'mapInteractions',
             'autoSizeMap'
-
-
         ];
     }
     show(){
