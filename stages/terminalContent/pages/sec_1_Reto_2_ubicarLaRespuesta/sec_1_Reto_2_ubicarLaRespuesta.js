@@ -13,11 +13,11 @@ class terminalContentClass_sec_1_Reto_2_ubicarLaRespuesta extends generalPage{
     /* */
 
       return `
-      <div class="header-h2"><h2>Reto 2 Seleccionar caja</h2></div>
+      <div class="header-h2"><h2>Ubicar la respuesta</h2></div>
       <div class="text-general ">
-          <p><strong>Tipo de pregunta: Emparejamiento (Arrastrar y soltar)</strong></p>
+          <p><strong>Tipo de pregunta: Emparejamiento (Seleccionar caja de texto y ubicar respuesta)</strong></p>
           <p>Aspectos como el espaciado entre líneas y párrafos, el tamaño de la letra y la alineación de los párrafos deben proporcionar organización visual para que tengan un efecto positivo en el lector al facilitarle la lectura del texto. En la elaboración de trabajos escrito en la UNAD estos aspectos son:</p>
-          <p><strong>Arrastra la respuesta correcta y ubícala frente al criterio correspondiente:</strong></p>
+          <p><strong>Selecciona la caja de texto y ubica la respuesta frente al criterio correspondiente:</strong></p>
           <table class="select-textbox">
             <tr>
               <td>
