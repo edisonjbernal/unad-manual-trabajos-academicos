@@ -18,11 +18,11 @@ class stageLoadClass{
      load(){
         this.lastStageIdLoaded = this.stageId;
          if(this.stageDiv){
-            console.log('STAGE LOAd:SHOW-IF');
-             console.log(this.stageId);
+            /* console.log('STAGE LOAd:SHOW-IF');
+             console.log(this.stageId); */
               window[this.stageId].show();
           }else{
-            console.log('STAGE LOAd:SHOW-ELSE');
+            /* console.log('STAGE LOAd:SHOW-ELSE'); */
               importJS.addFile([this.stageRoute]);
           }
      }
