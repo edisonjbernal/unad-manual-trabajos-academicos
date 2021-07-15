@@ -24,13 +24,30 @@ class terminalContentClass_sec_1_Reto_2_ubicarLaRespuesta extends generalPage{
                 El espacio entre renglones de un párrafo: 
               </td>
               <td>
-                <input data-correct-answer="Doble" type="text" onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusIn(this)">
+                <input data-correct-answer="Doble" type="text" onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusIn(this)"
+                onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOut(this)"
+                >
                 <div class="multiple-select">
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">12 puntos</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Justificado</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Un (1) solo renglón</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Doble</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Una (1) sangría al lado izquierdo de la página</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">12 puntos</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Justificado</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Un (1) solo renglón</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Doble</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Una (1) sangría al lado izquierdo de la página</button>
                 </div>
               </td>
             </tr>
@@ -39,13 +56,29 @@ class terminalContentClass_sec_1_Reto_2_ubicarLaRespuesta extends generalPage{
                 Tamaño de la letra: 
               </td>
               <td>
-                <input data-correct-answer="12 puntos" type="text" onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusIn(this)">
+                <input data-correct-answer="12 puntos" type="text" onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusIn(this)"
+                onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOut(this)">
                 <div class="multiple-select">
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">12 puntos</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Justificado</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Un (1) solo renglón</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Doble</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Una (1) sangría al lado izquierdo de la página</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">12 puntos</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Justificado</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Un (1) solo renglón</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Doble</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Una (1) sangría al lado izquierdo de la página</button>
                 </div>
               </td>
             </tr>
@@ -54,13 +87,29 @@ class terminalContentClass_sec_1_Reto_2_ubicarLaRespuesta extends generalPage{
                 Al inicio de un nuevo párrafo se requiere dejar:
               </td>
               <td>
-                <input data-correct-answer="Una (1) sangría al lado izquierdo de la página" type="text" onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusIn(this)">
+                <input data-correct-answer="Una (1) sangría al lado izquierdo de la página" type="text" onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusIn(this)"
+                onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOut(this)">
                 <div class="multiple-select">
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">12 puntos</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Justificado</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Un (1) solo renglón</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Doble</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Una (1) sangría al lado izquierdo de la página</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">12 puntos</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Justificado</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Un (1) solo renglón</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Doble</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Una (1) sangría al lado izquierdo de la página</button>
                 </div>
               </td>
             </tr>
@@ -69,13 +118,29 @@ class terminalContentClass_sec_1_Reto_2_ubicarLaRespuesta extends generalPage{
                 Espacio entre párrafos: 
               </td>
               <td>
-                <input data-correct-answer="Un (1) solo renglón" type="text" onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusIn(this)">
+                <input data-correct-answer="Un (1) solo renglón" type="text" onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusIn(this)"
+                onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOut(this)">
                 <div class="multiple-select">
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">12 puntos</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Justificado</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Un (1) solo renglón</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Doble</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Una (1) sangría al lado izquierdo de la página</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">12 puntos</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Justificado</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Un (1) solo renglón</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Doble</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Una (1) sangría al lado izquierdo de la página</button>
                 </div>
               </td>
             </tr>
@@ -84,13 +149,29 @@ class terminalContentClass_sec_1_Reto_2_ubicarLaRespuesta extends generalPage{
                 Formato en todos los párrafos:
               </td>
               <td>
-                <input data-correct-answer="Justificado" type="text" onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusIn(this)">
+                <input data-correct-answer="Justificado" type="text" onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusIn(this)"
+                onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOut(this)">
                 <div class="multiple-select">
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">12 puntos</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Justificado</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Un (1) solo renglón</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Doble</button>
-                    <button class="btn-general" onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Una (1) sangría al lado izquierdo de la página</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">12 puntos</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Justificado</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Un (1) solo renglón</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Doble</button>
+                    <button class="btn-general" 
+                    onfocus="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusInButton()";
+                    onblur="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.focusOutButton()"
+                    onclick="questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta.selectWord(this)">Una (1) sangría al lado izquierdo de la página</button>
                 </div>
               </td>
             </tr>
@@ -106,16 +187,12 @@ class terminalContentClass_sec_1_Reto_2_ubicarLaRespuesta extends generalPage{
   importCssFiles(){
     return [
         'generalStage.css|general',
-        'select-textbox.css|local'
-    ]
-    }
-    importJSFiles(){
-      return [
-        'selectTextbox'
+        'select-textbox.css|general'
     ]
     }
 }
 
 stagePage.pageContainerSet('sec_1_Reto_2_ubicarLaRespuesta',terminalContentClass_sec_1_Reto_2_ubicarLaRespuesta);
 
+let questionTerminalContentClass_sec_1_Reto_2_ubicarLaRespuesta = new selectTextBoxClass;
 

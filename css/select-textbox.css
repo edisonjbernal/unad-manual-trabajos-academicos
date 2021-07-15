@@ -1,6 +1,14 @@
 table.select-textbox{
     width: 100%;
 }
+table.select-textbox td{
+    border-bottom: 3px solid #999;
+    padding: 10px;
+}
+table.select-textbox td:first-child{
+    vertical-align: top;
+    
+}
 .select-textbox button.btn-general{
     background-color: #4d36bd;
     color: #fff;
@@ -32,14 +40,17 @@ table.select-textbox{
 
 .select-textbox input[type="text"]{
     padding: 10px;
+    font-size: .9rem;
+    font-weight: bold;
+    border:3px solid #666;
 }
 .select-textbox input[type="text"].danger{
-    border:2px solid red;
-    color: indigo;
+    border:3px solid red;
+    color: rgb(130, 0, 0);
 }
 
 .select-textbox input[type="text"].success{
-    border:2px solid green;
+    border:3px solid green;
     color: green;
 }
 

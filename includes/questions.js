@@ -16,7 +16,7 @@ class questionsClass{
         
     }
     add(description,answerCorrect,feedbackCorrect=null,feedbackIncorrect=null){
-        console.log('feedbackIncorrect'+feedbackIncorrect);
+        /* console.log('feedbackIncorrect'+feedbackIncorrect); */
         if(!feedbackCorrect){
             feedbackCorrect='Correcto';
         }
@@ -70,8 +70,8 @@ class questionsClass{
         let answerText=element.previousElementSibling;
         answerText.classList.remove('correct');
         answerText.classList.remove('incorrect');
-        console.log(element.getAttribute('data-index'));
-        console.log(element.value);
+        /* console.log(element.getAttribute('data-index'));
+        console.log(element.value); */
         let index = parseInt(element.getAttribute('data-index'));
         if(this.questions[index].answer.correct==element.value){
             /* answerText.classList.add('correct');
@@ -106,18 +106,18 @@ class questionsClass{
 
     }
     verifyAnswers(){
-        console.log('formElements');
-        console.log(this.questions.length);
+        /* console.log('formElements');
+        console.log(this.questions.length); */
         let questionsNumber =this.questions.length;
         let answersVoid=false;
         let answersIncorrect=false;
         for (let index = 0; index < questionsNumber; index++) {
             let answerCorrect= this.questions[index].answer.correct;
-            console.log(`p${index+1}-${this.id}`);
+            /* console.log(`p${index+1}-${this.id}`); */
             let answerUser= this.form.elements[`p${index+1}-${this.id}`].value;
             
             if(!answerUser){
-                console.log('NADA de nada:'+index);
+                /* console.log('NADA de nada:'+index); */
                 answersVoid=true;
             }
             else{
@@ -131,15 +131,15 @@ class questionsClass{
                     ulAnswerUserArray[ix].classList.remove('success');
                 }
 
-                console.log('ulAnswerUserArray');
-                console.log(ulAnswerUserArray);
+                /* console.log('ulAnswerUserArray');
+                console.log(ulAnswerUserArray); */
                 if(answerCorrect==answerUser){
-                    console.log('Acertó la:'+index);
+                    /* console.log('Acertó la:'+index); */
                     liAnswerUser.classList.add('success');
                     liAnswerUser.setAttribute('data-feedback',this.questions[index].feedback.correct);
                 }
                 else{
-                    console.log('Incorrecto:'+index);
+                    /* console.log('Incorrecto:'+index); */
                     liAnswerUser.classList.add('danger');
                     liAnswerUser.setAttribute('data-feedback',this.questions[index].feedback.incorrect);
                     answersIncorrect = true;
@@ -149,7 +149,7 @@ class questionsClass{
 
            
             
-            console.log(`p${index+1}-${this.id}`);
+            /* console.log(`p${index+1}-${this.id}`); */
            // console.log(this.form.elements[`p${index+1}-${this.id}`].value);
             
         }

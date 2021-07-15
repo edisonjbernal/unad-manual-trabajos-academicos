@@ -183,6 +183,7 @@ class terminalContentClass extends generalStage{
     return [
         'listMoveOptions',
         'question_CheckboxVerify',
+        'selectTextbox',
         'textChangeCustom'
     ];
 } 
