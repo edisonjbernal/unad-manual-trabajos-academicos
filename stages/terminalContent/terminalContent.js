@@ -176,7 +176,7 @@ class terminalContentClass extends generalStage{
   importJSFiles(){
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
     this.acordeonList= new acordeonListClass;
-    stagePage.get('sec_2_Reto_1');
+    stagePage.get('introduccion');
    
   }
   importJSGlobalFiles(){
