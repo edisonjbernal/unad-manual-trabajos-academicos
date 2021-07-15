@@ -15,7 +15,7 @@ class terminalContentClass_sec_1_Reto_3_emparejamiento extends generalPage{
       return `
       <div class="header-h2"><h2>Reto 3 - Emparejamiento</h2></div>
       <div class="text-general list-move-option">
-          <p><strong>Tipo de pregunta: Selecciona respuesta correcta a partir de una lista desplegable.</strong></p>
+          <p><strong>Tipo de pregunta:Emparejamiento (definiciones se mueven hacia arriba o hacia abajo)</strong></p>
           <p>Lee las definiciones a continuación y elige de la lista desplegable el elemento preliminar que corresponda a cada definición:</p>
     
               <div class="drag-and-drop-element">

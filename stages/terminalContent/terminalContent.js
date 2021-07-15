@@ -129,25 +129,31 @@ class terminalContentClass extends generalStage{
               <a href="#sec_2_Video_1">Video 1</a>
             </li>
             <li>
-              <a href="#sec_2_Reto_1">-- Reto 1</a>
+              <a href="#sec_2_Reto_1">-- Selección múltiple</a>
             </li>
             <li>
               <a href="#sec_2_Video_2">Video 2</a>
             </li>
             <li>
-              <a href="#sec_2_Reto_2">-- Reto 2</a>
+              <a href="#sec_2_Reto_2">-- Selección múltiple</a>
             </li>
             <li>
               <a href="#sec_2_Video_3">Video 3</a>
             </li>
             <li>
-              <a href="#sec_2_Reto_3">-- Reto 3</a>
+              <a href="#sec_2_Reto_3_emparejamiento">-- Emparejamiento</a>
+            </li>
+            <li>
+              <a href="#sec_2_Reto_3_falsoVerdadero">-- Falso / Verdadero</a>
             </li>
             <li>
               <a href="#sec_2_Video_4">Video 4</a>
             </li>
             <li>
-              <a href="#sec_2_Reto_4">-- Reto 4</a>
+              <a href="#sec_2_Reto_4_falsoVerdadero">-- Falso / Verdadero</a>
+            </li>
+            <li>
+              <a href="#sec_2_Reto_4_seleccionarTexto">-- Seleccionar texto</a>
             </li>
             <li>
               <a href="#sec_2_Video_5">Video 5</a>
@@ -170,7 +176,7 @@ class terminalContentClass extends generalStage{
   importJSFiles(){
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
     this.acordeonList= new acordeonListClass;
-    stagePage.get('sec_1_Reto_3_emparejamiento');
+    stagePage.get('sec_2_Reto_1');
    
   }
   importJSGlobalFiles(){
