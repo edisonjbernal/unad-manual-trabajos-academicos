@@ -13,10 +13,11 @@ class terminalContentClass_sec_1_Reto_1 extends generalPage{
     /* */
 
       return `
-      <div class="header-h2"><h2>True and False</h2></div>
+      <div class="header-h2"><h2>Selección múltiple</h2></div>
       <div class="text-general ">
           <p><strong>Tipo de pregunta: Selección múltiple (varias respuestas)</strong></p>
-          <p>Como viste, los trabajos escritos solicitados por los docentes de tus espacios académicos pueden tener diferentes aspectos físicos estructurales dependiendo del tipo de trabajo requerido. No obstante, hay tres aspectos físicos esenciales que deberás mantener en todos tus trabajos. <strong>¿Cuáles son estos tres aspectos?</strong></p>
+          <p>Como viste, los trabajos escritos solicitados por los docentes de tus espacios académicos pueden tener diferentes aspectos físicos estructurales dependiendo del tipo de trabajo requerido. No obstante, hay tres aspectos físicos esenciales que deberás mantener en todos tus trabajos.</p>
+          <p><strong>¿Cuáles son estos tres aspectos?</strong></p>
           <p><strong>Escoge las tres opciones correctas de la lista a continuación:</strong></p>
           <form action="" id="form-terminalContent_Sec_1_Reto_1">
           <ul class="ul-input">
@@ -84,7 +85,7 @@ stagePage.pageContainerSet('sec_1_Reto_1',terminalContentClass_sec_1_Reto_1);
  
 let questionsTerminalContent_Sec_1_Reto_1 = new question_CheckboxVerifyClass('terminalContent_Sec_1_Reto_1');
 
-questionsTerminalContent_Sec_1_Reto_1.feedback.correct="¡Correcto! Todo texto académico que presentes en la universidad debe cumplir con una estructura específica según el tipo de trabajo solicitado, pero siempre deberás incluir tres aspectos generales. En primer lugar, están los preliminares que pueden incluir la portada, contraportada, nota de aceptación, dedicatoria, entre otros. En segundo lugar, estará el abordaje formal de la temática específica del trabajo realizado también conocida como cuerpo del texto y, por último, viene una serie de referencias que sustentan el documento escrito.<hr/><br/>¡Excelente! Has entendido entonces que cada trabajo académico que presentes en la UNAD puede requerir una estructura específica dependiendo del tipo de reporte escrito solicitado, pero siempre habrá unas secciones generales transversales a todos los documentos. Vamos a continuar con nuestro siguiente reto.";
+questionsTerminalContent_Sec_1_Reto_1.feedback.correct="¡Correcto! Todo texto académico que presentes en la universidad debe cumplir con una estructura específica según el tipo de trabajo solicitado, pero siempre deberás incluir tres aspectos generales. En primer lugar, están los preliminares que pueden incluir la portada, contraportada, nota de aceptación, dedicatoria, entre otros. En segundo lugar, estará el abordaje formal de la temática específica del trabajo realizado también conocida como cuerpo del texto y, por último, viene una serie de referencias que sustentan el documento escrito.";
 questionsTerminalContent_Sec_1_Reto_1.feedback.incorrect="Por favor, verifica las respuestas.";
 questionsTerminalContent_Sec_1_Reto_1.add(
     'A. Preliminares.',

@@ -95,7 +95,7 @@ class terminalContentClass extends generalStage{
               <a href="#sec_1_Reto_2_falsoVerdadero">-- Falso / Verdadero</a>
             </li>
             <li>
-              <a href="#sec_1_Reto_2_lista_3">-- Seleccionar texto</a>
+              <a href="#sec_1_Reto_2_seleccionarTexto">-- Seleccionar texto</a>
             </li>
             <li>
               <a href="#sec_1_Reto_2_ubicarLaRespuesta">-- Ubicar la respuesta</a>

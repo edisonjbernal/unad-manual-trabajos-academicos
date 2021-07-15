@@ -1,0 +1,50 @@
+table.select-textbox{
+    width: 100%;
+}
+.select-textbox button.btn-general{
+    background-color: #4d36bd;
+    color: #fff;
+    border:1px solid #fff;
+    padding: 10px;
+    margin: 5px;
+}
+
+.select-textbox .multiple-select{
+    
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.select-textbox .multiple-select button{
+    display: none;
+}
+
+.select-textbox .multiple-select.show{
+    height: auto;
+    background-color: #7061bf;
+    text-align: center;
+    padding: 20px;
+}
+.select-textbox .multiple-select.show button{
+    display: inline-block;
+}
+
+.select-textbox input[type="text"]{
+    padding: 10px;
+}
+.select-textbox input[type="text"].danger{
+    border:2px solid red;
+    color: indigo;
+}
+
+.select-textbox input[type="text"].success{
+    border:2px solid green;
+    color: green;
+}
+
+@media (min-width: 1000px) {
+    .select-textbox input[type="text"]{
+        min-width: 300px;
+    }
+}
