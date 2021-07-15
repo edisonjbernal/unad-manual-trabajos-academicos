@@ -182,6 +182,7 @@ class terminalContentClass extends generalStage{
   importJSGlobalFiles(){
     return [
         'listMoveOptions',
+        'questions',
         'question_CheckboxVerify',
         'selectTextbox',
         'textChangeCustom'

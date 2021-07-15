@@ -13,10 +13,10 @@ class terminalContentClass_sec_1_Reto_2_unicaRespuesta extends generalPage{
     /* */
 
       return `
-      <div class="header-h2"><h2>Reto 4</h2></div>
+      <div class="header-h2"><h2>Única la respuesta</h2></div>
       <div class="text-general ">
           <p><strong>Tipo de pregunta: Selección múltiple (una (1) única respuesta)</strong></p>
-          <p>Por último, hablemos de las márgenes. Recuerda que su uso es esencial pues reflejan el orden del escrito que quieres presentar, y además orientan al lector al hacer pausas para llevar a cabo una mejor comprensión de las ideas. <strong>Todos los trabajos escritos académicos de la UNAD deben tener un espacio de ____ .</strong></p>
+          <p>Por último, hablemos de las márgenes. Recuerda que su uso es esencial pues reflejan el orden del escrito que quieres presentar, y además orientan al lector al hacer pausas para llevar a cabo una mejor comprensión de las ideas. <strong>Todos los trabajos escritos académicos de la UNAD deben tener un espacio de _______________.</strong></p>
           <p><strong>Escoge la opción correcta:</strong></p>
           <form action="" id="form-terminalContent_Sec_1_Reto_2_unicaRespuesta">
           <ul class="ul-input">
@@ -74,15 +74,15 @@ class terminalContentClass_sec_1_Reto_2_unicaRespuesta extends generalPage{
         'generalStage.css|general',
         'reto-4.css|local'
     ]
-    }        
+    }    
 }
 
 stagePage.pageContainerSet('sec_1_Reto_2_unicaRespuesta',terminalContentClass_sec_1_Reto_2_unicaRespuesta);
  
 let questionsTerminalContent_Sec_1_Reto_2_unicaRespuesta = new questionsClass('terminalContent_Sec_1_Reto_2_unicaRespuesta',true);
 
-questionsTerminalContent_Sec_1_Reto_2_unicaRespuesta.feedback.correct="¡Muy bien! Has completado el segundo reto. Vamos ahora por un tercer reto en el que podrás identificar cuánto has comprendido acerca del uso de elementos preliminares al cuerpo del trabajo escrito. A continuación, te haré una serie de preguntas sobre la portada, contraportada, nota de aceptación, dedicatoria, presentación de línea y grupo de investigación, y Resumen y Abstract.<br/>  ¡Vamos!";
-questionsTerminalContent_Sec_1_Reto_2_unicaRespuesta.feedback.incorrect="Todos los trabajos escritos académicos de la UNAD deben tener un espacio de 2,54 cm en todos los costados de las hojas.";
+questionsTerminalContent_Sec_1_Reto_2_unicaRespuesta.feedback.correct="¡Correcto! Todos los trabajos escritos académicos de la UNAD deben tener un espacio de 2,54 cm en todos los costados de las hojas.";
+questionsTerminalContent_Sec_1_Reto_2_unicaRespuesta.feedback.incorrect="¡Incorrecto! Recuerda que todos los trabajos escritos académicos de la UNAD deben tener un espacio de 2,54 cm en todos los costados de las hojas.";
 questionsTerminalContent_Sec_1_Reto_2_unicaRespuesta.add(
     '1.',
     '2',

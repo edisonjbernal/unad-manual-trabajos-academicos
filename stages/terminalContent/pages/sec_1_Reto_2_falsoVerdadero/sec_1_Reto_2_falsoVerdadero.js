@@ -47,8 +47,7 @@ class terminalContentClass_sec_1_Reto_2_falsoVerdadero extends generalPage{
   }
   importCssFiles(){
     return [
-        'generalStage.css|general',
-        'topics-choose.css|local'
+        'generalStage.css|general'
     ]
     }        
 }

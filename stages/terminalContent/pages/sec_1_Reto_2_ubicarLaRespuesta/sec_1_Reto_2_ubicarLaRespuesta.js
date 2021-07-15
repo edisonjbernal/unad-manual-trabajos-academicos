@@ -8,11 +8,7 @@ class terminalContentClass_sec_1_Reto_2_ubicarLaRespuesta extends generalPage{
       ]
   }
   content(){
-    /* */
-    
-    /* */
-
-      return `
+       return `
       <div class="header-h2"><h2>Ubicar la respuesta</h2></div>
       <div class="text-general ">
           <p><strong>Tipo de pregunta: Emparejamiento (Seleccionar caja de texto y ubicar respuesta)</strong></p>

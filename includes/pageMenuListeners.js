@@ -51,7 +51,7 @@ class pageMenuListenersClass{
                     these.mainMenu_NavLastElementClicked=element;
                     these.chagePage(element.href,element.getAttribute('data-menu-index'));
             
-                    console.log(these.menuNavigation.style);
+                    /* console.log(these.menuNavigation.style); */
                     element.scrollIntoView({ block: 'center', behavior: 'smooth' });
                  }
                  
@@ -151,7 +151,7 @@ class pageMenuListenersClass{
     this.menuNavigationParent.classList.add('clicked-menu');
     this.menuNavigationClicked=true;
     /* console.log('menuCliked'); */
-    console.log(this.menuNavigationClicked);
+    /* console.log(this.menuNavigationClicked); */
    }
    menuGeneralUnClicked(){
     this.menuNavigationParent.classList.remove('clicked-menu');
