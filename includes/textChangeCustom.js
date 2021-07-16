@@ -29,7 +29,7 @@ class textChangeCustomClass{
                 let these = this;
                 this.timmerToCloseBox = setTimeout(function(){
                     these.hideElement(feedbackMainContainer);
-                }, 2000);
+                }, 1500);
                 
             }
             
