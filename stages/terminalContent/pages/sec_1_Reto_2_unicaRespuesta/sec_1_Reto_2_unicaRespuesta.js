@@ -59,7 +59,11 @@ class terminalContentClass_sec_1_Reto_2_unicaRespuesta extends generalPage{
           </ul>
          
           
-          <div class="text-center"><button type="submit" class="btn-general btn-submit" >Validar repuesta</button></div>
+          <div class="text-center">
+            <button 
+            onclick="questionsTerminalContent_Sec_1_Reto_2_unicaRespuesta.verifyAnswers()"
+            type="button" class="btn-general btn-submit" >Validar repuesta</button>
+          </div>
         </form>
       </div>
       <div class="text-center">

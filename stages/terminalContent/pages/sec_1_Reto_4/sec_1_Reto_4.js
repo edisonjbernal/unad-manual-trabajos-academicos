@@ -252,7 +252,11 @@ class terminalContentClass_sec_1_Reto_4 extends generalPage{
               </li>
           </ul>
           
-          <div class="text-center"><button type="submit" class="btn-general btn-submit" >Validar repuestas</button></div>
+          <div class="text-center">
+            <button 
+              onclick="questionsTerminalContent_Sec_1_Reto_4.verifyAnswers();"
+              type="button" class="btn-general btn-submit" >Validar repuestas</button>
+          </div>
         </form>
       </div>
       <div class="text-center">

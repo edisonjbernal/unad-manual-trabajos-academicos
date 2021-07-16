@@ -106,6 +106,7 @@ class questionsClass{
 
     }
     verifyAnswers(){
+        this.form=document.getElementById('form-'+this.id);
         /* console.log('formElements');
         console.log(this.questions.length); */
         let questionsNumber =this.questions.length;

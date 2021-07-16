@@ -43,7 +43,7 @@ class terminalContentClass_sec_2_Reto_2 extends generalPage{
               <label for="p4-terminalContent_Sec_2_Reto_2"><strong>D. </strong>Ceder al autor del trabajo escrito los derechos que antes poseía una persona sobre sus propias creaciones.</p></label>
             </li>
           </ul>
-          <div class="text-center"><button class="btn-general btn-submit" onclick="questionsTerminalContent_Sec_2_Reto_2.checkboxVerify(2);" >Validar repuestas</button></div>
+          <div class="text-center"><button type="button" class="btn-general btn-submit" onclick="questionsTerminalContent_Sec_2_Reto_2.checkboxVerify(2);" >Validar repuestas</button></div>
         </form>
       </div>
       <div class="text-center">
