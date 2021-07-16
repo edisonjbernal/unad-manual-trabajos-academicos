@@ -19,7 +19,7 @@ class terminalContentClass_infograficasSobreCitacion extends generalPage{
                          <a href="#lineamientosGenerales" onclick="window.open('./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/citacion-de-comunicaciones-personales.pdf','','location=yes,scrollbars=yes,resizable=yes,width=1000,height=700');return false;">
                             <figure class="card">
                                 
-                                    <img src="./images/aspectos-tecnicos/aspectos-generales/lineamientosGenerales.png" alt="Lineamientos generales">
+                                    <img src="./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/portadaComunicacionesEspeciales.jpg" alt="Citación Textual">
                                 
                                 <figcaption>
                                     Ver infografía de citación de comunicaciones personales
@@ -37,7 +37,7 @@ class terminalContentClass_infograficasSobreCitacion extends generalPage{
                          <a href="#lineamientosGenerales" onclick="window.open('./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/citacion-parafrasis.pdf','','location=yes,scrollbars=yes,resizable=yes,width=1000,height=700');return false;">
                             <figure class="card">
                                 
-                                    <img src="./images/aspectos-tecnicos/aspectos-generales/lineamientosGenerales.png" alt="Lineamientos generales">
+                                <img src="./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/portadaParafrasis.jpg" alt="Citación Paráfrasis">
                                 
                                 <figcaption>
                                     Ver infografía de citación por paráfrasis
@@ -54,7 +54,7 @@ class terminalContentClass_infograficasSobreCitacion extends generalPage{
                          <a href="#lineamientosGenerales" onclick="window.open('./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/citacion-textual.pdf','','location=yes,scrollbars=yes,resizable=yes,width=1000,height=700');return false;">
                             <figure class="card">
                                 
-                                    <img src="./images/aspectos-tecnicos/aspectos-generales/lineamientosGenerales.png" alt="Lineamientos generales">
+                                    <img src="./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/portadaCitacionTextual.jpg" alt="Citación Textual">
                                 
                                 <figcaption>
                                     Ver infografía de citación textual

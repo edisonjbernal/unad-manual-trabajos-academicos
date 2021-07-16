@@ -10,7 +10,7 @@ class station3Class extends generalStage{
   content(){
       return `
       <h1>Trabajos y proyectos investigativos</h1>
-      <img class="responsive" src="./test/ninosBus.jpg" />
+      <img class="responsive" src="./images/Estacion_3_entrada.jpg" alt="Estación 3" />
       <div class="text-general">
          <p>Trabajos y proyectos investigativos: Texto de ejemplo</p>
       </div>

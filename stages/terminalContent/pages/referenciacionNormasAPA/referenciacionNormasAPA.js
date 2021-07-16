@@ -60,28 +60,6 @@ class terminalContentClass_referenciacionNormasAPA extends generalPage{
            <p>La URL, comúnmente conocida como dirección electrónica, corresponde a ese código que mayormente inicia con las letras “http” o “https”. Deberás utilizar la URL de la fuente solamente si la publicación NO tiene código DOI.</p>
            <p>Utiliza una URL que te lleve directamente a la fuente, no incluyas una URL que dirija al lector a una base de datos general como EBSCO o Academic Search, ni tampoco utilices el antiguo formato “tomado de” por el hecho de no contar con una URL directa. En esos casos, no incluyas la URL tampoco en la citación del documento en el cuerpo del trabajo.</p>
       </div>
-      <div class="text-general">
-        <div class="main-container-acordeon">  
-            <div class="container-acordeon">
-            <button class="btn-acordeon" onclick="stages_terminalContent.acordeonList.show(this);">Ejemplos de casos especiales</button>
-                <div class="text-acordeon">
-                <div class="cards">
-                <a href="#lineamientosGenerales" onclick="window.open('./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/referenciacion-ejemplos-casos-especiales.pdf','','location=yes,scrollbars=yes,resizable=yes,width=1000,height=700');return false;">
-                    <figure class="card">
-                        
-                            <img src="./images/aspectos-tecnicos/aspectos-generales/lineamientosGenerales.png" alt="Lineamientos generales">
-                        
-                        <figcaption>
-                            Ver infografía de casos especiales
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-                </div>
-                
-            </div>
-        </div>
-     </div>
       `;
   }
   importCssFiles(){
