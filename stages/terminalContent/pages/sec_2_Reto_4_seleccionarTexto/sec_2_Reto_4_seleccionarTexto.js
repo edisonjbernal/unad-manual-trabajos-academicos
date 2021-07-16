@@ -131,4 +131,4 @@ class terminalContentClass_sec_2_Reto_4_seleccionarTexto extends generalPage{
 
 stagePage.pageContainerSet('sec_2_Reto_4_seleccionarTexto',terminalContentClass_sec_2_Reto_4_seleccionarTexto);
  
-let text_TerminalContent_Sec_2_Reto_4_seleccionarTexto = new textChangeCustomClass();
+let text_TerminalContent_Sec_2_Reto_4_seleccionarTexto = new textChangeCustomClass(true);

@@ -1,6 +1,6 @@
 class textChangeCustomClass{
-    constructor(){
-
+    constructor(hideSelected = false){
+        this.hideSelected = hideSelected;
     }
     change(element){
         
@@ -9,22 +9,30 @@ class textChangeCustomClass{
         let correctAnswer=element.getAttribute('data-correct-answer');
         let textContainer=document.getElementById(textId);
         
-        let feedbackContainer=element.parentElement;
+        let feedbackMainContainer=element.parentElement;
         
-        feedbackContainer=feedbackContainer.getElementsByClassName('feedback')[0];
+        let feedbackContainer=feedbackMainContainer.getElementsByClassName('feedback')[0];
         
 
         if(!feedbackContainer.getAttribute('class').includes('success')){
             feedbackContainer.innerHTML=feedbackInfo;
             textContainer.innerHTML=element.innerHTML;
-        feedbackContainer.classList.remove('success');
-        feedbackContainer.classList.remove('danger');
-        textContainer.classList.remove('success');
-        textContainer.classList.remove('danger');
+            feedbackContainer.classList.remove('success');
+            feedbackContainer.classList.remove('danger');
+            textContainer.classList.remove('success');
+            textContainer.classList.remove('danger');
         if(correctAnswer){
             feedbackContainer.classList.add('success');
             element.classList.add('success');
             textContainer.classList.add('success');
+            if(this.hideSelected){
+                let these = this;
+                this.timmerToCloseBox = setTimeout(function(){
+                    these.hideElement(feedbackMainContainer);
+                }, 2000);
+                
+            }
+            
         }else{
             feedbackContainer.classList.add('danger');
             element.classList.add('danger');
@@ -33,5 +41,8 @@ class textChangeCustomClass{
     }
         
       
+    }
+    hideElement(feedbackMainContainer){
+        feedbackMainContainer.classList.add("hide");
     }
 }

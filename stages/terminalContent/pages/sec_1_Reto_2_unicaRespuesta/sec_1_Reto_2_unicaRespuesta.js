@@ -71,8 +71,7 @@ class terminalContentClass_sec_1_Reto_2_unicaRespuesta extends generalPage{
   }
   importCssFiles(){
     return [
-        'generalStage.css|general',
-        'reto-4.css|local'
+        'generalStage.css|general'
     ]
     }    
 }
