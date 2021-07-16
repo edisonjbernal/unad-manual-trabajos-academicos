@@ -13,7 +13,6 @@ class terminalContentClass_sec_2_Video_5 extends generalPage{
       <video class="responsive" src="./images/aspectos-tecnicos/gamificacion/sec_2_Video_5.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>
-        <button class="btn-general" onclick="stages_terminalContent.menu.next()"">Siguiente</button>
         <button class="btn-general btn-show-content" onclick="stages_terminalContent.menu.showContentInText(this,'none')">Mostar en texto</button>
       </div>
       <div class="text-show-content">
