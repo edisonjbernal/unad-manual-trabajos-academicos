@@ -13,7 +13,7 @@ class terminalContentClass_sec_1_Reto_4 extends generalPage{
     /* */
 
       return `
-      <div class="header-h2"><h2>Reto 4</h2></div>
+      <div class="header-h2"><h2>Selección múltiple de única respuesta</h2></div>
       <div class="text-general ">
           <p><strong>Tipo de pregunta: Selección de única respuesta</strong></p>
           <p>Los títulos le dan una estructura organizada al trabajo escrito y orientan a quien lo lee. Los procesadores de textos brindan diferentes niveles de titulación. Para la realización de los trabajos académicos elaborados por estudiantes de la UNAD se usarán títulos de primer a quinto nivel. Cada nivel tiene su propio formato y función dentro del texto.</p>

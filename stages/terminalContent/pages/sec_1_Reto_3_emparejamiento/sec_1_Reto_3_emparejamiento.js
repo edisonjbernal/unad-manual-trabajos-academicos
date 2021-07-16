@@ -13,10 +13,11 @@ class terminalContentClass_sec_1_Reto_3_emparejamiento extends generalPage{
     /* */
 
       return `
-      <div class="header-h2"><h2>Reto 3 - Emparejamiento</h2></div>
+      <div class="header-h2"><h2>Emparejamiento</h2></div>
       <div class="text-general list-move-option">
-          <p><strong>Tipo de pregunta:Emparejamiento (definiciones se mueven hacia arriba o hacia abajo)</strong></p>
-          <p>Lee las definiciones a continuación y elige de la lista desplegable el elemento preliminar que corresponda a cada definición:</p>
+          <p><strong>Tipo de pregunta: Emparejamiento (definiciones se mueven hacia arriba o hacia abajo)</strong></p>
+          <p>Ahora vamos a ver si reconoces el tipo de información que compone cada elemento preliminar.</p>
+          <p><strong>Lee las descripciones a continuación y pon frente a ella el elemento preliminar que le corresponde:</strong></p>
     
               <div class="drag-and-drop-element">
                 <table>
@@ -122,7 +123,7 @@ class terminalContentClass_sec_1_Reto_3_emparejamiento extends generalPage{
   importCssFiles(){
     return [
         'generalStage.css|general',
-        'list-move-option.css|local'
+        'list-move-option.css|general'
     ]
     }
         

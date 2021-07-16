@@ -1,6 +1,6 @@
 class listMoveOptionsClass{
     constructor(){
-        console.log('listMoveOptionsActivated');
+        /* console.log('listMoveOptionsActivated'); */
     }
     selectOtherElement(element,type){
         let currentContainer='';
@@ -29,25 +29,25 @@ class listMoveOptionsClass{
         otherContainer.parentElement.parentElement.classList.remove('danger');
         if(otherContainerContent==currentContainer.getAttribute('data-correct-answer')){
             currentContainer.parentElement.parentElement.classList.add('success');
-            console.log('currentContainer:CORRECT');
+            /* console.log('currentContainer:CORRECT'); */
         }
         else{
             currentContainer.parentElement.parentElement.classList.add('danger');
-            console.log('currentContainer:WRONG');
+            /* console.log('currentContainer:WRONG'); */
         }
 
         if(currentContainerContent==otherContainer.getAttribute('data-correct-answer')){
             otherContainer.parentElement.parentElement.classList.add('success');
-            console.log('otherContainer:CORRECT');
+            /* console.log('otherContainer:CORRECT'); */
         }
         else{
             
             otherContainer.parentElement.parentElement.classList.add('danger');
-            console.log('otherContainer:WRONG');
+            /* console.log('otherContainer:WRONG'); */
         }
-        console.log(currentContainer);
+        /* console.log(currentContainer);
         console.log(type);
-        console.log(otherContainer);
+        console.log(otherContainer); */
 
         
     }

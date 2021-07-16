@@ -13,17 +13,17 @@ class terminalContentClass_sec_2_Reto_3_emparejamiento extends generalPage{
     /* */
 
       return `
-      <div class="header-h2"><h2>Reto 3 - Emparejamiento</h2></div>
+      <div class="header-h2"><h2>Emparejamiento</h2></div>
       <div class="text-general list-move-option">
-          <p><strong>Tipo de pregunta:Emparejamiento (definiciones se mueven hacia arriba o hacia abajo)</strong></p>
-          <p>Lee las definiciones a continuación y elige de la lista desplegable el elemento preliminar que corresponda a cada definición:</p>
+          <p><strong>Tipo de pregunta: Emparejamiento (definiciones se mueven hacia arriba o hacia abajo)</strong></p>
+          <p>Lee las definiciones a continuación y pon frente a ella el concepto que le corresponde:</p>
     
               <div class="drag-and-drop-element">
                 <table>
                   <tr>
                     <td>
                         <div 
-                        class="text-option-to-move" data-correct-answer="Nota de aceptación" >Citación</div>
+                        class="text-option-to-move" data-correct-answer="Paráfrasis parentética" >Citación</div>
                         <button class="btn-move-option" onclick="listMoveOptionsTerminalContent_sec_2_Reto_3_emparejamiento.down(this);">bajar</button>
                     </td>
                                 <td><p>Texto en el que hacemos referencia, con nuestras propias palabras, a algo dicho por otra persona agregando al final en un paréntesis el apellido del autor y el año de publicación o emisión de la obra en la que está incluida dicha idea.</p></td>
@@ -37,7 +37,7 @@ class terminalContentClass_sec_2_Reto_3_emparejamiento extends generalPage{
                         <button class="btn-move-option" onclick="listMoveOptionsTerminalContent_sec_2_Reto_3_emparejamiento.up(this);" >Subir</button>
                         <div 
                         class="text-option-to-move"
-                        data-correct-answer="Presentación de línea y grupo de investigación"
+                        data-correct-answer="Citación textual parentética"
                         >Referenciación</div>
                         <button class="btn-move-option" onclick="listMoveOptionsTerminalContent_sec_2_Reto_3_emparejamiento.down(this);">bajar</button>
                     </td>
@@ -53,7 +53,7 @@ class terminalContentClass_sec_2_Reto_3_emparejamiento extends generalPage{
                         <button class="btn-move-option" onclick="listMoveOptionsTerminalContent_sec_2_Reto_3_emparejamiento.up(this);" >Subir</button>
                         <div 
                         class="text-option-to-move"
-                        data-correct-answer="Contraportada"
+                        data-correct-answer="Paráfrasis narrativa"
                         >Paráfrasis parentética</div>
                         <button class="btn-move-option" onclick="listMoveOptionsTerminalContent_sec_2_Reto_3_emparejamiento.down(this);">bajar</button>
                     </td>
@@ -69,7 +69,7 @@ class terminalContentClass_sec_2_Reto_3_emparejamiento extends generalPage{
                       <button class="btn-move-option" onclick="listMoveOptionsTerminalContent_sec_2_Reto_3_emparejamiento.up(this);" >Subir</button>
                       <div 
                       class="text-option-to-move"
-                      data-correct-answer="Contraportada"
+                      data-correct-answer="Citación"
                       >Paráfrasis narrativa</div>
                       <button class="btn-move-option" onclick="listMoveOptionsTerminalContent_sec_2_Reto_3_emparejamiento.down(this);">bajar</button>
                   </td>
@@ -85,7 +85,7 @@ class terminalContentClass_sec_2_Reto_3_emparejamiento extends generalPage{
                     <button class="btn-move-option" onclick="listMoveOptionsTerminalContent_sec_2_Reto_3_emparejamiento.up(this);" >Subir</button>
                     <div 
                     class="text-option-to-move"
-                    data-correct-answer="Contraportada"
+                    data-correct-answer="Citación textual narrativa"
                     >Citación textual parentética</div>
                     <button class="btn-move-option" onclick="listMoveOptionsTerminalContent_sec_2_Reto_3_emparejamiento.down(this);">bajar</button>
                 </td>
@@ -101,7 +101,7 @@ class terminalContentClass_sec_2_Reto_3_emparejamiento extends generalPage{
                         <button class="btn-move-option" onclick="listMoveOptionsTerminalContent_sec_2_Reto_3_emparejamiento.up(this);" >Subir</button>
                         <div 
                             class="text-option-to-move"
-                            data-correct-answer="Portada"
+                            data-correct-answer="Referenciación"
                         >Citación textual narrativa</div>
                     </td>
                                 <td><p>Listado de las fuentes que fueron citadas a lo largo de un texto. Se incluye en la parte final del trabajo o documento.</p>
@@ -121,7 +121,7 @@ class terminalContentClass_sec_2_Reto_3_emparejamiento extends generalPage{
   importCssFiles(){
     return [
         'generalStage.css|general',
-        'list-move-option.css|local'
+        'list-move-option.css|general'
     ]
     }
         

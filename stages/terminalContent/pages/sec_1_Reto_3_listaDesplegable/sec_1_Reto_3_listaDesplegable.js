@@ -13,7 +13,7 @@ class terminalContentClass_sec_1_Reto_3_listaDesplegable extends generalPage{
     /* */
 
       return `
-      <div class="header-h2"><h2>Reto 3 - lista desplegable</h2></div>
+      <div class="header-h2"><h2>Lista desplegable</h2></div>
       <div class="text-general ">
           <p><strong>Tipo de pregunta: Selecciona respuesta correcta a partir de una lista desplegable.</strong></p>
           <p>Lee las definiciones a continuación y elige de la lista desplegable el elemento preliminar que corresponda a cada definición:</p>

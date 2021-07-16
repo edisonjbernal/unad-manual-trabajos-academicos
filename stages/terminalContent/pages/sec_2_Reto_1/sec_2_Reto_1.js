@@ -16,7 +16,8 @@ class terminalContentClass_sec_2_Reto_1 extends generalPage{
       <div class="header-h2"><h2>Selección múltiple (más de una respuesta)</h2></div>
       <div class="text-general ">
           <p><strong>Tipo de pregunta: Selección múltiple (más de una respuesta)</strong></p>
-          <p>¿Cuáles de las opciones a continuación te ayudan a evitar el plagio? Escoge todas las respuestas que consideras correctas:</p>
+          <p>¿Cuáles de las opciones a continuación te ayudan a evitar el plagio?</p>
+          <p><strong> Escoge todas las respuestas que consideras correctas:</strong></p>
           <form action="" id="form-terminalContent_Sec_2_Reto_1">
           <ul class="ul-input">
             <li>
@@ -79,8 +80,7 @@ class terminalContentClass_sec_2_Reto_1 extends generalPage{
   }
   importCssFiles(){
     return [
-        'generalStage.css|general',
-        'topics-choose.css|local'
+        'generalStage.css|general'
     ]
     }        
 }
