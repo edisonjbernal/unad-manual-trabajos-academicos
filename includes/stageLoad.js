@@ -1,4 +1,7 @@
 class stageLoadClass{
+    currentStageName(){
+        return this.stageName;
+    }
      get(stageName){
         this.stageName=stageName;
          this.stageId = `stages_${this.stageName}`;

@@ -95,7 +95,7 @@ video.principal {
     max-width: 1000px;
     margin: 0 auto;
 }
-.map-circle-button{
+ .map-circle-button{
     background-color: var(--main-button-background);
     color: var(--main-button-color);
     display: flex;

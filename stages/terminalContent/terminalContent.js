@@ -195,12 +195,6 @@ class terminalContentClass extends generalStage{
 } 
 show(){
   this.divContainer.classList.remove('hide');
-  let these=this;
- 
-    these.menu.unloadMenuToclick('#preliminares');
-
-  
-  /* this.menu.unloadMenuToclick('#preliminares'); */
 } 
    
 }
