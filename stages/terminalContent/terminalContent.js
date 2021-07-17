@@ -164,9 +164,13 @@ class terminalContentClass extends generalStage{
       
       `;
   }
-  hide(){
+   hide(){
+   
+    /* this.menu.getFromPageName(evento,'#introduccion'); */
+   /*  this.menu.unloadMenuToclick('#preliminares'); */
     this.divContainer.classList.add('hide');
-  }
+    
+  } 
   importCssFiles(){
     return [
         'generalStage.css|general',
@@ -176,7 +180,8 @@ class terminalContentClass extends generalStage{
   importJSFiles(){
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
     this.acordeonList= new acordeonListClass;
-    stagePage.get('introduccion');
+     stagePage.get('introduccion'); 
+     
    
   }
   importJSGlobalFiles(){
@@ -188,9 +193,16 @@ class terminalContentClass extends generalStage{
         'textChangeCustom'
     ];
 } 
-  show(){
-    this.divContainer.classList.remove('hide');
-  }
+show(){
+  this.divContainer.classList.remove('hide');
+  let these=this;
+ 
+    these.menu.unloadMenuToclick('#preliminares');
+
+  
+  /* this.menu.unloadMenuToclick('#preliminares'); */
+} 
+   
 }
 
 var stages_terminalContent = new terminalContentClass('terminalContent');

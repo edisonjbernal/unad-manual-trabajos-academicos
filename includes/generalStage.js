@@ -93,5 +93,9 @@ class generalStage{
         //VAria para las páginas
         this.divContainer.innerHTML=this.content();
         this.divContainer.classList.remove('hide');
+        this.showAditional();
+    }
+    showAditional(){
+        return false;
     }
 }

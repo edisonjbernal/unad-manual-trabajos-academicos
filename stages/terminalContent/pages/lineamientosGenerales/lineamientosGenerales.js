@@ -9,7 +9,7 @@ class terminalContentClass_lineamientosGenerales extends generalPage{
   }
   content(){
       return `
-      <h2>Lineaminetos generales</h2>
+      <h2>Lineamientos generales</h2>
       <div class="text-general">
         <p>Para la elaboración de los trabajos académicos en la UNAD, se deben tener en cuenta los siguientes aspectos técnicos formales:</p>
       </div>

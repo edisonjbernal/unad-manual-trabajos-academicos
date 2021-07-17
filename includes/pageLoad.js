@@ -45,8 +45,8 @@ class pageLoadClass{
          console.log('*****NUEVA PAGINA :'+pageName);
         this.stageName=stage.stageName;
         this.pageName=pageName;
-        
-        //console.log(this.stageLastPageContainer);
+        /* console.log('this.stageLastPageContainer');
+        console.log(this.stageLastPageContainer); */
         //Nombre para controlar la variable de la clase
          this.pageIdCurrent = `stages_${this.stageName}_${this.pageName}`;
          this.stageContainer=this.setStageContainer('value');

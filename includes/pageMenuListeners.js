@@ -191,5 +191,12 @@ class pageMenuListenersClass{
         let menuTempSelected= this.stageId.getElementsByClassName('navigation')[0].querySelectorAll(`a[href="${page}"]`)[0];
         menuTempSelected.click();
     }
+    unloadMenuToclick(pageName){
+        console.log('unloadMenuToclick');
+        console.log('this.stageId');
+        console.log(this.stageId);
+        let menuTempSelected=this.stageId.getElementsByClassName('navigation')[0].querySelectorAll(`a[href="${pageName}"]`)[0];
+        menuTempSelected.click();
+    }
     
 }
