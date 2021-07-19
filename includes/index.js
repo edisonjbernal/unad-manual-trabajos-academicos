@@ -7,5 +7,4 @@ var activities={
     }
 }
 
-
-stage.get('home');
+stage.get('station2Content');
