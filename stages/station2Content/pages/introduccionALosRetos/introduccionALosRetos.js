@@ -12,6 +12,7 @@ class station2ContentClass_introduccionALosRetos extends generalPage{
       <h2>Introducción a los retos</h2>
       <video class="responsive" src="./images/trabajos-escritos/introduccion.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
+        <button class="btn-general" onclick="stages_station2Content.menu.back()">Atrás</button>
         <button class="btn-general" onclick="stages_station2Content.menu.next()">Siguiente</button>
         <button class="btn-general btn-show-content" onclick="stages_station2Content.menu.showContentInText(this,'none')">Mostar en texto</button>
       </div>

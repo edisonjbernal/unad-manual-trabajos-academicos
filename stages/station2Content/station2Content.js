@@ -46,6 +46,16 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#introduccionALosRetos">Introducción a los retos</a>
             </li>
+            <li>
+              <a href="#trabajosAcademicos">Trabajos Académicos</a>
+            </li>
+            <li>
+              <a href="#resumenResenaEnsayo">Resumen, Reseña y Ensayo</a>
+            </li>
+            <li>
+              <a href="#miniModulos">Mini Módulos</a>
+            </li>
+        
           </ul>
         </nav>
       </div>
