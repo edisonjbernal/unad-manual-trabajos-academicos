@@ -79,6 +79,7 @@ class station2ContentClass extends generalStage{
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
     this.acordeonList= new acordeonListClass;
      stagePage.get('introduccion'); 
+     this.pointsManager= new pointManagerClass;
      
    
   }
@@ -90,7 +91,7 @@ class station2ContentClass extends generalStage{
         'selectTextbox',
         'textChangeCustom'
     ];
-} 
+}
 show(){
   this.divContainer.classList.remove('hide');
 } 
