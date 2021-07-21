@@ -12,8 +12,8 @@ class station2ContentClass_introducccion extends generalPage{
       <h2>Introducción</h2>
       <video class="responsive" src="./images/trabajos-escritos/introduccion.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
-        <button class="btn-general" onclick="stages_station2Content.menu.next()">Siguiente</button>
-        <button class="btn-general btn-show-content" onclick="stages_station2Content.menu.showContentInText(this,'none')">Mostar en texto</button>
+        <button class="btn-general btn-next" onclick="stage.activity('menu_next')">Siguiente</button>
+        <button class="btn-general btn-show-content" onclick="stage.activity('menu_showContentInText_none',this)">Mostar en texto</button>
       </div>
       <div class="text-show-content">
         <h3>Transcripción del video</h3>
