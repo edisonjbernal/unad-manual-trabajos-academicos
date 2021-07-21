@@ -10,7 +10,6 @@ class station2ContentClass_reto1_organizarOraciones extends generalPage{
   content(){
       return `
       <div id="timer_station2ContentClass_reto1_organizarOraciones"></div>
-      <button onclick="stagePage.activity()">Oraciones</button>
       <div class="header-h2"><h2>Emparejamiento</h2></div>
       <div class="text-general list-move-option">
           <p><strong>Tipo de pregunta: Emparejamiento (definiciones se mueven hacia arriba o hacia abajo)</strong></p>
@@ -109,9 +108,9 @@ class station2ContentClass_reto1_organizarOraciones extends generalPage{
   }
   hide(){
     //VAria para las páginas
-
     this.divContainer.classList.add('hide');
     this.listMoveOptions.timer.disable();
+    stages_station2Content.pointsManager.add('station2ContentClass_reto1_organizarOraciones',this.listMoveOptions.pointsActivityCalculate.totalPoints);
   }
   importCssFiles(){
     return [
@@ -123,8 +122,8 @@ class station2ContentClass_reto1_organizarOraciones extends generalPage{
   importJSFiles(){
     this.listMoveOptions = new listMoveOptionsClass();
     this.listMoveOptions.setTimer('timer_station2ContentClass_reto1_organizarOraciones');
+    this.listMoveOptions.setPoints(4);
     this.listMoveOptions.timer.enable();
-    //this.temporizador.activar();
   }
   show(){
     //VAria para las páginas
@@ -134,6 +133,3 @@ class station2ContentClass_reto1_organizarOraciones extends generalPage{
   }
 }
 stagePage.pageContainerSet('reto1_organizarOraciones',station2ContentClass_reto1_organizarOraciones);
-
-/* const temporizador_station2ContentClass_reto1_organizarOraciones=new temporizadorClass('temporizador_station2ContentClass_reto1_organizarOraciones');
-temporizador_station2ContentClass_reto1_organizarOraciones.activar(); */

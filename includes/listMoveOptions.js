@@ -1,11 +1,15 @@
 class listMoveOptionsClass{
     constructor(){
-        
+        this.timer='';
+        this.pointsActivityCalculate='';
     }
     setTimer(timer){
         if(timer){
             this.timer= new timerClass(timer);
         }
+    }
+    setPoints(points){
+        this.pointsActivityCalculate=new pointsActivityCalculateClass(points);
     }
     selectOtherElement(element,type){
         let currentContainer='';
@@ -16,7 +20,7 @@ class listMoveOptionsClass{
         otherContainer = element.parentElement.parentElement.parentElement.parentElement.parentElement
         otherContainer = otherContainer.nextElementSibling;
     }
-    else{
+    else if(type=='up'){
         currentContainer=element.nextElementSibling;
         otherContainer = element.parentElement.parentElement.parentElement.parentElement.parentElement
         otherContainer = otherContainer.previousElementSibling;
@@ -53,16 +57,56 @@ class listMoveOptionsClass{
         /* console.log(currentContainer);
         console.log(type);
         console.log(otherContainer); */
-
+        if(this.pointsActivityCalculate){
+            this.pointsCalculate(element);
+            
+        }
         
     }
-    down(element){
+    pointsCalculate(element){
+        let mainContainer= element.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement;
+        let optionsListArray=mainContainer.getElementsByClassName('text-option-to-move');
+        let maxPoints=optionsListArray.length;
+        let sumPoints=0;
+        for (let index = 0; index < optionsListArray.length; index++) {
+            optionsListArray[index];
+            
+            let tr=optionsListArray[index].parentElement.parentElement;
+         
+            let classOfTr= tr.getAttribute('class');
+            if(classOfTr){
+                if(classOfTr.includes('success')){
+                    sumPoints++;
+                }
+            }
+            
+            
+        }
         
-        this.selectOtherElement(element,'down');
+        this.pointsActivityCalculate.calculate(maxPoints,sumPoints);
+    }
+    down(element){
+        if(this.timer){
+            if(this.timer.enabled){
+                this.selectOtherElement(element,'down');
+            } 
+        }
+        else{
+            this.selectOtherElement(element,'down');
+        }
+        
+        
         
     }
     up(element){
         
-        this.selectOtherElement(element,'up');
+        if(this.timer){
+            if(this.timer.enabled){
+                this.selectOtherElement(element,'up');
+            } 
+        }
+        else{
+            this.selectOtherElement(element,'up');
+        }
     }
 }

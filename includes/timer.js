@@ -9,10 +9,10 @@ class timerClass{
         this.timerSound=document.getElementById(`clockSound_${id}`);
         this.minutos=1;
         this.segundos=0;
-        this.status=1;
+        this.enabled=1;
     }
     enable(){
-        if(this.status){
+        if(this.enabled){
             this.timerDiv.classList.add('show');
         }
        //this.timerSound.play();
@@ -44,7 +44,7 @@ class timerClass{
                  
                }
                else{
-                this.status=0;
+                this.enabled=0;
                 this.closeTimmer();
                  /* thisPageOportunities=oportunitiesToAnswer;
                  open_background_msg(mensaje_tiempo_terminado,imagen_mensaje_alerta_actividad_reprobado);
@@ -63,7 +63,5 @@ class timerClass{
     closeTimmer(){
         this.timerDiv.classList.remove('show');
         this.timerSound.pause();
-        
-        console.log('TIMMER:Terminado');
     }
 }

@@ -96,6 +96,7 @@ class station2ContentClass extends generalStage{
         'listMoveOptions',
         'questions',
         'question_CheckboxVerify',
+        'pointsActivityCalculate',
         'selectTextbox',
         'timer',
         'textChangeCustom'
