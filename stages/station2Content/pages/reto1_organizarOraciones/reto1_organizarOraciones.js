@@ -101,8 +101,8 @@ class station2ContentClass_reto1_organizarOraciones extends generalPage{
      
       </div>
       <div class="text-center">
-        <button class="btn-general btn-back" onclick="stages_terminalContent.menu.back()">Atrás</button>
-        <button class="btn-general btn-next" onclick="stages_terminalContent.menu.next()">Siguiente</button>
+        <button class="btn-general btn-back" onclick="stage.activity('menu_back')">Atrás</button>
+        <button class="btn-general btn-next" onclick="stage.activity('menu_next')">Siguiente</button>
       </div>
       `;
   }

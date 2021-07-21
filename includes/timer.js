@@ -7,8 +7,8 @@ class timerClass{
         `;
         this.timerDiv=document.getElementById(`clock_${id}`);
         this.timerSound=document.getElementById(`clockSound_${id}`);
-        this.minutos=1;
-        this.segundos=0;
+        this.minutes=1;
+        this.seconds=0;
         this.enabled=1;
     }
     enable(){
@@ -16,29 +16,29 @@ class timerClass{
             this.timerDiv.classList.add('show');
         }
        //this.timerSound.play();
-            //console.log(this.nombre+" :"+this.segundos);
-           if(this.segundos<10){
-                this.timerDiv.innerHTML=this.minutos+":0"+this.segundos;
+            //console.log(this.nombre+" :"+this.seconds);
+           if(this.seconds<10){
+                this.timerDiv.innerHTML=this.minutes+":0"+this.seconds;
             }
             else{
-                this.timerDiv.innerHTML=this.minutos+":"+this.segundos;
+                this.timerDiv.innerHTML=this.minutes+":"+this.seconds;
             }
     
     
-            if(this.segundos>0){
+            if(this.seconds>0){
                
-                this.segundos--;
+                this.seconds--;
                 var that=this;
-                this.timerSegundos=setTimeout(function(){ 
+                this.timerSeconds=setTimeout(function(){ 
                     that.enable();
                     }, 1000);
              }
              else{
-               if(this.minutos>0){
-                 this.minutos--;
-                 this.segundos=59;
+               if(this.minutes>0){
+                 this.minutes--;
+                 this.seconds=59;
                  var that=this;
-                 this.timerMinutos=setTimeout(function(){
+                 this.timerMinutes=setTimeout(function(){
                      that.enable();
                     }, 1000);
                  
@@ -56,8 +56,8 @@ class timerClass{
             
     }
     disable(){
-        clearTimeout(this.timerSegundos);
-        clearTimeout(this.timerMinutos);
+        clearTimeout(this.timerSeconds);
+        clearTimeout(this.timerMinutes);
         this.closeTimmer();
     }
     closeTimmer(){

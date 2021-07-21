@@ -11,6 +11,15 @@ class pointManagerClass{
                 }
             );
         }
+        else{
+            let index= this.findIndex(name);
+            /* console.log('indexActivity');
+            console.log(index); */
+            this.activities[index]={
+                name:name,
+                points:points
+            };
+        }
     }
     get(name){
         let activity = this.find(name);
@@ -27,6 +36,13 @@ class pointManagerClass{
     find(name){
         let activity = false;
         activity  = this.activities.find(function(activitiesArray){
+            return activitiesArray.name === name;
+        });
+        return activity;
+    }
+    findIndex(name){
+        let activity = false;
+        activity  = this.activities.findIndex(function(activitiesArray){
             return activitiesArray.name === name;
         });
         return activity;

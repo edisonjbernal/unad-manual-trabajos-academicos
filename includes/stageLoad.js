@@ -1,6 +1,12 @@
 class stageLoadClass{
+    constructor(){
+        this.stageLoadActivities= new stageLoadActivitiesClass;
+    }
     currentStageName(){
         return this.stageName;
+    }
+    activity(name,element = ''){
+        this.stageLoadActivities.load(this.stageId,name,element);
     }
      get(stageName){
         this.stageName=stageName;
@@ -29,6 +35,7 @@ class stageLoadClass{
               importJS.addFile([this.stageRoute]);
           }
      }
+
 }
 
 const stage = new stageLoadClass;

@@ -6,7 +6,8 @@ class pointsActivityCalculateClass{
     calculate(maxPoints,sumPoints){
         this.totalPoints= 1/maxPoints;
         this.totalPoints=this.totalPoints*sumPoints;
-        this.totalPoints=this.totalPoints*this.pointsActivity;
+        this.totalPoints=parseInt(this.totalPoints*this.pointsActivity);
+        
         return this.totalPoints;
     }
 }
