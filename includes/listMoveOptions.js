@@ -1,6 +1,11 @@
 class listMoveOptionsClass{
     constructor(){
-        /* console.log('listMoveOptionsActivated'); */
+        
+    }
+    setTimer(timer){
+        if(timer){
+            this.timer= new timerClass(timer);
+        }
     }
     selectOtherElement(element,type){
         let currentContainer='';

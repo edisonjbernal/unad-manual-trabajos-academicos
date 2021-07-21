@@ -2,6 +2,11 @@ class pageLoadClass{
     constructor(){
         this.stagePageContainer=[];
         this.stageLastPageContainer=[];
+        this.activities=new pageLoadActivitiesClass;
+    }
+    activity(name,element = ''){
+        let pageObject=this.pageContainerGet(this.pageIdCurrent);
+        this.activities.load(pageObject,name,element);
     }
     pageContainerGet(pageId){
         let values = false;

@@ -97,7 +97,7 @@ class station2ContentClass extends generalStage{
         'questions',
         'question_CheckboxVerify',
         'selectTextbox',
-        'temporizador',
+        'timer',
         'textChangeCustom'
     ];
 }
