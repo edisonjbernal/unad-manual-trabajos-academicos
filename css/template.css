@@ -70,6 +70,9 @@ button.btn-submit{
 .stageMaster > div.hide{
     display: none !important;
 }
+.stageMaster  .stage_general.hide{
+    display: none !important;
+}
 .text-center{
     text-align: center;
 }

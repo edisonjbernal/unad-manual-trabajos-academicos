@@ -55,7 +55,14 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#miniModulos">Mini Módulos</a>
             </li>
-        
+            <li><strong>Reto 1</strong></li>
+            <li>
+              <a href="#reto1_video">Video 1</a>
+            </li>
+            <li>
+              <a href="#reto1_organizarOraciones">Organizar oraciones</a>
+            </li>
+            
           </ul>
         </nav>
       </div>
@@ -78,8 +85,9 @@ class station2ContentClass extends generalStage{
   importJSFiles(){
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
     this.acordeonList= new acordeonListClass;
-     stagePage.get('introduccion'); 
-     this.pointsManager= new pointManagerClass;
+    this.pointsManager= new pointManagerClass;
+    stagePage.get('introduccion'); 
+     
      
    
   }
@@ -89,6 +97,7 @@ class station2ContentClass extends generalStage{
         'questions',
         'question_CheckboxVerify',
         'selectTextbox',
+        'temporizador',
         'textChangeCustom'
     ];
 }
