@@ -18,6 +18,9 @@ class stageLoadActivitiesClass{
             case 'menu_showContentInText_none':
                 window[stage].menu.showContentInText(element,'none');
                 break;
+            case 'acordeonList_show':
+                window[stage].acordeonList.show(element);
+                break;
         
             default:
                 break;

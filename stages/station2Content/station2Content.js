@@ -39,7 +39,6 @@ class station2ContentClass extends generalStage{
         <nav>
         
           <ul>
-            <li><strong>Aspectos generales</strong></li>
             <li>
               <a href="#introduccion" class="active">Introducción</a>
             </li>
@@ -52,9 +51,6 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#resumenResenaEnsayo">Resumen, Reseña y Ensayo</a>
             </li>
-            <li>
-              <a href="#miniModulos">Mini Módulos</a>
-            </li>
             <li><strong>Reto 1</strong></li>
             <li>
               <a href="#reto1_video">Video 1</a>
@@ -62,6 +58,17 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#reto1_organizarOraciones">Organizar oraciones</a>
             </li>
+            <li><strong><hr/></strong></li>
+            <li>
+              <a href="#miniModulos">Mini Módulos</a>
+            </li>
+            <li>
+              <a href="#resumen">Resumen</a>
+            </li>
+            <li>
+              <a href="#recomendacionesParaResumir">Recomendaciones para resumir</a>
+            </li>
+            
             
           </ul>
         </nav>

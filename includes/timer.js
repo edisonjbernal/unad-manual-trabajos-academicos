@@ -7,15 +7,15 @@ class timerClass{
         `;
         this.timerDiv=document.getElementById(`clock_${id}`);
         this.timerSound=document.getElementById(`clockSound_${id}`);
-        this.minutes=1;
-        this.seconds=0;
+        this.minutes=0;
+        this.seconds=20;
         this.enabled=1;
     }
     enable(){
         if(this.enabled){
             this.timerDiv.classList.add('show');
         }
-       //this.timerSound.play();
+       this.timerSound.play();
             //console.log(this.nombre+" :"+this.seconds);
            if(this.seconds<10){
                 this.timerDiv.innerHTML=this.minutes+":0"+this.seconds;
