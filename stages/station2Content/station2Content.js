@@ -75,6 +75,16 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#reto2_emparejar">Emparejar</a>
             </li>
+            <li>
+              <a href="#reto2_listaDesplegable">Lista desplegable</a>
+            </li>
+            <li>
+              <a href="#reto2_seleccionMultiple">Selección múltiple</a>
+            </li>
+            <li>
+              <a href="#reto2_seleccionMultiplePregunta4">Selección múltiple 2</a>
+            </li>
+            
             
             
           </ul>
@@ -108,6 +118,8 @@ class station2ContentClass extends generalStage{
   importJSGlobalFiles(){
     return [
         'listMoveOptions',
+        'listSelectOptions',
+        'multipleSelectionCheckbox',
         'questions',
         'question_CheckboxVerify',
         'pointsActivityCalculate',

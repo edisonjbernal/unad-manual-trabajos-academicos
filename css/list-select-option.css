@@ -1,0 +1,48 @@
+.list-select-option tr td{
+    padding: 10px;
+    margin: 10px;
+    transition: 1s;
+    border:3px solid #666;
+}
+.list-select-option tr.success td{
+    border:3px solid green;
+}
+
+.list-select-option tr.danger td{
+    border:3px solid red;
+}
+
+.list-select-option  tr.success td:first-child:after,
+.list-select-option  tr.danger td:first-child::after{
+    content: "Correcto";
+    display: block;
+    padding: 5px;
+    margin: 20px 0;
+    background-color: green;
+    color: #fff;
+}
+.list-select-option  tr.danger td:first-child::after{
+    background-color: red;
+    content: "Incorrecto";
+}
+
+.list-select-option tr td:first-child{
+    width: 20%;
+    text-align: center;
+
+}
+
+.list-select-option .drag-and-drop-element .text-option-to-move{
+    font-weight: bold;
+}
+
+.list-select-option button.btn-move-option{
+    background-color: rgb(235, 235, 235);
+    color: rgb(41, 41, 41);
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+    display: block;
+    width: 100%;
+    font-size: .9rem;
+    margin: 20px 0;
+}

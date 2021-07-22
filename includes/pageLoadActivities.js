@@ -11,7 +11,12 @@ class pageLoadActivitiesClass{
             case 'listMoveOptions_down':
                 pageObject.listMoveOptions.down(element);
                 break;
-        
+            case 'listSelectOptions':
+                pageObject.listSelectOptions.onChange(element);
+                break;
+            case 'multiple-selection-checkbox':
+                pageObject.multipleSelectionCheckbox.checkAnswers(element);
+                break;
             default:
                 break;
         }

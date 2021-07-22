@@ -1,0 +1,40 @@
+.multiple-selection-checkbox{
+
+}
+.multiple-selection-checkbox ul.ul-selection li{
+    list-style: none;
+}
+
+.multiple-selection-checkbox ul.ul-selection li label{
+    padding: 10px;
+    display: block;
+}
+.multiple-selection-checkbox ul.ul-selection li label:hover{
+    background-color: cadetblue;
+    
+    cursor: pointer;
+}
+
+.multiple-selection-checkbox ul.ul-selection li label.success,
+.multiple-selection-checkbox ul.ul-selection li label.danger{
+    border: 2px solid green;  
+}
+
+.multiple-selection-checkbox ul.ul-selection li label.danger{
+    border: 2px solid red;
+}
+
+.multiple-selection-checkbox ul.ul-selection li label.success::after,
+.multiple-selection-checkbox ul.ul-selection li label.danger::after{
+    content: "Correcto";
+    display: inline-block;
+    padding: 5px;
+    margin: 20px 0;
+    background-color: green;
+    color: #fff;
+}
+
+.multiple-selection-checkbox ul.ul-selection li label.danger::after{
+    background-color: red;
+    content: "Incorrecto";
+}
