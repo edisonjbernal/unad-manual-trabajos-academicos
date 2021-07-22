@@ -13,7 +13,7 @@ class alertMessageClass{
           <div class="text-center"><img class="alert-image" class src="./images/${type}.png" /></div>
           <p>${text}</p>
           <div class="text-center">
-              <button id="button-alert-message" class="btn-general btn-submit" onclick="alertMessaje.hide()">Ok</button>
+              <button id="button-alert-message" class="btn-general btn-submit" onclick="alertMessaje.hide()">Aceptar</button>
           </div>
         </div>
       `;

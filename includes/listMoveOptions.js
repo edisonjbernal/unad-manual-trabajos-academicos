@@ -2,6 +2,7 @@ class listMoveOptionsClass{
     constructor(){
         this.timer='';
         this.pointsActivityCalculate='';
+        this.messageCorrectAnswer='¡Lo lograste!'
     }
     setTimer(timer){
         if(timer){
@@ -83,7 +84,14 @@ class listMoveOptionsClass{
             
         }
         
-        this.pointsActivityCalculate.calculate(maxPoints,sumPoints);
+        let totalPoints=this.pointsActivityCalculate.calculate(maxPoints,sumPoints);
+        let pointsActivity = this.pointsActivityCalculate.pointsActivity;
+
+        if(totalPoints==pointsActivity){
+            this.timer.disable();
+            this.timer.enabled=0;
+            alertMessaje.show('success',this.messageCorrectAnswer);
+        }
     }
     down(element){
         if(this.timer){

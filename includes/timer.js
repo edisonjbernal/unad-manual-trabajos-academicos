@@ -10,11 +10,12 @@ class timerClass{
         this.minutes=0;
         this.seconds=20;
         this.enabled=1;
+        this.messageTimeOut='El tiempo ha terminado';
     }
     enable(){
         if(this.enabled){
             this.timerDiv.classList.add('show');
-        }
+        
        this.timerSound.play();
             //console.log(this.nombre+" :"+this.seconds);
            if(this.seconds<10){
@@ -46,13 +47,14 @@ class timerClass{
                else{
                 this.enabled=0;
                 this.closeTimmer();
+                alertMessaje.show('danger',this.messageTimeOut);
                  /* thisPageOportunities=oportunitiesToAnswer;
                  open_background_msg(mensaje_tiempo_terminado,imagen_mensaje_alerta_actividad_reprobado);
                   */
          
                }
             }
-    
+        }
             
     }
     disable(){
