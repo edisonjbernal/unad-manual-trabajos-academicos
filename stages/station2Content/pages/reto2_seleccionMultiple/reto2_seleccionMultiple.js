@@ -12,7 +12,7 @@ class station2ContentClass_reto2_seleccionMultiple extends generalPage{
       <div id="timer_station2ContentClass_reto2_seleccionMultiple"></div>
       <div class="header-h2"><h2>Selección múltiple</h2></div>
       <div class="text-general multiple-selection-checkbox">
-          <p><strong>Tipo de pregunta:</strong> Selecciona la respuesta correcta a partir de una lista desplegable.</p>
+          <p><strong>Tipo de pregunta:</strong> Selección múltiple (más de una respuesta correcta) </p>
           <p><strong>Tiempo para resolver la pregunta:</strong> 70 segundos</p>
           <p><strong>Puntos a obtener:</strong> 2</p>
           <p>¿Cuáles son las características de un resumen descriptivo? Más de una opción es correcta. Escoge aquellas que mejor definen este tipo de resumen:</p>

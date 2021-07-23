@@ -12,7 +12,7 @@ class station2ContentClass_reto2_seleccionMultiplePregunta4 extends generalPage{
       <div id="timer_station2ContentClass_reto2_seleccionMultiplePregunta4"></div>
       <div class="header-h2"><h2>Selección múltiple</h2></div>
       <div class="text-general multiple-selection-checkbox">
-          <p><strong>Tipo de pregunta:</strong> Selecciona la respuesta correcta a partir de una lista desplegable.</p>
+          <p><strong>Tipo de pregunta:</strong> Selección múltiple (más de una respuesta correcta) </p>
           <p><strong>Tiempo para resolver la pregunta:</strong> 70 segundos</p>
           <p><strong>Puntos a obtener:</strong> 2</p>
           <p>¿Cuáles son las características de un resumen tipo síntesis? Más de una opción es correcta. Escoge aquellas que mejor definen este tipo de resumen:</p>
@@ -93,12 +93,12 @@ class station2ContentClass_reto2_seleccionMultiplePregunta4 extends generalPage{
     this.multipleSelectionCheckbox.timer.seconds=10;
     this.multipleSelectionCheckbox.timer.messageTimeOut=`<strong>El tiempo ha finalizado</strong>
     <br/>
-    Las respuestas correctas eran:
+    Las respuestas relacionadas son:
     <ul>
-      <li>Resumen descriptivo: a, c, e, h</li>
-      <li>Abstract: b, g</li>    
-      <li>Resumen informativo: d</li>     
-      <li>Síntesis: f </li>
+      <li>Síntesis: a, e </li>
+      <li>Resumen descriptivo: c </li>    
+      <li>Abstract: b, d </li>     
+      <li>Resumen informativo: f</li>
     </ul>`;
     this.multipleSelectionCheckbox.timer.enable(); 
   }
