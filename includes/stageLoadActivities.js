@@ -21,6 +21,10 @@ class stageLoadActivitiesClass{
             case 'acordeonList_show':
                 window[stage].acordeonList.show(element);
                 break;
+            case 'popUpToDiscover_showHideCombined':
+                window[stage].popUpToDiscover.showHideCombined(element);
+                break;
+                
         
             default:
                 break;

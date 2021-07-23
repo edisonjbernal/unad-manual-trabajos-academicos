@@ -84,6 +84,9 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#reto2_seleccionMultiplePregunta4">Selección múltiple 2</a>
             </li>
+            <li>
+              <a href="#resena">Reseña</a>
+            </li>
             
             
             
@@ -110,6 +113,7 @@ class station2ContentClass extends generalStage{
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
     this.acordeonList= new acordeonListClass;
     this.pointsManager= new pointManagerClass;
+    this.popUpToDiscover= new popUpToDiscoverClass;
     stagePage.get('introduccion'); 
      
      

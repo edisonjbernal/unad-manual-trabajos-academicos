@@ -17,6 +17,9 @@ class pageLoadActivitiesClass{
             case 'multiple-selection-checkbox':
                 pageObject.multipleSelectionCheckbox.checkAnswers(element);
                 break;
+            
+
+                
             default:
                 break;
         }
