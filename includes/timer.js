@@ -14,6 +14,7 @@ class timerClass{
     }
     enable(){
         if(this.enabled){
+            document.getElementById('map-circle-button').classList.add('hide');
             this.timerDiv.classList.add('show');
         
        this.timerSound.play();
@@ -65,5 +66,6 @@ class timerClass{
     closeTimmer(){
         this.timerDiv.classList.remove('show');
         this.timerSound.pause();
+        document.getElementById('map-circle-button').classList.remove('hide');
     }
 }

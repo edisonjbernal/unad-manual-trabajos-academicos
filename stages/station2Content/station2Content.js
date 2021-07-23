@@ -87,6 +87,10 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#resena">Reseña</a>
             </li>
+            <li><strong>Reto 3</strong></li>
+            <li>
+              <a href="#reto3_video">Video 3</a>
+            </li>
             
             
             

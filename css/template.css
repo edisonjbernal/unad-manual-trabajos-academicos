@@ -124,6 +124,9 @@ video.principal {
     border:2px solid #000;
     font-weight: bold;
 }
+.map-circle-button.hide{
+    right: -1000px;
+}
 
 ul,ol{
     padding: 20px;
