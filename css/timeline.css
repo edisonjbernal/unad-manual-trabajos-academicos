@@ -1,0 +1,103 @@
+@keyframes circleMove {
+    from {
+      opacity:1;
+      padding: 15px;
+    }
+  
+    to {
+        padding: 10px;
+        opacity: .5;
+    }
+  }
+.timeline{
+    background-color: rgb(98, 98, 160);
+    padding: 10px 0;
+}
+.sigle-time-container{
+    display: flex;
+}
+.timeline .start{
+    background-color: rgb(245, 245, 245);
+    margin: 20px;
+    padding: 20px;
+}
+.timeline .start h3{
+    color: #6262a0;
+}
+
+.timeline .finish{
+    background-color: rgb(245, 245, 245);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.timeline .finish .btn-finish-timeline{
+    background-color: #d23b19;
+    color: #fff;
+}
+.sigle-time-container h3{
+    padding: 20px;
+    border-bottom: 3px solid #6262a0;
+    color: #6262a0;
+}
+
+.timeline p{
+    padding: 10px 0;
+}
+.sigle-time-container .box-left{
+    background-color: rgb(245, 245, 245);
+    width: 10%;
+}
+.sigle-time-container .box-right{
+    background-color: rgb(245, 245, 245);
+    width: 80%;
+    padding: 20px;
+}
+.sigle-time-container .line-timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    
+}
+.sigle-time-container .line-timeline button{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: chartreuse;
+    cursor: pointer;
+    padding: 15px;
+    animation-duration: 1s;
+    animation-name: circleMove;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+.sigle-time-container .line-timeline button::before{
+    content: url('../images/hand-down.png');
+    display: block;
+    position: absolute;
+    top: -50px;
+    text-align: center;
+    left: -10px;
+}
+.sigle-time-container .line-timeline button:hover,
+.sigle-time-container .line-timeline button:focus,
+.sigle-time-container .line-timeline button.static{
+    animation-name: none;
+    border: 4px solid #fff;
+    
+    transition: .5s;
+}
+
+.sigle-time-container:nth-child(3) .line-timeline button{
+    background-color: chocolate;
+}
+
+.sigle-time-container:nth-child(4) .line-timeline button{
+    background-color: rgb(98, 238, 226);
+}
+
+.sigle-time-container:nth-child(5) .line-timeline button{
+    background-color: rgb(246, 85, 134);
+}
+ 

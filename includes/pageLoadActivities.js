@@ -14,8 +14,17 @@ class pageLoadActivitiesClass{
             case 'listSelectOptions':
                 pageObject.listSelectOptions.onChange(element);
                 break;
+            case 'listSelectOptionsForText':
+                pageObject.listSelectOptionsForText.onChange(element);
+                break;
             case 'multiple-selection-checkbox':
                 pageObject.multipleSelectionCheckbox.checkAnswers(element);
+                break;
+            case 'popUpToDiscoverTimeline_show':
+                pageObject.popUpToDiscoverTimeline.show(element,'none');
+                break;
+            case 'popUpToDiscoverTimeline_hide':
+                pageObject.popUpToDiscoverTimeline.hide(element);
                 break;
             
 

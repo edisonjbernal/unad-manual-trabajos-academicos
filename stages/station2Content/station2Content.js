@@ -91,6 +91,19 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#reto3_video">Video 3</a>
             </li>
+            <li>
+              <a href="#reto3_completarTexto">Completar texto</a>
+            </li>
+            <li>
+              <a href="#reto3_completarTexto_2">Completar texto 2</a>
+            </li>
+            <li>
+              <a href="#reto3_completarTexto_3">Completar texto 3</a>
+            </li>
+            <li>
+              <a href="#tiposDeResenas">Tipos de Reseñas</a>
+            </li>
+            
             
             
             
@@ -127,9 +140,11 @@ class station2ContentClass extends generalStage{
     return [
         'listMoveOptions',
         'listSelectOptions',
+        'listSelectOptionsForText',
         'multipleSelectionCheckbox',
         'questions',
         'question_CheckboxVerify',
+        'popUpToDiscoverTimeline',
         'pointsActivityCalculate',
         'selectTextbox',
         'timer',
