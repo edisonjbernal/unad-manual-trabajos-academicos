@@ -101,8 +101,12 @@ class station2ContentClass extends generalStage{
               <a href="#reto3_completarTexto_3">Completar texto 3</a>
             </li>
             <li>
-              <a href="#tiposDeResenas">Tipos de Reseñas</a>
+              <a href="#tiposDeResenas">Tipos de reseñas</a>
             </li>
+            <li>
+              <a href="#tiposDeEnsayo">Tipos de ensayo</a>
+            </li>
+            
             
             
             

@@ -20,7 +20,7 @@ class station2ContentClass_tiposDeResenas extends generalPage{
                     <button title="Click here to show" onclick="stagePage.activity('popUpToDiscoverTimeline_show',this);"></button>
                 </div>
                 <div class="box-right">
-                    <h3>HISTÓRICA</h3>
+                    <h3>Histórica</h3>
                     <div class="popUpToDiscover">
                         <div class="text-popUpToDiscover">
                         <div class="close-button-container"><button onclick="stagePage.activity('popUpToDiscoverTimeline_hide',this);">X</button></div>
@@ -37,7 +37,7 @@ class station2ContentClass_tiposDeResenas extends generalPage{
                 </div>
                 <div class="box-right">
                     
-                    <h3>LITERARIA</h3>
+                    <h3>Literaria</h3>
                     <div class="popUpToDiscover">
                         <div class="text-popUpToDiscover">
                         <div class="close-button-container"><button onclick="stagePage.activity('popUpToDiscoverTimeline_hide',this);">X</button></div>
@@ -64,7 +64,7 @@ class station2ContentClass_tiposDeResenas extends generalPage{
                 </div>
                 <div class="box-right">
                     
-                    <h3>CRÍTICA</h3>
+                    <h3>Crítica</h3>
                     <div class="popUpToDiscover">
                         <div class="text-popUpToDiscover">
                         <div class="close-button-container"><button onclick="stagePage.activity('popUpToDiscoverTimeline_hide',this);">X</button></div>
