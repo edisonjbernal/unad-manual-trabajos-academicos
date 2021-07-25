@@ -2,48 +2,51 @@ class pointManagerClass{
     constructor(){
         this.activities=[];
     }
-    add(name,points){
-        if(!this.find(name)){
+    add(id,points,name){
+        if(!this.find(id)){
             this.activities.push(
                 {
-                    name:name,
-                    points:points
+                    id:id,
+                    points:points,
+                    name:name
                 }
             );
         }
         else{
-            let index= this.findIndex(name);
+            let index= this.findIndex(id);
             /* console.log('indexActivity');
             console.log(index); */
             this.activities[index]={
-                name:name,
-                points:points
+                id:id,
+                points:points,
+                name:name
             };
         }
     }
-    get(name){
-        let activity = this.find(name);
+    get(id){
+        let activity = this.find(id);
 
         if(!activity){
             activity={
-                name:'noActivity',
-                points:0
+                id:'noId',
+                points:0,
+                name:'noNameActivity'
             };
         }
 
         return activity;
     }
-    find(name){
+    find(id){
         let activity = false;
         activity  = this.activities.find(function(activitiesArray){
-            return activitiesArray.name === name;
+            return activitiesArray.id === id;
         });
         return activity;
     }
-    findIndex(name){
+    findIndex(id){
         let activity = false;
         activity  = this.activities.findIndex(function(activitiesArray){
-            return activitiesArray.name === name;
+            return activitiesArray.id === id;
         });
         return activity;
     }

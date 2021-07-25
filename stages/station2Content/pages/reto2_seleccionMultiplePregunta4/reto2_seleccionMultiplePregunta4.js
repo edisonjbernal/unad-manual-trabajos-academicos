@@ -10,7 +10,7 @@ class station2ContentClass_reto2_seleccionMultiplePregunta4 extends generalPage{
   content(){
       return `
       <div id="timer_station2ContentClass_reto2_seleccionMultiplePregunta4"></div>
-      <div class="header-h2"><h2>Selección múltiple</h2></div>
+      <div class="header-h2"><h2>Selección múltiple 2</h2></div>
       <div class="text-general multiple-selection-checkbox">
           <p><strong>Tipo de pregunta:</strong> Selección múltiple (más de una respuesta correcta) </p>
           <p><strong>Tiempo para resolver la pregunta:</strong> 70 segundos</p>
@@ -75,7 +75,7 @@ class station2ContentClass_reto2_seleccionMultiplePregunta4 extends generalPage{
     //VAria para las páginas
     this.divContainer.classList.add('hide');
     this.multipleSelectionCheckbox.timer.disable();
-    stages_station2Content.pointsManager.add('station2ContentClass_reto2_seleccionMultiplePregunta4',this.multipleSelectionCheckbox.pointsActivityCalculate.totalPoints);
+    stages_station2Content.pointsManager.add('station2ContentClass_reto2_seleccionMultiplePregunta4',this.multipleSelectionCheckbox.pointsActivityCalculate.totalPoints,'e. Reto 2 - Selección múltiple 2');
   }
   importCssFiles(){
     return [

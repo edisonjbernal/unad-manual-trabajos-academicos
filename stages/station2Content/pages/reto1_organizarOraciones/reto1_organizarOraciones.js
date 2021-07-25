@@ -110,7 +110,7 @@ class station2ContentClass_reto1_organizarOraciones extends generalPage{
     //VAria para las páginas
     this.divContainer.classList.add('hide');
     this.listMoveOptions.timer.disable();
-    stages_station2Content.pointsManager.add('station2ContentClass_reto1_organizarOraciones',this.listMoveOptions.pointsActivityCalculate.totalPoints);
+    stages_station2Content.pointsManager.add('station2ContentClass_reto1_organizarOraciones',this.listMoveOptions.pointsActivityCalculate.totalPoints,'a. Reto 1 - Organizar oraciones');
   }
   importCssFiles(){
     return [

@@ -91,7 +91,7 @@ class station2ContentClass_reto2_listaDesplegable extends generalPage{
     //VAria para las páginas
     this.divContainer.classList.add('hide');
     this.listSelectOptions.timer.disable();
-    stages_station2Content.pointsManager.add('station2ContentClass_reto2_listaDesplegable',this.listSelectOptions.pointsActivityCalculate.totalPoints);
+    stages_station2Content.pointsManager.add('station2ContentClass_reto2_listaDesplegable',this.listSelectOptions.pointsActivityCalculate.totalPoints,'c. Reto 2 - Lista desplegable');
   }
   importCssFiles(){
     return [

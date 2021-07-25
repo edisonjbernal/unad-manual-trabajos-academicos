@@ -1,0 +1,72 @@
+.stage-page-points .final-points-container{
+    background-color: rgb(254 144 2);
+    padding: 20px 0;
+    background-image: url('../images/trabajos-escritos/finalPuntajes.png');
+    background-repeat: no-repeat;
+}
+
+.stage-page-points .final-points-container-points{
+    background-color: var(--main-button-background);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-weight: bold;
+    -webkit-box-shadow: -34px 28px 33px 10px rgba(0,0,0,0.44);
+    -moz-box-shadow: -34px 28px 33px 10px rgba(0,0,0,0.44);
+    box-shadow: -34px 28px 33px 10px rgba(0,0,0,0.44);
+
+}
+
+.stage-page-points .final-points-container-message,
+.stage-page-points .table-points{
+    background-color: rgba(255, 255, 255, 0.93);
+    color: rgb(32, 32, 32);
+    padding: 20px;
+    margin: 40px 20px 20px 20px;
+    -webkit-box-shadow: -34px 28px 33px 10px rgba(0,0,0,0.44);
+    -moz-box-shadow: -34px 28px 33px 10px rgba(0,0,0,0.44);
+    box-shadow: -34px 28px 33px 10px rgba(0,0,0,0.44);
+}
+
+.stage-page-points .table-points{
+    background-color: transparent;
+    color: white;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.stage-page-points .final-points-container-message h3{
+    padding: 20px 0;
+}
+
+.stage-page-points .table-points{
+    margin: 0 auto;
+}
+
+
+.stage-page-points .table-points td{
+    padding: 15px;
+    border-bottom:2px rgb(185, 185, 185) solid;
+    text-align: center;
+}
+
+.stage-page-points .table-points td:first-child{
+    text-align: left;
+}
+
+.stage-page-points .btn-final-points{
+    background-color: var(--main-button-background);
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}

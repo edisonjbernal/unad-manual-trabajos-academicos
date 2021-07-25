@@ -88,7 +88,7 @@ class station2ContentClass_reto2_seleccionMultiple extends generalPage{
     //VAria para las páginas
     this.divContainer.classList.add('hide');
     this.multipleSelectionCheckbox.timer.disable();
-    stages_station2Content.pointsManager.add('station2ContentClass_reto2_seleccionMultiple',this.multipleSelectionCheckbox.pointsActivityCalculate.totalPoints);
+    stages_station2Content.pointsManager.add('station2ContentClass_reto2_seleccionMultiple',this.multipleSelectionCheckbox.pointsActivityCalculate.totalPoints,'d. Reto 2 - Selección múltiple');
   }
   importCssFiles(){
     return [

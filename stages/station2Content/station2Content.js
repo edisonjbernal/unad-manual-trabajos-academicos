@@ -122,13 +122,15 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#reto4_emparejar">Emparejar</a>
             </li>
-            
-            
-            
-            
-            
-            
-            
+            <li>
+              <a href="#reto4_seleccionMultiple">Selección múltiple</a>
+            </li>
+            <li>
+              <a href="#resultados">Resultados</a>
+            </li>
+            <li>
+              <a href="#puntajes">Puntajes</a>
+            </li>
             
           </ul>
         </nav>
