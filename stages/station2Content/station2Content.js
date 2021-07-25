@@ -112,9 +112,17 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#caracteristicasBuenEnsayo">Características de un buen ensayo</a>
             </li>
+            <li><strong>Reto 4</strong></li>
             <li>
               <a href="#reto4_video">Video 4</a>
             </li>
+            <li>
+              <a href="#reto4_completarTabla">Completar tabla</a>
+            </li>
+            <li>
+              <a href="#reto4_emparejar">Emparejar</a>
+            </li>
+            
             
             
             

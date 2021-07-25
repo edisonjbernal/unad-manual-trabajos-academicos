@@ -39,3 +39,32 @@
 
 
 
+.list-select-for-text .table-row-title,
+.list-select-for-text .table-row-content{
+    padding: 10px;
+    background-color: white;
+}
+.list-select-for-text .table-row-title{
+    background-color:rgb(173, 82, 82) ;
+    color: white;
+    text-align: center;
+    border: 3px solid rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+@media (min-width: 1200px) {
+    .list-select-for-text .table-list-select-for-text{
+        background-color: rgb(173, 82, 82);
+        padding: 20px 5px;
+        display: flex;
+    }
+    .list-select-for-text .table-row{
+        margin: 0 10px;
+    }
+
+    
+    
+}
+
+

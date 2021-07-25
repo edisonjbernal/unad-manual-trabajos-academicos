@@ -2,7 +2,8 @@ class listSelectOptionsForTextClass{
     constructor(){
         this.timer='';
         this.pointsActivityCalculate='';
-        this.messageCorrectAnswer='¡Lo lograste!'
+        this.messageCorrectAnswer='¡Lo lograste!';
+        this.tableMode=false;
     }
     setTimer(timer){
         if(timer){
@@ -51,6 +52,9 @@ class listSelectOptionsForTextClass{
 
         if(this.pointsActivityCalculate){
             let mainContainer = answerContainer.parentElement.parentElement;
+            if(this.tableMode){
+                mainContainer = answerContainer.parentElement.parentElement.parentElement.parentElement;
+            }
             this.pointsCalculate(mainContainer);
             
         }
