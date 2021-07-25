@@ -106,6 +106,14 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#tiposDeEnsayo">Tipos de ensayo</a>
             </li>
+            <li>
+              <a href="#partesDeUnEnsayo">Partes de un ensayo</a>
+            </li>
+            <li>
+              <a href="#caracteristicasBuenEnsayo">Características de un buen ensayo</a>
+            </li>
+            
+            
             
             
             

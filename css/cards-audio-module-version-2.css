@@ -1,0 +1,40 @@
+.cards-audio-module{
+    background-color: rgb(36, 172, 99);
+   
+}
+
+.cards-audio-module .start h3{
+    color: #2a7b34;
+}
+
+.card-audio h3{
+    color: #2a7b34;
+    border-bottom: 2px dotted;
+}
+.card-audio{
+    background-color: #fff;
+
+    
+ 
+    animation-name: none;
+    -webkit-transition: .5s linear;
+  transition: .5s linear;
+  -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.card-audio:hover,
+.card-audio:focus{
+    -webkit-box-shadow: -34px 28px 33px 10px rgba(0,0,0,0.44);
+    -moz-box-shadow: -34px 28px 33px 10px rgba(0,0,0,0.44);
+    box-shadow: -34px 28px 33px 10px rgba(0,0,0,0.44);
+        
+}
+
+@media (min-width: 1000px) {
+    .cards-audio-container{
+        display: flex;
+    }   
+}

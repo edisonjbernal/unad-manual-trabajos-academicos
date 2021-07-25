@@ -1,4 +1,4 @@
-class station2ContentClass_resena extends generalPage{
+class station2ContentClass_tiposDeEnsayo extends generalPage{
     constructor(pageName){
         super(pageName);
     }
@@ -103,4 +103,4 @@ class station2ContentClass_resena extends generalPage{
 }        
 }
 
-stagePage.pageContainerSet('resena',station2ContentClass_resena);
+stagePage.pageContainerSet('tiposDeEnsayo',station2ContentClass_tiposDeEnsayo);
