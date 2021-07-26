@@ -16,7 +16,7 @@ class preImportCssClass{
         if(!document.getElementById(cssId)){
             let linkCss = document.createElement('link');
             linkCss.id = cssId;
-            linkCss.href = cssHref;
+            linkCss.href = cssHref+'?version='+configuration.version;
             linkCss.rel="stylesheet";
     
             if(cssMedia){
