@@ -7,5 +7,5 @@ const configuration =  {
         stage4:"Escenario 4"
     },
     globalURL:".",
-    version:"1.38"
+    version:"1.39"
 }
