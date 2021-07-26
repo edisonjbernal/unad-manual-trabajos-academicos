@@ -1,4 +1,14 @@
 
+@keyframes principal-hand-move {
+    from {
+        padding: 40px 20px 10px 20px ;
+        
+    }
+  
+    to {
+        padding: 10px 20px 40px 20px;
+    }
+  }
 .introduction-select-p-1, .introduction-select-p-2{
     border-top: 1px solid rgb(96, 93, 129);
 }
@@ -23,13 +33,17 @@
     padding: 1rem 4%;
 }
 .stage_home .cursor-hand{
-    background-color: var(--main-font-color);
     color: black;
     padding: 20px;
     width: 100px;
     margin: 20px auto;
     text-align: center;
+    animation-duration: 1s;
+    animation-name: principal-hand-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
 
 @media (min-width: 500px) {
     .stage_home .introduction-select{

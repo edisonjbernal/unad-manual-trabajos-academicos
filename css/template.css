@@ -16,7 +16,7 @@ html.stationMap{
     height: 100vh;
 }
 body{
-    background-image: url("../test/fondoTemporalMundo.png");
+    background-image: url("../images/mapa_estaciones.jpg");
     font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
     font-weight: 300;
