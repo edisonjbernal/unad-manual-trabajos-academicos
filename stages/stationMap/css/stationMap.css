@@ -45,7 +45,7 @@
     width: 100%;
 }
 .station-base{
-    border: 2px solid rgb(116, 116, 116) ;
+   /*  border: 2px solid rgb(116, 116, 116) ; */
     position: absolute;
     z-index: 12;
     transition: 1s;
