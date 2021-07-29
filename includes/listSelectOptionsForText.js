@@ -84,8 +84,10 @@ class listSelectOptionsForTextClass{
         let pointsActivity = this.pointsActivityCalculate.pointsActivity;
 
          if(totalPoints==pointsActivity){
-            this.timer.disable();
-            this.timer.enabled=0;
+            if(this.timer){
+                this.timer.disable();
+                this.timer.enabled=0;
+            }
             alertMessaje.show('success',this.messageCorrectAnswer);
         } 
     }

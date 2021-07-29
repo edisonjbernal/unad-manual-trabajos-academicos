@@ -42,16 +42,42 @@ class station3ContentClass extends generalStage{
             <li>
               <a href="#introduccion" class="active">Introducción</a>
             </li>
+            <li><strong>Reto 1</strong></li>
+            <li>
+              <a href="#reto1_video" >Video</a>
+            </li>
+            <li>
+              <a href="#reto1_completarTexto" >Completar texto</a>
+            </li>
             <li>
               <a href="#explicacion" >Explicación</a>
             </li>
+            <li><strong>Reto 2</strong></li>
+            <li>
+              <a href="#reto2_seleccionMultiple" >Selección múltiple</a>
+            </li>
+            <li>
+              <a href="#reto2_emparejar" >Emparejar</a>
+            </li>
+            
             <li>
               <a href="#tiposDeTrabajosInvestigativos" >Tipos de Trabajos Investigativos</a>
             </li>
+            <li><strong>Reto 3</strong></li>
+            <li>
+              <a href="#reto3_listaDesplegable" >Lista desplegable</a>
+            </li>
+            
             <li>
               <a href="#monografias" >Monografías</a>
             </li>
-            
+            <li><strong>Reto 4</strong></li>
+            <li>
+              <a href="#reto4_completarTexto" >Completar texto</a>
+            </li>
+            <li>
+              <a href="#reto4_emparejar" >Emparejar</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -74,6 +100,7 @@ class station3ContentClass extends generalStage{
   importJSFiles(){
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
     this.acordeonList= new acordeonListClass;
+    this.pointsManager= new pointManagerClass;
     this.popUpToDiscover= new popUpToDiscoverClass;
      stagePage.get('introduccion');  
      
@@ -81,7 +108,7 @@ class station3ContentClass extends generalStage{
    
   }
   importJSGlobalFiles(){
-    /* return [
+     return [
         'listMoveOptions',
         'listSelectOptions',
         'listSelectOptionsForText',
@@ -91,9 +118,8 @@ class station3ContentClass extends generalStage{
         'popUpToDiscoverTimeline',
         'pointsActivityCalculate',
         'selectTextbox',
-        'timer',
         'textChangeCustom'
-    ]; */
+    ];
 }
 show(){
   this.divContainer.classList.remove('hide');

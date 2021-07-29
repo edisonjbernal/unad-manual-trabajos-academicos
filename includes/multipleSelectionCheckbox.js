@@ -2,7 +2,8 @@ class multipleSelectionCheckboxClass{
     constructor(){
         this.timer='';
         this.pointsActivityCalculate='';
-        this.messageCorrectAnswer='¡Lo lograste!'
+        this.messageCorrectAnswer='¡Lo lograste!';
+        this.messageWrongAnswer='Por favor, verifica las respuestas';
     }
     setTimer(timer){
         if(timer){
@@ -73,7 +74,7 @@ class multipleSelectionCheckboxClass{
             alertMessaje.show('danger','No se han seleccionado respuestas');
         }
         else{
-            alertMessaje.show('danger','Por favor, verifica las respuestas');
+            alertMessaje.show('danger',this.messageWrongAnswer);
         }
     }
 }

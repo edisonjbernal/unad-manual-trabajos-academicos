@@ -2,7 +2,8 @@ class listMoveOptionsClass{
     constructor(){
         this.timer='';
         this.pointsActivityCalculate='';
-        this.messageCorrectAnswer='¡Lo lograste!'
+        this.messageCorrectAnswer='¡Lo lograste!';
+        this.onlyOrderSentences=false;
     }
     setTimer(timer){
         if(timer){
@@ -88,8 +89,10 @@ class listMoveOptionsClass{
         let pointsActivity = this.pointsActivityCalculate.pointsActivity;
 
         if(totalPoints==pointsActivity){
-            this.timer.disable();
-            this.timer.enabled=0;
+            if(this.timer){
+                this.timer.disable();
+                this.timer.enabled=0;
+            }
             alertMessaje.show('success',this.messageCorrectAnswer);
         }
     }
