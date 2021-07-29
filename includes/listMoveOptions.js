@@ -5,15 +5,7 @@ class listMoveOptionsClass{
         this.messageCorrectAnswer='¡Lo lograste!';
         this.onlyOrderSentences=false;
     }
-    setTimer(timer){
-        if(timer){
-            this.timer= new timerClass(timer);
-        }
-    }
-    setPoints(points){
-        this.pointsActivityCalculate=new pointsActivityCalculateClass(points);
-    }
-    selectOtherElement(element,type){
+    analize(element,type){
         let currentContainer='';
         let otherContainer = '';
 
@@ -63,6 +55,73 @@ class listMoveOptionsClass{
             this.pointsCalculate(element);
             
         }
+    }
+    analizeOrderSentences(element,type){
+        let currentContainer='';
+        let otherContainer = '';
+        let parentCurrentContainer='';
+        let parentOtherContainer = '';
+
+        if(type=='down'){
+            parentCurrentContainer= element.parentElement.parentElement;
+            parentOtherContainer= parentCurrentContainer.nextElementSibling;
+            currentContainer=element.parentElement.nextElementSibling.getElementsByTagName('p')[0];
+            otherContainer = parentOtherContainer.getElementsByTagName('td')[1].getElementsByTagName('p')[0];
+        }
+        else if(type=='up'){
+            parentCurrentContainer= element.parentElement.parentElement;
+            parentOtherContainer= parentCurrentContainer.previousElementSibling;
+            currentContainer=element.parentElement.nextElementSibling.getElementsByTagName('p')[0];
+            otherContainer = parentOtherContainer.getElementsByTagName('td')[1].getElementsByTagName('p')[0];
+        }
+
+        let currentContainerContent=currentContainer.innerHTML;
+        let otherContainerContent = otherContainer.innerHTML;
+        currentContainer.innerHTML=otherContainerContent;
+        otherContainer.innerHTML=currentContainerContent;
+
+        parentCurrentContainer.classList.remove('success');
+        parentCurrentContainer.classList.remove('danger');
+        parentOtherContainer.classList.remove('success');
+        parentOtherContainer.classList.remove('danger');
+
+        if(otherContainerContent==parentCurrentContainer.getAttribute('data-correct-answer')){
+            parentCurrentContainer.classList.add('success');
+        }
+        else{
+            parentCurrentContainer.classList.add('danger');
+        }
+
+        if(currentContainerContent==parentOtherContainer.getAttribute('data-correct-answer')){
+            parentOtherContainer.classList.add('success');
+        }
+        else{
+            parentOtherContainer.classList.add('danger');
+        }
+
+        if(this.pointsActivityCalculate){
+            this.pointsCalculate(element);
+            
+        }
+   
+    }
+    setTimer(timer){
+        if(timer){
+            this.timer= new timerClass(timer);
+        }
+    }
+    setPoints(points){
+        this.pointsActivityCalculate=new pointsActivityCalculateClass(points);
+    }
+    selectOtherElement(element,type){
+
+        if(this.onlyOrderSentences){
+            this.analizeOrderSentences(element,type);
+        }
+        else{
+           this.analize(element,type);
+        }
+        
         
     }
     pointsCalculate(element){
