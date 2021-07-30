@@ -78,6 +78,9 @@ class station3ContentClass extends generalStage{
             <li>
               <a href="#reto4_emparejar" >Emparejar</a>
             </li>
+            <li>
+              <a href="#puntajes" >Puntajes</a>
+            </li>
           </ul>
         </nav>
       </div>
