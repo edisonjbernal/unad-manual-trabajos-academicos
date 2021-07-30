@@ -45,7 +45,7 @@ class station4ContentClass extends generalStage{
               <li>
                 <a href="#partesDeUnArticulo">Partes de un artículo de investigación</a>
               </li>
-              <li><strong>Reto 1</strong></li>
+              <li><strong>Reto</strong></li>
               <li>
                 <a href="#reto1_video" >Video</a>
               </li>
