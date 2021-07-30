@@ -1,4 +1,4 @@
-class station3ContentClass_puntajes extends generalPage{
+class station4ContentClass_puntajes extends generalPage{
     constructor(pageName){
         super(pageName);
     }
@@ -9,9 +9,9 @@ class station3ContentClass_puntajes extends generalPage{
       ]
   }
   content(){
-    console.log(stages_station3Content.pointsManager.activities);
-    let pointsManager=stages_station3Content.pointsManager;
-    let pointsArray=stages_station3Content.pointsManager.activities;
+    console.log(stages_station4Content.pointsManager.activities);
+    let pointsManager=stages_station4Content.pointsManager;
+    let pointsArray=stages_station4Content.pointsManager.activities;
 
    /* pointsArray.sort(function (x, y) {
      let a= x.name,
@@ -29,11 +29,11 @@ class station3ContentClass_puntajes extends generalPage{
   
     if(totalPoints>=1){
       messageTotalPoints=`
-      <h3>¡Excelente! Hemos terminado una estación más y con ella un reto más.</h3>
+      <h3>¡Excelente! Hemos terminado una estación la última estación.</h3>
       
-      <p>A continuación, puedes hacer la descarga de infografías con el resumen del material presentado en la estación. Recuerda que este material descargable te servirá como material de consulta y orientación en los aspectos formales del desarrollo de tu trabajo de grado.</p>
+      <p>A continuación, puedes descargar tu premio.</p>
       <div class="text-center">
-        <a href="./images/trabajos-y-proyectos-investigativos/premios-trabajos-y-proyectos-investigativos.zip" target="_blank" class="btn-final-points" >Descargar premios PRENDIETE</a>
+        <a href="./images/trabajos-y-proyectos-investigativos/premios-trabajos-y-proyectos-investigativos.zip" target="_blank" class="btn-final-points" >Descargar premios PENDIENTE</a>
       </div>
       `;
     }
@@ -69,4 +69,4 @@ class station3ContentClass_puntajes extends generalPage{
     ]
 }
 }
-stagePage.pageContainerSet('puntajes',station3ContentClass_puntajes);
+stagePage.pageContainerSet('puntajes',station4ContentClass_puntajes);

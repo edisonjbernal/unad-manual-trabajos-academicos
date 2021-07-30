@@ -59,6 +59,13 @@ class station4ContentClass extends generalStage{
                 <a href="#reto1_seleccionMultiple" >Selección múltiple</a>
               </li>
               <li>
+                <a href="#reto1_emparejar" >Emparejar</a>
+              </li>
+              <li>
+                <a href="#reto1_falsoVerdaderoNoe" >Falso / verdadero</a>
+              </li>
+              
+              <li>
                 <a href="#puntajes" >Puntajes</a>
               </li>
             </ul>
