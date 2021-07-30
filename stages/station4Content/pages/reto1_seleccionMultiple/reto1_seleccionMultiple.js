@@ -10,43 +10,65 @@ class station4ContentClass_reto1_seleccionMultiple extends generalPage{
   content(){
       return `
       <div id="timer_station4ContentClass_reto1_seleccionMultiple"></div>
-      <div class="header-h2"><h2>Selección múltiple, única respuesta</h2></div>
+      <div class="header-h2"><h2>Selección múltiple</h2></div>
       <div class="text-general multiple-selection-checkbox">
-          <p><strong>En cuál de las siguientes fuentes académicos NO es probable publicar tu artículo investigativo?</strong></p>
+        <p>Selecciona los elementos que suelen incluirse en torno al autor (o a los autores) de un artículo académico investigativo.</p>
+          <p><strong>Marca todas las opciones posibles.</strong></p>
           <ul class="ul-selection">
             <li>
               <label for="checkbox_1_station4ContentClass_reto1_seleccionMultiple">
                 <strong>a.</strong>
-                <input name="timer_station4ContentClass_reto1_seleccion_radio" class="input-checkbox" type="radio" id="checkbox_1_station4ContentClass_reto1_seleccionMultiple" value="1">
-                <span>Revista indexada especializada en el área de conocimiento.</span>
+                <input  class="input-checkbox" type="checkbox" id="checkbox_1_station4ContentClass_reto1_seleccionMultiple" value="1">
+                <span>Nombres y apellidos completos de quién(es) escribe(n) el artículo</span>
               </label>
             </li>
             <li>
               <label for="checkbox_2_station4ContentClass_reto1_seleccionMultiple">
                 <strong>b.</strong>
-                <input name="timer_station4ContentClass_reto1_seleccion_radio" class="input-checkbox" type="radio" id="checkbox_2_station4ContentClass_reto1_seleccionMultiple" value="2" >
-                <span>Capítulo de libro.</span>
+                <input  class="input-checkbox" type="checkbox" id="checkbox_2_station4ContentClass_reto1_seleccionMultiple" value="2" data-answer="true">
+                <span>Un nombre y un apellido de quién(es) escribe(n) el artículo </span>
               </label>
             </li>
             <li>
               <label for="checkbox_3_station4ContentClass_reto1_seleccionMultiple">
                 <strong>c.</strong>
-                <input name="timer_station4ContentClass_reto1_seleccion_radio" class="input-checkbox" type="radio" id="checkbox_3_station4ContentClass_reto1_seleccionMultiple" value="3">
-                <span>Documento de memorias de evento académico.</span>
+                <input  class="input-checkbox" type="checkbox" id="checkbox_3_station4ContentClass_reto1_seleccionMultiple" value="3" data-answer="true">
+                <span>Institución(es) a la(s) que pertenece(n) quién(es) escribe(n) el artículo</span>
               </label>
             </li>
             <li>
               <label for="checkbox_4_station4ContentClass_reto1_seleccionMultiple">
                 <strong>d.</strong>
-                <input name="timer_station4ContentClass_reto1_seleccion_radio" class="input-checkbox" type="radio" id="checkbox_4_station4ContentClass_reto1_seleccionMultiple" value="4" data-answer="true" >
-                <span>Revista de variedades y cultura general.</span>
+                <input  class="input-checkbox" type="checkbox" id="checkbox_4_station4ContentClass_reto1_seleccionMultiple" value="4"  >
+                <span>Institución a la que pertenece la revista o la fuente académica donde se publicará el artículo</span>
               </label>
             </li>
             <li>
               <label for="checkbox_5_station4ContentClass_reto1_seleccionMultiple">
                 <strong>e.</strong>
-                <input name="timer_station4ContentClass_reto1_seleccion_radio" class="input-checkbox" type="radio" id="checkbox_5_station4ContentClass_reto1_seleccionMultiple" value="5" >
-                <span>Revista no indexada especializada en el área de conocimiento.</span>
+                <input  class="input-checkbox" type="checkbox" id="checkbox_5_station4ContentClass_reto1_seleccionMultiple" value="5" data-answer="true">
+                <span>Breve información académica/laboral de quién(es) escribe(n) el artículo</span>
+              </label>
+            </li>
+            <li>
+              <label for="checkbox_6_station4ContentClass_reto1_seleccionMultiple">
+                <strong>f.</strong>
+                <input  class="input-checkbox" type="checkbox" id="checkbox_6_station4ContentClass_reto1_seleccionMultiple" value="6" >
+                <span>Completa información académica/laboral de quién(es) escribe(n) el artículo</span>
+              </label>
+            </li>
+            <li>
+              <label for="checkbox_7_station4ContentClass_reto1_seleccionMultiple">
+                <strong>g.</strong>
+                <input  class="input-checkbox" type="checkbox" id="checkbox_7_station4ContentClass_reto1_seleccionMultiple" value="7" data-answer="true">
+                <span>Correo electrónico de quién(es) escribe(n) el artículo</span>
+              </label>
+            </li>
+            <li>
+              <label for="checkbox_8_station4ContentClass_reto1_seleccionMultiple">
+                <strong>h.</strong>
+                <input  class="input-checkbox" type="checkbox" id="checkbox_8_station4ContentClass_reto1_seleccionMultiple" value="8" >
+                <span>Número telefónico de quién(es) escribe(n) el artículo</span>
               </label>
             </li>
           </ul>
@@ -75,8 +97,8 @@ class station4ContentClass_reto1_seleccionMultiple extends generalPage{
     this.multipleSelectionCheckbox.setPoints(2);
     this.multipleSelectionCheckbox.messageCorrectAnswer='<strong>Correcto</strong><br/> Muy bien, una revista de variedades y cultura general no suele enfocarse en temas académicos desarrollados en proyectos investigativos; es probable que en ellas se reporten estudios y experimentos científicos, pero más a modo informativo-noticioso que como una fuente de pesquisa académica.';
     this.multipleSelectionCheckbox.messageWrongAnswer=`
-    <strong>Recuerda lo siguiente:</strong><br/>
-    Los artículos académicos provenientes de ejercicios investigativos son muy bien recibidos en varios tipos de fuentes académicas como revistas especializadas indexadas y no indexadas, capítulos de libros, e documentos de memorias de seminarios, congresos, y simposios.
+    <strong>Revisa nuevamente tus respuestas:</strong><br/>
+    Ten en cuenta que el párrafo anterior describe lo presentado con respecto a las características generales del TÍTULO de tu artículo de investigación.
     `;
   }
   show(){

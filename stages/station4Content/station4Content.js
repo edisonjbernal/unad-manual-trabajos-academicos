@@ -50,10 +50,13 @@ class station4ContentClass extends generalStage{
                 <a href="#reto1_video" >Video</a>
               </li>
               <li>
-                <a href="#reto1_seleccionMultiple" >Selección múltiple</a>
+                <a href="#reto1_seleccionMultipleUnica" >Selección múltiple</a>
               </li>
               <li>
                 <a href="#reto1_completaElParrafo" >Completa el párrafo</a>
+              </li>
+              <li>
+                <a href="#reto1_seleccionMultiple" >Selección múltiple</a>
               </li>
               <li>
                 <a href="#puntajes" >Puntajes</a>
