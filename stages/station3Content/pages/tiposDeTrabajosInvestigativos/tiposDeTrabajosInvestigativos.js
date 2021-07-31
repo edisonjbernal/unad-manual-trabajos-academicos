@@ -111,6 +111,10 @@ class station3ContentClass_tiposDeTrabajosInvestigativos extends generalPage{
                 </div>
             </div>
         </div>
+        <div class="text-center">
+        <button class="btn-general btn-back" onclick="stage.activity('menu_back')">Atrás</button>
+        <button class="btn-general btn-next" onclick="stage.activity('menu_next')">Siguiente</button>
+      </div>
       `;
   }
   importCssFiles(){
