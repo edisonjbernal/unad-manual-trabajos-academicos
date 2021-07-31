@@ -1,4 +1,4 @@
-class station3ContentClass_reto1_video extends generalPage{
+class station4ContentClass_reto1_video extends generalPage{
     constructor(pageName){
         super(pageName);
     }
@@ -28,4 +28,4 @@ class station3ContentClass_reto1_video extends generalPage{
     ]
 }
 }
-stagePage.pageContainerSet('reto1_video',station3ContentClass_reto1_video);
+stagePage.pageContainerSet('reto1_video',station4ContentClass_reto1_video);
