@@ -1,4 +1,4 @@
-class station3ContentClass_introducccion extends generalPage{
+class station4ContentClass_introducccion extends generalPage{
     constructor(pageName){
         super(pageName);
     }
@@ -30,4 +30,4 @@ class station3ContentClass_introducccion extends generalPage{
     ]
 }
 }
-stagePage.pageContainerSet('introduccion',station3ContentClass_introducccion);
+stagePage.pageContainerSet('introduccion',station4ContentClass_introducccion);
