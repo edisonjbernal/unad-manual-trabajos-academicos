@@ -4,6 +4,9 @@ class pageMenuListenersClass{
         this.mainMenu_NavElements=this.stageId.querySelectorAll('nav ul li a');
         this.mainMenu_NavLastElementClicked=this.mainMenu_NavElements[0];
         this.mainMenu_Button=this.stageId.getElementsByClassName('button-menu-principal')[0];
+        this.mainMenu_CloseButton=this.stageId.querySelectorAll('.close-main-menu button')[0];
+     
+        
         this.menuNavigation=this.stageId.getElementsByClassName('navigation')[0];
         this.menuNavigationParent=this.menuNavigation.parentElement;
         this.menuXXXButtonListener();
@@ -105,6 +108,14 @@ class pageMenuListenersClass{
     menuXXXButtonListener(){
         let these = this;
         this.mainMenu_Button.addEventListener('click',
+        function () {
+            event.preventDefault();
+            these.menuXXXButtonListenerFunction();
+        }
+        
+        , false);
+
+        this.mainMenu_CloseButton.addEventListener('click',
         function () {
             event.preventDefault();
             these.menuXXXButtonListenerFunction();

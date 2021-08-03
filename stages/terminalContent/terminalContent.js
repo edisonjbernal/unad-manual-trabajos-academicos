@@ -161,6 +161,9 @@ class terminalContentClass extends generalStage{
           </ul>
         </nav>
       </div>
+      <div class="close-main-menu">
+          <button> Cerrar menú</button>
+        </div>
       
       `;
   }

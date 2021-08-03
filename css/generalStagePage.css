@@ -34,7 +34,7 @@
     left:-300vw;
     transform: rotateZ(90deg);
     overflow: auto;
-    padding: 200px 0 0 0;
+    padding: 200px 0 100px 0;
 }
 .navigation::-webkit-scrollbar{
     width:8px;
@@ -90,7 +90,7 @@ div.stage-pages-general.clicked-menu .navigation{
     z-index: 2000;
     transition: .5s;
     text-align: center;
-    width: 97%;
+    width: 99%;
     -webkit-box-shadow: -1px 17px 17px -13px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 17px 17px -13px rgba(0,0,0,0.75);
     box-shadow: -1px 17px 17px -13px rgba(0,0,0,0.75);
@@ -99,7 +99,46 @@ div.stage-pages-general.clicked-menu .navigation{
 div.stage-pages-general.clicked-menu .logo-UNAD-container{
     left: 0;
 }
-
+.close-main-menu{
+    background-color: rgb(60, 60, 60);
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: -1000px;
+    z-index: 2000;
+    transition: .5s;
+    text-align: center;
+    width: 100%;
+    -webkit-box-shadow: 0px -5px 13px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -5px 13px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px -5px 13px -5px rgba(0,0,0,0.75);
+    transform: rotateZ(90deg);
+}
+div.stage-pages-general.clicked-menu .close-main-menu{
+    left: 0;
+    transform: rotateZ(0deg);
+}
+.close-main-menu button{
+    background-color: transparent;
+    color: white;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border:0;
+    cursor: pointer;
+}
+.close-main-menu button::before{
+    content: 'X';
+    background-color: tomato;
+    padding: 5px 10px;
+    margin: 0 0 0 10px;
+    display: inline-block;
+}
+ div.stage-pages-general.clicked-menu .close-main-menu{
+    bottom: 0;
+    left: 0;
+} 
 img.logo-unad{
     max-width: 300px;
 }
@@ -336,10 +375,18 @@ table.table-general tr th{
         width: 292px;
         left: 0;
     }
+    .close-main-menu{
+        transform: rotateZ(0deg);
+        width: 292px;
+        bottom: 0;
+    }
     
-    div.stage-pages-general.clicked-menu .logo-UNAD-container{
+    div.stage-pages-general.clicked-menu .logo-UNAD-container,
+    div.stage-pages-general.clicked-menu .close-main-menu
+    {
         left: -1000px;
     }
+    
     .stageMaster > div.stage-pages-general div.general{
         margin: 0 auto;
         max-width: 900px;
