@@ -21,10 +21,10 @@ class mapCircleButtonClass{
     change(){
         let currentStageName= stage.currentStageName();
         try {
-                console.log('stage.currentStageDiv()');
+                /* console.log('stage.currentStageDiv()'); */
             let currentStage=document.getElementById(`stage_${currentStageName}`);
             let currentStagePagesArray=currentStage.getElementsByClassName('general')[0].querySelectorAll('main > div');
-            console.log(currentStagePagesArray);
+            /* console.log(currentStagePagesArray); */
             for (let index = 0; index < currentStagePagesArray.length; index++) {
                 let tmpHTML=currentStagePagesArray[index].innerHTML;
                 currentStagePagesArray[index].innerHTML='';
