@@ -13,7 +13,7 @@ class changeScenarioAnimationClass{
         this.opacity++;
         if(this.opacity>=10){
             this.container.style.opacity="1";
-            console.log('fin');
+            /* console.log('fin'); */
             stage.unload();
             stage.load();
             
@@ -33,7 +33,7 @@ class changeScenarioAnimationClass{
         if(this.opacity<=0){
             this.container.style.opacity="0";
             this.container.style.display='none';
-            console.log('fin2');
+            /* console.log('fin2'); */
         }
         else{
             this.container.style.opacity="0."+this.opacity;

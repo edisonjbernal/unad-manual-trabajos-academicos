@@ -55,7 +55,7 @@ class pageLoadClass{
          
     }
      get(pageName){
-         console.log('*****NUEVA PAGINA :'+pageName);
+         /* console.log('*****NUEVA PAGINA :'+pageName); */
         this.stageName=stage.stageName;
         this.pageName=pageName;
         /* console.log('this.stageLastPageContainer');

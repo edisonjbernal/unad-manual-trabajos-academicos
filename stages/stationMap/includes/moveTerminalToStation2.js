@@ -2,7 +2,6 @@ function moveTerminalToStation2(stage = 1){
     let animationFunction = moveTerminalToStation2;
     switch (stage) {
         case 1:
-            console.log(stage)
             busCar.changePosition('right',58 ,animationFunction,stage);
             break;
         case 2:

@@ -111,20 +111,7 @@ class station3ContentClass extends generalStage{
      
    
   }
-  importJSGlobalFiles(){
-     return [
-        'listMoveOptions',
-        'listSelectOptions',
-        'listSelectOptionsForText',
-        'multipleSelectionCheckbox',
-        'questions',
-        'question_CheckboxVerify',
-        'popUpToDiscoverTimeline',
-        'pointsActivityCalculate',
-        'selectTextbox',
-        'textChangeCustom'
-    ];
-}
+ 
 show(){
   this.divContainer.classList.remove('hide');
 } 

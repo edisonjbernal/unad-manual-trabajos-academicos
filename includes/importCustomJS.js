@@ -22,7 +22,7 @@ class importCustomJS {
         this.busy=true;
         let scriptId ='JS' + file.replaceAll('/','_');
         this.lastFileLoaded=scriptId;
-        console.log('JS--'+this.lastFileLoaded);
+        /* console.log('JS--'+this.lastFileLoaded); */
         if (!document.getElementById(scriptId)) {
 
             let script = document.createElement('script');

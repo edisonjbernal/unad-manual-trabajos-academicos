@@ -11,7 +11,7 @@ class busCarClass{
         }
         this.terminalApproved=true;
         this.stopped=true;
-        console.log(this.position);
+        /* console.log(this.position); */
         
     }
 
@@ -113,8 +113,8 @@ class busCarClass{
     stop(station){
         this.position.station=station;
         this.stopped=true;
-        console.log('Station: ' + this.position.station);
-        console.log('STOP : ' + this.stopped);
+        /* console.log('Station: ' + this.position.station);
+        console.log('STOP : ' + this.stopped); */
         mapInteractions.enableAccess(station);
     }
     
