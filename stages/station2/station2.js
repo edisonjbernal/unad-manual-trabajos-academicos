@@ -24,6 +24,21 @@ class station2Class extends generalStage{
             'generalStage.css|general'
         ]
     }
+    importJSGlobalFiles(){
+       /*  return [
+            'timer',
+            'pointsActivityCalculate',
+            'listMoveOptions',
+            'listSelectOptions',
+            'listSelectOptionsForText',
+            'multipleSelectionCheckbox',
+            'questions',
+            'question_CheckboxVerify',
+            'popUpToDiscoverTimeline',
+            'selectTextbox',
+            'textChangeCustom'
+        ]; */
+    }
 }
 
 var stages_station2 = new station2Class('station2');

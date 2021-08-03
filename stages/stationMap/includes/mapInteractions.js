@@ -20,7 +20,7 @@ class mapInteractionsClass{
                         break;
                     default:
                         this.goIntoStation(station);
-                        console.log("Estas en el TERMINAL");
+                        /* console.log("Estas en el TERMINAL"); */
                         break;
                 }
             }
@@ -43,21 +43,21 @@ class mapInteractionsClass{
                 }
                 else{
                     this.goIntoStation(station);
-                    console.log('ESTACIÓN ACTUAL: ' + busCar.position.station);
+                    /* console.log('ESTACIÓN ACTUAL: ' + busCar.position.station); */
                 }
                 
             }
     }
     }
     disableAccess(station){
-        console.log('DESACTIVARr acceso a:'+station);
+        /* console.log('DESACTIVARr acceso a:'+station); */
         document.getElementById(station).innerHTML=`<div class="display-station">
         ${this.stationName(station)}
     </div> `;
     }
     
     enableAccess(station){
-        console.log('Activar acceso a:'+station);
+        /* console.log('Activar acceso a:'+station); */
         document.getElementById(station).innerHTML=`<div class="display-station display-station-success">
         Ingresar a ${this.stationName(station)}
     </div> `;
@@ -114,12 +114,12 @@ class mapInteractionsClass{
             return true;
         }
         else{
-            console.log('Necesita aprobar primero lo anterior');
+            /* console.log('Necesita aprobar primero lo anterior'); */
             return false;
         }
     }
     waitAccess(station){
-        console.log('Esperando....a:'+station);
+        /* console.log('Esperando....a:'+station); */
         document.getElementById(station).innerHTML=`<div class="display-station display-station-danger">
         Esperando ...
     </div> `;

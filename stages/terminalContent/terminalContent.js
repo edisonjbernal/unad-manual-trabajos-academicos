@@ -180,19 +180,11 @@ class terminalContentClass extends generalStage{
   importJSFiles(){
     this.menu= new pageMenuListenersClass('stage_'+stage.stageName);
     this.acordeonList= new acordeonListClass;
-     stagePage.get('introduccion'); 
+    importJS.busy=false;
+    stagePage.get('introduccion'); 
      
    
   }
-  importJSGlobalFiles(){
-    return [
-        'listMoveOptions',
-        'questions',
-        'question_CheckboxVerify',
-        'selectTextbox',
-        'textChangeCustom'
-    ];
-} 
 show(){
   this.divContainer.classList.remove('hide');
 } 

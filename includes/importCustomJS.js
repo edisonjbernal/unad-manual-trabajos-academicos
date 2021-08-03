@@ -3,11 +3,13 @@ class importCustomJS {
 
         this.url= url;
         this.version=version;
-        this.lastStageIdLoaded=''
+        this.lastStageIdLoaded='';
+        this.busy=false;
+        this.lastFileLoaded='';
 
     }
     addFile(files){
-
+        
         this.count=0;
         this.files=files;
         this.verifyFileToLoad();
@@ -17,7 +19,10 @@ class importCustomJS {
 
     }
     load(file){
+        this.busy=true;
         let scriptId ='JS' + file.replaceAll('/','_');
+        this.lastFileLoaded=scriptId;
+        console.log('JS--'+this.lastFileLoaded);
         if (!document.getElementById(scriptId)) {
 
             let script = document.createElement('script');
@@ -28,6 +33,7 @@ class importCustomJS {
             
         }
         else{
+            this.busy=false;
             console.log('Ya está cargado :'+scriptId);
         }
         
@@ -49,6 +55,7 @@ class importCustomJS {
 
             console.log("Cargado: " + script.src);
             these.nextFile();
+            these.busy=false;
 
         };
 
@@ -56,6 +63,7 @@ class importCustomJS {
 
             console.log("No se pudo cargar el archivo: " + script.src);
             these.nextFile();
+            these.busy=false;
 
         };
     }

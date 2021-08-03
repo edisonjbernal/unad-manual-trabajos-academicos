@@ -92,7 +92,8 @@ class station4ContentClass extends generalStage{
       this.acordeonList= new acordeonListClass;
       this.pointsManager= new pointManagerClass;
       this.popUpToDiscover= new popUpToDiscoverClass;
-       stagePage.get('introduccion');  
+      importJS.busy=false;
+      stagePage.get('introduccion');  
        
        
      

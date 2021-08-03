@@ -66,8 +66,7 @@ class stationMapClass extends generalStage{
             'moveTerminalToStation3',
             'moveTerminalToStation4',
             'mapInteractions',
-            'autoSizeMap',
-            'mapCircleButton'
+            'autoSizeMap'
         ];
     }
     show(){

@@ -9,12 +9,20 @@ class pageLoadClass{
         this.activities.load(pageObject,name,element);
     }
     pageContainerGet(pageId){
-        let values = false;
-        values  = this.stagePageContainer.find(function(pagesContainer){
-            return pagesContainer.id === pageId;
-        });
+        try {
 
-        return values.container;
+            let values = false;
+            values  = this.stagePageContainer.find(function(pagesContainer){
+                return pagesContainer.id === pageId;
+            });
+
+            return values.container;
+            
+        } catch (error) {
+            console.log('No cargó la página :'+pageId);
+            return false;
+        }
+        
   
     }
     pageContainerSet(pageName,container){
@@ -68,29 +76,41 @@ class pageLoadClass{
          this.pageDivId=`stage_${this.stageName}_${this.pageName}`;
          //console.log(`PAGE -----this.pageIdCurrent:${this.pageDivId}`);
          this.pageDiv = document.getElementById(this.pageDivId);
+         /* console.log('this.pageDiv');
+         console.log(this.pageDiv); */
          //Ruta:
          this.pageRoute = `/stages/${this.stageName}/pages/${this.pageName}/${this.pageName}`;
 
-         if(this.pageIdLast==this.pageIdCurrent){
-             //No activa nada
-            // console.log("CLIC: En la página activa no se realiza nada");
-         }
-         else if(this.pageIdLast){
-            // console.log('** OCULTAR ANTERIOR: '+this.pageIdLast);
-             this.unload();
-             this.load();
-             //changeScenarioAnimation.change();
+         if(importJS.busy){
+            console.log('importCustomJS - importJS : Está cargando otro archivo en el momento');
          }
          else{
-             this.load();
+            if(this.pageIdLast==this.pageIdCurrent){
+                //No activa nada
+               // console.log("CLIC: En la página activa no se realiza nada");
+            }
+            else if(this.pageIdLast){
+               // console.log('** OCULTAR ANTERIOR: '+this.pageIdLast);
+                this.unload();
+                this.load();
+                //changeScenarioAnimation.change();
+            }
+            else{
+                this.load();
+            }
          }
+
+         
 
         /*  console.log(`stageName: ${this.stageName}`);
         console.log(`pageName: ${pageName}`); */
      }
      unload(){
         let pageId = this.pageContainerGet(this.pageIdLast);
-        pageId.hide();
+        if(pageId){
+            pageId.hide();
+        }
+        
      }
      load(){
          //console.log(`**EXISTE LA PÁGINA? (${this.pageName}) :${this.pageDiv}`);

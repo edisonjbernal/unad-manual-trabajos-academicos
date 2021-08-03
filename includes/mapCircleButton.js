@@ -33,9 +33,6 @@ class mapCircleButtonClass{
         } catch (error) {
             
         }
-        
-
-        
         stage.get('stationMap');
     }
 }

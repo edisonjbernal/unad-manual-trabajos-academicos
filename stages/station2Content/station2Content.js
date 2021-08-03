@@ -156,26 +156,12 @@ class station2ContentClass extends generalStage{
     this.acordeonList= new acordeonListClass;
     this.pointsManager= new pointManagerClass;
     this.popUpToDiscover= new popUpToDiscoverClass;
+    importJS.busy=false;
     stagePage.get('introduccion'); 
      
      
    
   }
-  importJSGlobalFiles(){
-    return [
-        'listMoveOptions',
-        'listSelectOptions',
-        'listSelectOptionsForText',
-        'multipleSelectionCheckbox',
-        'questions',
-        'question_CheckboxVerify',
-        'popUpToDiscoverTimeline',
-        'pointsActivityCalculate',
-        'selectTextbox',
-        'timer',
-        'textChangeCustom'
-    ];
-}
 show(){
   this.divContainer.classList.remove('hide');
 } 
