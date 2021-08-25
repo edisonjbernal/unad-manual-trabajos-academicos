@@ -9,7 +9,7 @@ class terminalContentClass_tablasyFiguras extends generalPage{
   }
   content(){
       return `
-      <h2>Tablas y figuras</h2>
+      <h2>Tablas y Figuras</h2>
     <video class="responsive" src="./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/tablasyFiguras.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()">Atrás</button>

@@ -39,57 +39,31 @@ class terminalContentClass extends generalStage{
         <nav>
         
           <ul>
-            <li><strong>Aspectos generales</strong></li>
+            <li><strong>Aspectos Generales</strong></li>
             <li>
               <a href="#introduccion" class="active">Introducción</a>
             </li>
             <li>
-              <a href="#aspectosEstructuralesTrabajosAcademicos">Aspectos estructurales de los trabajos académicos</a>
+              <a href="#sec_1_Introduccion">Contexto de los Retos</a>
             </li>
             <li>
-              <a href="#lineamientosGenerales">Lineamientos generales</a>
+              <a href="#aspectosEstructuralesTrabajosAcademicos">Formato General para la Presentación de Trabajos Académicos</a>
+            </li>
+            <li>
+              <a href="#lineamientosGenerales">Lineamientos Generales</a>
             </li>
             <li>
               <a href="#preliminares">Preliminares</a>
             </li>
             <li>
-              <a href="#titulacionyTablaDeContenido">Titulación y tabla de contenido</a>
+              <a href="#titulacionyTablaDeContenido">Titulación y Tabla de Contenido</a>
             </li>
-           <!-- <li>
-              <a href="#theResearchQuestions">Ejercicios</a>
-            </li>-->
-            <li><strong>Propiedad intelectual y referenciación</strong></li>
-            <li>
-              <a href="#introduccionPropiedadIntelectual">Introducción</a>
-            </li>
-            <li>
-              <a href="#conceptosPropiedadIntelectualYReferenciacion">Conceptos Propiedad Intelectual y Referenciación</a>
-            </li>
-            <li>
-              <a href="#propiedadIntelectualYPlagio">Propiedad intelectual y plagio</a>
-            </li>
-            <li>
-              <a href="#citacionNormasAPA">Citación (Normas APA)</a>
-            </li>
-            <li>
-              <a href="#infograficasSobreCitacion">Infografías sobre citación</a>
-            </li>
-            <li>
-              <a href="#referenciacionNormasAPA">Referenciación (Normas APA)</a>
-            </li>
-            <li>
-              <a href="#tablasyFiguras">Tablas y figuras</a>
-            </li>
-            <li><strong>Retos</strong></li>
-            <li><strong>- Sección 1</strong></li>
-            <li>
-              <a href="#sec_1_Introduccion">Introducción</a>
-            </li>
+            <li><strong>-- Retos</strong></li>
             <li>
               <a href="#sec_1_Reto_1">-- Selección múltiple</a>
             </li>
             <li>
-              <a href="#sec_1_Video_1">Video 1</a>
+              <a href="#sec_1_Video_1">Continuación del reto</a>
             </li>
             <li>
               <a href="#sec_1_Reto_2_falsoVerdadero">-- Falso / Verdadero</a>
@@ -104,7 +78,7 @@ class terminalContentClass extends generalStage{
               <a href="#sec_1_Reto_2_unicaRespuesta">-- Única respuesta</a>
             </li>
             <li>
-              <a href="#sec_1_Video_2">Video 2</a>
+              <a href="#sec_1_Video_2">Continuación del reto</a>
             </li>
             <li>
               <a href="#sec_1_Reto_3_emparejamiento">-- Emparejamiento</a>
@@ -113,32 +87,59 @@ class terminalContentClass extends generalStage{
               <a href="#sec_1_Reto_3_listaDesplegable">-- Lista desplegable</a>
             </li>
             <li>
-              <a href="#sec_1_Video_3">Video 3</a>
+              <a href="#sec_1_Video_3">Continuación del reto</a>
             </li>
             <li>
               <a href="#sec_1_Reto_4">-- Selección múltiple de única respuesta</a>
             </li>
             <li>
-              <a href="#sec_1_Video_4">Video 4</a>
+              <a href="#sec_1_Video_4">Finalización del reto</a>
             </li>
-            <li><strong>- Sección 2</strong></li>
+           <!-- <li>
+              <a href="#theResearchQuestions">Ejercicios</a>
+            </li>-->
+            <li><strong>Propiedad Intelectual y Referenciación</strong></li>
             <li>
-              <a href="#sec_2_Introduccion">Introducción</a>
+              <a href="#introduccionPropiedadIntelectual">Introducción</a>
             </li>
             <li>
-              <a href="#sec_2_Video_1">Video 1</a>
+              <a href="#sec_2_Introduccion">Contexto de los Retos</a>
+            </li>
+            <li>
+              <a href="#conceptosPropiedadIntelectualYReferenciacion">Conceptos Propiedad Intelectual y Referenciación</a>
+            </li>
+            <li>
+              <a href="#propiedadIntelectualYPlagio">Propiedad Intelectual y Plagio</a>
+            </li>
+            <li>
+              <a href="#citacionNormasAPA">Citación (Normas APA)</a>
+            </li>
+            <li>
+              <a href="#infograficasSobreCitacion">Infografías sobre citación</a>
+            </li>
+            <li>
+              <a href="#referenciacionNormasAPA">Referenciación (Normas APA)</a>
+            </li>
+            <li>
+              <a href="#tablasyFiguras">Tablas y Figuras</a>
+            </li>
+            
+            <li><strong>-- Retos</strong></li>
+            
+            <li>
+              <a href="#sec_2_Video_1">Introducción a los Retos</a>
             </li>
             <li>
               <a href="#sec_2_Reto_1">-- Selección múltiple</a>
             </li>
             <li>
-              <a href="#sec_2_Video_2">Video 2</a>
+              <a href="#sec_2_Video_2">Continuación del reto</a>
             </li>
             <li>
               <a href="#sec_2_Reto_2">-- Selección múltiple</a>
             </li>
             <li>
-              <a href="#sec_2_Video_3">Video 3</a>
+              <a href="#sec_2_Video_3">Continuación del reto</a>
             </li>
             <li>
               <a href="#sec_2_Reto_3_emparejamiento">-- Emparejamiento</a>
@@ -147,7 +148,7 @@ class terminalContentClass extends generalStage{
               <a href="#sec_2_Reto_3_falsoVerdadero">-- Falso / Verdadero</a>
             </li>
             <li>
-              <a href="#sec_2_Video_4">Video 4</a>
+              <a href="#sec_2_Video_4">Continuación del reto</a>
             </li>
             <li>
               <a href="#sec_2_Reto_4_falsoVerdadero">-- Falso / Verdadero</a>
@@ -156,7 +157,7 @@ class terminalContentClass extends generalStage{
               <a href="#sec_2_Reto_4_seleccionarTexto">-- Seleccionar texto</a>
             </li>
             <li>
-              <a href="#sec_2_Video_5">Video 5</a>
+              <a href="#sec_2_Video_5">Finalización del reto</a>
             </li>
           </ul>
         </nav>

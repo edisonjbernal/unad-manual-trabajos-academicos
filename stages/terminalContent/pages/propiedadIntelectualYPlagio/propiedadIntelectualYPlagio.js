@@ -9,7 +9,7 @@ class terminalContentClass_propiedadIntelectualYPlagio extends generalPage{
   }
   content(){
       return `
-      <h2>Propiedad intelectual y plagio</h2>
+      <h2>Propiedad Intelectual y Plagio</h2>
       <video class="responsive" src="./images/aspectos-tecnicos/propiedad-intelectual-y-referenciacion/propiedadIntelectualYPlagio.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>
@@ -18,7 +18,7 @@ class terminalContentClass_propiedadIntelectualYPlagio extends generalPage{
       </div>
       <div class="text-show-content">
         <h3>Transcripción del video</h3>
-        <p><strong>Propiedad intelectual y plagio</strong></p>
+        <p><strong>Propiedad Intelectual y Plagio</strong></p>
         <p>Hablar de la propiedad intelectual es hablar de los derechos que posee una persona sobre sus propias creaciones. Los pensamientos, las ideas, las palabras, las percepciones, como todo tipo de creaciones son individuales, y cuando estas se hacen públicas tienen una voz propia antes de ser reconocidas por otros.</p>
         <p>En el contexto actual, es extremadamente importante conocer qué es la propiedad intelectual y su relevancia en un mundo en el que el flujo de la información es tan grande gracias a las tecnologías de la información y la comunicación. Esto le permitirá a todo profesional tanto en formación como en ejercicio de su labor, llevar a cabo trabajos de alta calidad y rigor investigativo no solo de orden escrito sino también de carácter audiovisual. A continuación te presentaré algunos conceptos clave sobre este tema, y encontrarás diferentes maneras correctas de citar y referenciar los estudios, teorías, análisis, y trabajos hechos previamente por otros expertos cuando consideres que ellos aportarán información valiosa para tus trabajos.</p>
         <p>Si las ideas escritas o expresadas por otros te parecen interesantes y quieres replicarlas en un trabajo académico, siempre deberás hacer referencia bien sea al texto de donde las obtuviste y a quien sea que las haya escrito, de otro modo incurrirás en un Plagio. Algunos aspectos que debes tener claro sobre el plagio son:</p>

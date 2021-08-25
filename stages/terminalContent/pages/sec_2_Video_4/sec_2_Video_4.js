@@ -9,7 +9,7 @@ class terminalContentClass_sec_2_Video_4 extends generalPage{
   }
   content(){
       return `
-      <h2>Reto 4 video</h2>
+      <h2>Continuación del reto</h2>
       <video class="responsive" src="./images/aspectos-tecnicos/gamificacion/sec_2_Video_4.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>

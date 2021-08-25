@@ -9,7 +9,7 @@ class terminalContentClass_aspectosEstructuralesTrabajosAcademicos extends gener
   }
   content(){
       return `
-      <h2>Aspectos estructurales de los trabajos académicos</h2>
+      <h2>Formato General para la Presentación de Trabajos Académicos</h2>
       <video class="responsive" src="./images/aspectos-tecnicos/aspectos-generales/aspectosEstructuralesTrabajosAcademicos.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>

@@ -9,7 +9,7 @@ class terminalContentClass_sec_2_Introduccion extends generalPage{
   }
   content(){
       return `
-      <h2>Introducción</h2>
+      <h2>Contexto de los Retos</h2>
       <video class="responsive" src="./images/aspectos-tecnicos/gamificacion/sec_2_Introduccion.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>
