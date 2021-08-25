@@ -10,7 +10,7 @@ class station2ContentClass_resumenResenaEnsayo extends generalPage{
   content(){
       return `
       <h2>Resumen, Reseña y Ensayo</h2>
-      <video class="responsive" src="./images/trabajos-escritos/resumenResenaEnsayo.mp4" controls="" controlslist="nodownload"></video>
+      <video class="responsive" src="./images/trabajos-escritos/resumen-resena-ensayo.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general btn-back" onclick="stage.activity('menu_back')">Atrás</button>
         <button class="btn-general btn-next" onclick="stage.activity('menu_next')">Siguiente</button>

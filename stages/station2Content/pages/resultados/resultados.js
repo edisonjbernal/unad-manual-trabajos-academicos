@@ -9,7 +9,7 @@ class station2ContentClass_resultados extends generalPage{
   }
   content(){
       return `
-      <h2>Reto 1</h2>
+      <h2>Resultados</h2>
       <video class="responsive" src="./images/trabajos-escritos/resultados.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general btn-back" onclick="stage.activity('menu_back')">Atrás</button>

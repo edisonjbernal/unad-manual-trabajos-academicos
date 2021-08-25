@@ -39,6 +39,7 @@ class station2ContentClass extends generalStage{
         <nav>
         
           <ul>
+            <li><strong>Trabajos Escritos</strong></li>
             <li>
               <a href="#introduccion" class="active">Introducción</a>
             </li>
@@ -51,16 +52,18 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#resumenResenaEnsayo">Resumen, Reseña y Ensayo</a>
             </li>
-            <li><strong>Reto 1</strong></li>
+            <li><strong>-- Reto</strong></li>
             <li>
-              <a href="#reto1_video">Video 1</a>
+              <a href="#reto1_video">-- Introducción al Reto</a>
             </li>
             <li>
-              <a href="#reto1_organizarOraciones">Organizar oraciones</a>
+              <a href="#reto1_organizarOraciones">-- Organizar oraciones</a>
             </li>
-            <li><strong><hr/></strong></li>
             <li>
-              <a href="#miniModulos">Mini Módulos</a>
+              <strong>Mini Módulos</strong>
+            </li>
+            <li>
+              <a href="#miniModulos">Presentación</a>
             </li>
             <li>
               <a href="#resumen">Resumen</a>
@@ -68,41 +71,45 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#recomendacionesParaResumir">Recomendaciones para resumir</a>
             </li>
-            <li><strong>Reto 2</strong></li>
+            <li><strong>-- Reto</strong></li>
             <li>
-              <a href="#reto2_video">Video 2</a>
+              <a href="#reto2_video">-- Introducción al Reto</a>
             </li>
             <li>
-              <a href="#reto2_emparejar">Emparejar</a>
+              <a href="#reto2_emparejar">-- Emparejar</a>
             </li>
             <li>
-              <a href="#reto2_listaDesplegable">Lista desplegable</a>
+              <a href="#reto2_listaDesplegable">-- Lista desplegable</a>
             </li>
             <li>
-              <a href="#reto2_seleccionMultiple">Selección múltiple</a>
+              <a href="#reto2_seleccionMultiple">-- Selección múltiple</a>
             </li>
             <li>
-              <a href="#reto2_seleccionMultiplePregunta4">Selección múltiple 2</a>
+              <a href="#reto2_seleccionMultiplePregunta4">-- Selección múltiple 2</a>
             </li>
             <li>
-              <a href="#resena">Reseña</a>
-            </li>
-            <li><strong>Reto 3</strong></li>
-            <li>
-              <a href="#reto3_video">Video 3</a>
+              <strong>Reseña</strong>
             </li>
             <li>
-              <a href="#reto3_completarTexto">Completar texto</a>
-            </li>
-            <li>
-              <a href="#reto3_completarTexto_2">Completar texto 2</a>
-            </li>
-            <li>
-              <a href="#reto3_completarTexto_3">Completar texto 3</a>
+              <a href="#resena">Presentación</a>
             </li>
             <li>
               <a href="#tiposDeResenas">Tipos de reseñas</a>
             </li>
+            <li><strong>-- Reto</strong></li>
+            <li>
+              <a href="#reto3_video">-- Introducción al Reto</a>
+            </li>
+            <li>
+              <a href="#reto3_completarTexto">-- Completar texto</a>
+            </li>
+            <li>
+              <a href="#reto3_completarTexto_2">-- Completar texto 2</a>
+            </li>
+            <li>
+              <a href="#reto3_completarTexto_3">-- Completar texto 3</a>
+            </li>
+            <li><strong>Ensayo</strong></li>
             <li>
               <a href="#tiposDeEnsayo">Tipos de ensayo</a>
             </li>
@@ -112,21 +119,22 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#caracteristicasBuenEnsayo">Características de un buen ensayo</a>
             </li>
-            <li><strong>Reto 4</strong></li>
+            <li><strong>-- Reto</strong></li>
             <li>
-              <a href="#reto4_video">Video 4</a>
+              <a href="#reto4_video">-- Introducción al Reto</a>
             </li>
             <li>
-              <a href="#reto4_completarTabla">Completar tabla</a>
+              <a href="#reto4_completarTabla">-- Completar tabla</a>
             </li>
             <li>
-              <a href="#reto4_emparejar">Emparejar</a>
+              <a href="#reto4_emparejar">-- Emparejar</a>
             </li>
             <li>
-              <a href="#reto4_seleccionMultiple">Selección múltiple</a>
+              <a href="#reto4_seleccionMultiple">-- Selección múltiple</a>
             </li>
+            <li><strong>Resultados</strong></li>
             <li>
-              <a href="#resultados">Resultados</a>
+              <a href="#resultados">Presentación</a>
             </li>
             <li>
               <a href="#puntajes">Puntajes</a>
