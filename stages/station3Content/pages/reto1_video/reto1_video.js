@@ -9,7 +9,7 @@ class station3ContentClass_reto1_video extends generalPage{
   }
   content(){
       return `
-      <h2>Reto 1 - video</h2>
+      <h2>Introducción a Reto</h2>
       <video class="responsive" src="./images/trabajos-y-proyectos-investigativos/reto1_video.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general btn-back" onclick="stage.activity('menu_back')">Atrás</button>

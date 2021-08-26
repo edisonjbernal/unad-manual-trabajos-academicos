@@ -9,8 +9,8 @@ class station3ContentClass_explicacion extends generalPage{
   }
   content(){
       return `
-      <h2>Explicación</h2>
-      <video class="responsive" src="./images/trabajos-y-proyectos-investigativos/explicacion.mp4" controls="" controlslist="nodownload"></video>
+      <h2>Anteproyecto de Trabajos y Trabajos Investigativos</h2>
+      <video class="responsive" src="./images/trabajos-y-proyectos-investigativos/Anteproyecto-de-Trabajos-y-Trabajos-Investigativos.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general btn-next" onclick="stage.activity('menu_back')">Atrás</button>
         <button class="btn-general btn-next" onclick="stage.activity('menu_next')">Siguiente</button>

@@ -39,47 +39,56 @@ class station3ContentClass extends generalStage{
         <nav>
         
           <ul>
+          <li><strong>Trabajos y Proyectos Investigativos</strong></li>
             <li>
               <a href="#introduccion" class="active">Introducción</a>
             </li>
-            <li><strong>Reto 1</strong></li>
+            <li><strong>-- Reto</strong></li>
             <li>
-              <a href="#reto1_video" >Video</a>
+              <a href="#reto1_video" >-- Introducción a Reto</a>
             </li>
             <li>
-              <a href="#reto1_completarTexto" >Completar texto</a>
+              <a href="#reto1_completarTexto" >-- Completar texto</a>
+            </li>
+            <li><strong>Anteproyecto de Trabajos y Trabajos Investigativos</strong></li>
+            <li>
+              <a href="#explicacion" >Presentación</a>
+            </li>
+            <li><strong>-- Reto</strong></li>
+            <li>
+              <a href="#reto2_seleccionMultiple" >-- Selección múltiple</a>
             </li>
             <li>
-              <a href="#explicacion" >Explicación</a>
-            </li>
-            <li><strong>Reto 2</strong></li>
-            <li>
-              <a href="#reto2_seleccionMultiple" >Selección múltiple</a>
+              <a href="#reto2_emparejar" >-- Emparejar</a>
             </li>
             <li>
-              <a href="#reto2_emparejar" >Emparejar</a>
-            </li>
-            
-            <li>
-              <a href="#tiposDeTrabajosInvestigativos" >Tipos de Trabajos Investigativos</a>
-            </li>
-            <li><strong>Reto 3</strong></li>
-            <li>
-              <a href="#reto3_listaDesplegable" >Lista desplegable</a>
-            </li>
-            
-            <li>
-              <a href="#monografias" >Monografías</a>
-            </li>
-            <li><strong>Reto 4</strong></li>
-            <li>
-              <a href="#reto4_completarTexto" >Completar texto</a>
+              <strong>Proyectos Investigativos</strong>
             </li>
             <li>
-              <a href="#reto4_emparejar" >Emparejar</a>
+              <a href="#tiposDeTrabajosInvestigativos" >Presentación</a>
+            </li>
+            <li><strong>-- Reto</strong></li>
+            <li>
+              <a href="#reto3_listaDesplegable" >-- Lista desplegable</a>
             </li>
             <li>
-              <a href="#puntajes" >Puntajes</a>
+              <strong>Monografías</strong>
+            </li>
+            <li>
+              <a href="#monografias" >Presentación</a>
+            </li>
+            <li><strong>-- Reto</strong></li>
+            <li>
+              <a href="#reto4_completarTexto" >-- Completar texto</a>
+            </li>
+            <li>
+              <a href="#reto4_emparejar" >-- Emparejar</a>
+            </li>
+            <li>
+              <strong>Resultados</strong>
+            </li>
+            <li>
+              <a href="#puntajes" >Descargar premio</a>
             </li>
           </ul>
         </nav>

@@ -23,7 +23,7 @@ class station4ContentClass extends generalStage{
               <div class="menu-text">Menú</div>
           </a>
               <div> 
-                  <h1>Artículos para publicación</h1>
+                  <h1>Artículos para Publicación</h1>
               </div>
           </header>
           <a id="accesibility-main-menu-access" class="accesibility-main-menu-access" href="#">Navegar directamente en el menú</a>  
@@ -39,34 +39,35 @@ class station4ContentClass extends generalStage{
           <nav>
           
             <ul>
+              <li><strong>Artículos para Publicación</strong></li>
               <li>
                 <a href="#introduccion" class="active">Introducción</a>
               </li>
               <li>
                 <a href="#partesDeUnArticulo">Partes de un artículo de investigación</a>
               </li>
-              <li><strong>Reto</strong></li>
+              <li><strong>-- Reto</strong></li>
               <li>
-                <a href="#reto1_video" >Video</a>
+                <a href="#reto1_video" >-- Introducción al Reto</a>
               </li>
               <li>
-                <a href="#reto1_seleccionMultipleUnica" >Selección múltiple</a>
+                <a href="#reto1_seleccionMultipleUnica" >-- Selección múltiple</a>
               </li>
               <li>
-                <a href="#reto1_completaElParrafo" >Completa el párrafo</a>
+                <a href="#reto1_completaElParrafo" >-- Completa el párrafo</a>
               </li>
               <li>
-                <a href="#reto1_seleccionMultiple" >Selección múltiple</a>
+                <a href="#reto1_seleccionMultiple" >-- Selección múltiple</a>
               </li>
               <li>
-                <a href="#reto1_emparejar" >Emparejar</a>
+                <a href="#reto1_emparejar" >-- Emparejar</a>
               </li>
               <li>
-                <a href="#reto1_falsoVerdaderoNoe" >Falso / verdadero</a>
+                <a href="#reto1_falsoVerdaderoNoe" >-- Falso / verdadero</a>
               </li>
               
               <li>
-                <a href="#puntajes" >Puntajes</a>
+                <a href="#puntajes" >Resultados</a>
               </li>
             </ul>
           </nav>

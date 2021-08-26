@@ -7,4 +7,4 @@ var activities={
     }
 }
 
-stage.get('home');
+stage.get(configuration.mainPage);

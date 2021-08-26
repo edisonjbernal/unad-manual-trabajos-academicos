@@ -9,7 +9,7 @@ class station3ContentClass_tiposDeTrabajosInvestigativos extends generalPage{
   }
   content(){
       return `
-      <h2>Tipos de Trabajos Investigativos</h2>
+      <h2>Proyectos Investigativos</h2>
       <video class="responsive" src="./images/trabajos-y-proyectos-investigativos/tiposDeTrabajosInvestigativos.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general btn-next" onclick="stage.activity('menu_back')">Atrás</button>

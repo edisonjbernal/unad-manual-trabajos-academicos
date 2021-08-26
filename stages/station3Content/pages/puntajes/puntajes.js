@@ -49,7 +49,7 @@ class station3ContentClass_puntajes extends generalPage{
 
 
       return `
-      <h2>Puntaje final</h2>
+      <h2>Descargar premio</h2>
       <div class="final-points-container">
         <div class="final-points-container-message">
             ${messageTotalPoints}
