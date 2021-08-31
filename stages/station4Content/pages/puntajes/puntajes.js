@@ -22,6 +22,10 @@ class station4ContentClass_puntajes extends generalPage{
     let totalPoints=0;
     let messageTotalPoints='';
 
+    let urlDescargaDPremios="./images/premios/estacion-4.zip";
+
+    let mensajeBotonPremios="Descargar premio de la estación";
+
     for (let index = 0; index < pointsArray.length; index++) {
       totalPoints+=pointsArray[index].points;
       
@@ -29,22 +33,30 @@ class station4ContentClass_puntajes extends generalPage{
   
     if(totalPoints>=1){
       messageTotalPoints=`
-      <h3>¡Excelente! Hemos terminado una estación la última estación.</h3>
+      <h3>¡Excelente! Hemos terminado una estación más y con ella un reto más.</h3>
       
-      <p>A continuación, puedes descargar tu premio.</p>
+      <p>A continuación, puedes hacer la descarga de infografías con el resumen del material presentado en la estación. Recuerda que este material descargable te servirá como material de consulta y orientación en los aspectos formales del desarrollo de tu trabajo de grado.</p>
       <div class="text-center">
-        <a href="./images/trabajos-y-proyectos-investigativos/premios-trabajos-y-proyectos-investigativos.zip" target="_blank" class="btn-final-points" >Descargar premios PENDIENTE</a>
+        <a href="${urlDescargaDPremios}" target="_blank" class="btn-final-points" >
+          ${mensajeBotonPremios}
+        </a>
       </div>
       `;
     }
     else{
       messageTotalPoints=`
-      <h3>Ups ¡Aún falta un poco más de trabajo!</h3>
+      <h3>Ups ¡Falta un poco más de trabajo!</h3>
       
-      <p>Por favor realiza los retos indicados, y vuelve nuevamente por tu premio</p>
+      <p>Notamos que aún no has realizado ningún reto, por lo que te invitamos a navegar el contenido y a realizar los retos propuestos.</p>
+      <br/>
+      <p>No obstante, si deseas descargar los premios directamente lo puedes hacer en el siguiente enlace:</p>
+      <div class="text-center">
+        <a href="${urlDescargaDPremios}" target="_blank" class="btn-final-points" >
+          ${mensajeBotonPremios}
+        </a>
+      </div>
       `;
     }
-
 
 
 

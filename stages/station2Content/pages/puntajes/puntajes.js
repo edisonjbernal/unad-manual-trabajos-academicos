@@ -22,6 +22,10 @@ class station2ContentClass_puntajes extends generalPage{
     let totalPoints=0;
     let messageTotalPoints='';
 
+    let urlDescargaDPremios="./images/premios/estacion-2.zip";
+
+    let mensajeBotonPremios="Descargar premio de la estación";
+
     for (let index = 0; index < pointsArray.length; index++) {
       totalPoints+=pointsArray[index].points;
       
@@ -33,7 +37,9 @@ class station2ContentClass_puntajes extends generalPage{
       
       <p>Has comprendido cada temática en su totalidad y has logrado ayudar a Andrés a Ximena en esta carrera contra reloj. ¡Ahora ellos están listos para empezar a trabajar en sus primeras entregas! Como lo prometido es deuda, tú también obtendrás un premio. En el siguiente enlace acceso a material descargable sobre las temáticas de esta segunda estación. Ten este material a mano pues te servirá de referencia rápida en la elaboración de tus trabajos académicos.</p>
       <div class="text-center">
-        <a href="./images/trabajos-escritos/premios-trabajos-escritos.zip" target="_blank" class="btn-final-points" >Descargar premios</a>
+      <a href="${urlDescargaDPremios}" target="_blank" class="btn-final-points" >
+          ${mensajeBotonPremios}
+      </a>
       </div>
       `;
     }
@@ -43,7 +49,9 @@ class station2ContentClass_puntajes extends generalPage{
       
       <p>Has comprendido la mayoría de las temáticas presentadas en la estación y has logrado ayudar a Andrés a Ximena en esta carrera contra reloj y ahora ellos están listos para empezar a trabajar en sus primeras entregas. Te invitamos a revisar en qué preguntas fallaste para que consultes de nuevo las temáticas y aclares cualquier duda que tengas sobre ellas. Como lo prometido es deuda, tú también obtendrás un premio. En el siguiente enlace tendrás acceso a material descargable sobre las temáticas de esta segunda estación. Ten este material a mano pues te servirá de referencia rápida en la elaboración de tus trabajos académicos.</p>
       <div class="text-center">
-        <a href="./images/trabajos-escritos/premios-trabajos-escritos.zip" target="_blank" class="btn-final-points" >Descargar premios</a>
+      <a href="${urlDescargaDPremios}" target="_blank" class="btn-final-points" >
+          ${mensajeBotonPremios}
+      </a>
       </div>
       `;
 
