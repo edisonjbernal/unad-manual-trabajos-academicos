@@ -13,7 +13,7 @@ class station4ContentClass_introducccion extends generalPage{
   <video class="responsive" src="./images/articulos-para-publicacion/introduccion.mp4" controls="" controlslist="nodownload"></video>
   <div class="text-center">
     <button class="btn-general btn-next" onclick="stage.activity('menu_next')">Siguiente</button>
-    <button class="btn-general btn-show-content" onclick="stage.activity('menu_showContentInText_none',this)">Mostar en texto</button>
+    <button class="btn-general btn-show-content" onclick="stage.activity('menu_showContentInText_none',this)">Mostrar en texto</button>
   </div>
   <div class="text-show-content">
     <h3>Transcripción del video</h3>

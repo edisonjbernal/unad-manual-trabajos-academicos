@@ -8,5 +8,5 @@ const configuration =  {
     },
     globalURL:".",
     mainPage:"home",
-    version:"1.49"
+    version:"1.50"
 }

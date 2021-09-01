@@ -14,7 +14,7 @@ class terminalContentClass_referenciacionNormasAPA extends generalPage{
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.back()"">Atrás</button>
         <button class="btn-general" onclick="stages_terminalContent.menu.next()"">Siguiente</button>
-        <button class="btn-general btn-show-content" onclick="stages_terminalContent.menu.showContentInText(this,'none')">Mostar en texto</button>
+        <button class="btn-general btn-show-content" onclick="stages_terminalContent.menu.showContentInText(this,'none')">Mostrar en texto</button>
       </div>
       <div class="text-show-content">
         <h3>Transcripción del video</h3>

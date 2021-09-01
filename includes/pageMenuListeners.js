@@ -184,7 +184,7 @@ class pageMenuListenersClass{
     showContentInText(buttonShowText,noScrollIntoView){
         let textContainer = buttonShowText.parentElement.nextElementSibling;
         if(buttonShowText.innerText =="Ocultar texto"){
-            buttonShowText.innerText="Mostar en texto";
+            buttonShowText.innerText="Mostrar en texto";
             textContainer.classList.remove('show');
         }
         else{

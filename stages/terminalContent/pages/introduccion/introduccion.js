@@ -13,7 +13,7 @@ class terminalContentClass_introducccion extends generalPage{
       <video class="responsive" src="./images/aspectos-tecnicos/aspectos-generales/introduccion.mp4" controls="" controlslist="nodownload"></video>
       <div class="text-center">
         <button class="btn-general" onclick="stages_terminalContent.menu.next()"">Siguiente</button>
-        <button class="btn-general btn-show-content" onclick="stages_terminalContent.menu.showContentInText(this,'none')">Mostar en texto</button>
+        <button class="btn-general btn-show-content" onclick="stages_terminalContent.menu.showContentInText(this,'none')">Mostrar en texto</button>
       </div>
       <div class="text-show-content">
         <h3>Transcripción del video</h3>

@@ -14,7 +14,7 @@ class station3ContentClass_monografias extends generalPage{
       <div class="text-center">
         <button class="btn-general btn-next" onclick="stage.activity('menu_back')">Atrás</button>
         <button class="btn-general btn-next" onclick="stage.activity('menu_next')">Siguiente</button>
-        <button class="btn-general btn-show-content" onclick="stage.activity('menu_showContentInText_none',this)">Mostar en texto</button>
+        <button class="btn-general btn-show-content" onclick="stage.activity('menu_showContentInText_none',this)">Mostrar en texto</button>
       </div>
       <div class="text-show-content">
         <h3>Transcripción del video</h3>
