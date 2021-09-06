@@ -90,6 +90,9 @@ class station3ContentClass extends generalStage{
             <li>
               <a href="#puntajes" >Descargar premio</a>
             </li>
+            <li>
+              <a href="#creditos" >Créditos</a>
+            </li>
           </ul>
         </nav>
       </div>
