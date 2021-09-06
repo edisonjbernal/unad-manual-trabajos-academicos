@@ -71,6 +71,7 @@ class station4ContentClass_puntajes extends generalPage{
       
       <div class="text-center">
         <button class="btn-general btn-back" onclick="stage.activity('menu_back')">Atrás</button>
+        <button class="btn-general btn-next" onclick="stage.activity('menu_next')">Siguiente</button>
       </div>
       `;
   }

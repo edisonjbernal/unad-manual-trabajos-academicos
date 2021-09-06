@@ -69,6 +69,9 @@ class station4ContentClass extends generalStage{
               <li>
                 <a href="#puntajes" >Resultados</a>
               </li>
+              <li>
+                <a href="#creditos" >Créditos</a>
+              </li>
             </ul>
           </nav>
         </div>
