@@ -7,6 +7,6 @@ const configuration =  {
         stage4:"Escenario 4"
     },
     globalURL:".",
-    mainPage:"terminalContent",
-    version:"1.50"
+    mainPage:"station2Content",
+    version:"1.51"
 }

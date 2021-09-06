@@ -139,6 +139,9 @@ class station2ContentClass extends generalStage{
             <li>
               <a href="#puntajes">Puntajes</a>
             </li>
+            <li>
+              <a href="#creditos">Créditos</a>
+            </li>
             
           </ul>
         </nav>
