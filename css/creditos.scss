@@ -1,0 +1,18 @@
+.creditos{
+    background-color: rgb(60, 60, 60);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    h3{
+        padding: 10px;
+    }
+    h3.colaboracion-de{
+        padding:  20px 0 50px 0;
+    }
+    p{
+        padding:  0 0 30px 0;
+    }
+    hr{
+        border: solid 1px var(--main-font-color);
+    }
+}

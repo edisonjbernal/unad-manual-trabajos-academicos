@@ -159,6 +159,9 @@ class terminalContentClass extends generalStage{
             <li>
               <a href="#sec_2_Video_5">Finalización del reto</a>
             </li>
+            <li>
+              <a href="#creditos">Créditos</a>
+            </li>
           </ul>
         </nav>
       </div>
