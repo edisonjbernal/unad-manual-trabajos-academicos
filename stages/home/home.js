@@ -26,7 +26,7 @@ class stageHomeClass extends generalStage{
           <button class="btn-general" onclick="stage.get('introduction')">Introducción</button>
       </div>
       <div class="introduction-select-p-2">
-          <p>Comience su viaje aquí  y avance por las diferentes y avance por las rutas haciendo clic sobre las estaciones que encontrará</p>
+          <p>Comience aquí su viaje y avance por las diferentes rutas haciendo clic sobre las estaciones que encontrará</p>
       </div>
       
       <div class="introduction-select-button-2">
