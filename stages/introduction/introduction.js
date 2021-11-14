@@ -26,7 +26,7 @@ class introductionClass extends generalStage{
 
             <h3>Introducción</h3>
             
-            <p>El presente Manual para la Presentación de Trabajos Académicos tiene por objeto poner a conocimiento de la comunidad académica los lineamientos particulares que propone la Universidad Nacional Abierta y a Distancia (UNAD), y han de ser aplicados por la comunidad universitaria para la elaboración y entrega de diferentes tipos de documentos académicos.</p>
+            <p>El presente Manual para la Presentación de Trabajos Académicos tiene por objeto por objeto dar a conocer a la comunidad académica los lineamientos particulares que propone la Universidad Nacional Abierta y a Distancia (UNAD), y han de ser aplicados por la comunidad universitaria para la elaboración y entrega de diferentes tipos de documentos académicos.</p>
 
             <p>En este Manual, además de orientaciones generales y específicas de cada una de las fases de un documento académico; los estudiantes y docentes encontrarán ejercicios y ejemplos explicativos que servirán de insumo para la preparación y presentación pertinente de trabajos académicos con el sello distintivo unadista. </p>
 
