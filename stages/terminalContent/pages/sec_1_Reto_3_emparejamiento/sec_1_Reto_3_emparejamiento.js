@@ -17,7 +17,9 @@ class terminalContentClass_sec_1_Reto_3_emparejamiento extends generalPage{
       <div class="text-general list-move-option">
           <p><strong>Tipo de pregunta: Emparejamiento (definiciones se mueven hacia arriba o hacia abajo)</strong></p>
           <p>Ahora vamos a ver si reconoces el tipo de información que compone cada elemento preliminar.</p>
-          <p><strong>Lee las descripciones a continuación y pon frente a ella el elemento preliminar que le corresponde:</strong></p>
+          <p>Lee las descripciones que se encuentran en la columna derecha de la tabla y pon frente a ella el elemento preliminar que le corresponde haciendo clic en el botón subir o bajar:</p>
+          <p>Cuando el concepto este frente a la definición correcta aparecerá el botón Correcto en color verde.</p>
+          <p>Cuando el concepto este frente a la definición incorrecta aparecerá el botón Incorrecto en color rojo.</p>
     
               <div class="drag-and-drop-element">
                 <table>
