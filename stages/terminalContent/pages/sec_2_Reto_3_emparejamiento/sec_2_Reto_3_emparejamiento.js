@@ -16,7 +16,7 @@ class terminalContentClass_sec_2_Reto_3_emparejamiento extends generalPage{
       <div class="header-h2"><h2>Emparejamiento</h2></div>
       <div class="text-general list-move-option">
           <p><strong>Tipo de pregunta: Emparejamiento (puedes mover los conceptos hacia arriba o hacia abajo)</strong></p>
-          <p>Lee las definiciones que se encuentran al lado derecho y pon frente a ella el concepto que le corresponde haciendo clic en el botón subir o bajar.:</p>
+          <p>Lee las definiciones que se encuentran en la columna derecha de la tabla y pon frente a ella el concepto que le corresponde haciendo clic en el botón subir o bajar:</p>
           <p>Cuando el concepto este frente a la definición correcta aparecerá el botón Correcto en color verde.</p>
           <p>Cuando el concepto este frente a la definición incorrecta aparecerá el botón Incorrecto en color rojo.</p>
     
