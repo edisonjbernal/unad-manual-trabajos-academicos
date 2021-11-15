@@ -31,7 +31,7 @@ class station3ContentClass_reto1_completarTexto extends generalPage{
               <option value="asunto">asunto</option>
               <option value="contexto">contexto</option>
               <option value="problema">problema</option>
-            </select></span> a resolver o una pregunta a contestar que se sustenta a partir de revisión previa sobre el tema a ser investigado. Para llevar a cabo el ejercicio investigativo que resuelve el problema o contesta la pregunta, se plantean unos <span class="span-select"><select class="text-option-to-move" onchange="stagePage.activity('listSelectOptionsForText',this);" data-answer="objetivos">
+            </select></span> a resolver o una pregunta a contestar que se sustenta a partir de una revisión previa sobre el tema a ser investigado. Para llevar a cabo el ejercicio investigativo que resuelve el problema o contesta la pregunta, se plantean unos <span class="span-select"><select class="text-option-to-move" onchange="stagePage.activity('listSelectOptionsForText',this);" data-answer="objetivos">
               <option value="">-Seleccionar-</option>
               <option value="objetivos">objetivos</option>
               <option value="pasos">pasos</option>
