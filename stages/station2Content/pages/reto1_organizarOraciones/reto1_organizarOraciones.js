@@ -123,7 +123,7 @@ class station2ContentClass_reto1_organizarOraciones extends generalPage{
     this.listMoveOptions = new listMoveOptionsClass();
     this.listMoveOptions.setTimer('timer_station2ContentClass_reto1_organizarOraciones');
     this.listMoveOptions.setPoints(4);
-    this.listMoveOptions.timer.minutes=1;
+    this.listMoveOptions.timer.minutes=2;
     this.listMoveOptions.timer.seconds=30;
     this.listMoveOptions.timer.messageTimeOut='<strong>El tiempo ha finalizado</strong>';
     this.listMoveOptions.timer.enable();
