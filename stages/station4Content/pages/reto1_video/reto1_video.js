@@ -18,7 +18,7 @@ class station4ContentClass_reto1_video extends generalPage{
       </div>
       <div class="text-show-content">
         <h3>Transcripción del video</h3>
-        <p>Una vez más te presentaremos un reto mediante el cual podrás ir evaluando qué tanto has aprendido y como es costumbre recibirás material referente a esta estación una vez culminado el reto. Recuerda que el material descargable te servirá como orientación para el momento que realices tu artículo de investigación.</p>
+        <p>Una vez más, te presentaremos un reto mediante el cual podrás ir evaluando qué tanto has aprendido y, como es costumbre, recibirás material referente a esta estación una vez culminado el reto. Recuerda que el material descargable te servirá como orientación para el momento que realices tu artículo de investigación.</p>
       </div>
       `;
   }
