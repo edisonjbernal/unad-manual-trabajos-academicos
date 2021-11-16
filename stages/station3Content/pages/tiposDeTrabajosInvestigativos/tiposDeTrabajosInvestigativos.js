@@ -65,7 +65,7 @@ class station3ContentClass_tiposDeTrabajosInvestigativos extends generalPage{
                         Your browser does not support the audio tag.
                     </audio>
                 <h3>Recolección de datos</h3>
-                <p>La recolección de datos es uno de los procesos fundamentales en una investigación, y este proceso de obtención de información se realiza teniendo en cuenta los método y procedimientos propios del tipo de investigación que se está desarrollando. Aun cuando el equipo docente de investigación se encarga de orientar a los estudiantes en este quehacer, de manera general se menciona en este manual propio para la Facultad de Educación, que al realizar una investigación teórica los datos se centran en fuentes secundarias, mientras que en la investigación aplicada la recolección de datos se basa en trabajo de campo.</p>
+                <p>La recolección de datos es uno de los procesos fundamentales en una investigación. Este proceso de obtención de información se realiza teniendo en cuenta los métodos y procedimientos propios del tipo de investigación que se está desarrollando. Aun cuando el equipo docente de investigación se encarga de orientar a los estudiantes en este quehacer, de manera general se menciona en este manual propio para la Facultad de Educación, que al realizar una investigación teórica los datos se centran en fuentes secundarias, mientras que en la investigación aplicada la recolección de datos se basa en trabajo de campo.</p>
                 </div>
             </div>
             <div class="cards-audio-container">
