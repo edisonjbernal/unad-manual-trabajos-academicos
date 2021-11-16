@@ -29,7 +29,7 @@ class station3ContentClass_tiposDeTrabajosInvestigativos extends generalPage{
                         <source src="./images/trabajos-y-proyectos-investigativos/tiposDeTrabajosInvestigativos_tematica.mp3" type="audio/mpeg">
                         Your browser does not support the audio tag.
                     </audio>
-                <h3>Temática.</h3>
+                <h3>Temática</h3>
                 <p>La selección del tema de investigación es esencial antes, durante y después del proceso investigativo. Es importante seleccionar un tema de interés personal, que motive y que genere curiosidad en quien investiga. Además, el tema debe ser interesante para el campo académico en el que este se va a llevar a cabo, y especialmente, debe contribuir al entorno académico en el que la investigación se desarrollaría. El tema conlleva un contexto, una población, y puede determinar el tiempo que tomará la realización investigativa.</p>
                 </div>
             </div>
@@ -39,7 +39,7 @@ class station3ContentClass_tiposDeTrabajosInvestigativos extends generalPage{
                         <source src="./images/trabajos-y-proyectos-investigativos/tiposDeTrabajosInvestigativos_preguntaInvestigativa.mp3" type="audio/mpeg">
                         Your browser does not support the audio tag.
                     </audio>
-                <h3>La pregunta investigativa.</h3>
+                <h3>La pregunta investigativa</h3>
                 <p>Al hacer una pregunta investigativa debemos tener en cuenta: </p>
                 <ul>
                     <li>¿Qué es lo que se va a comprobar con nuestra investigación? </li>
@@ -54,8 +54,8 @@ class station3ContentClass_tiposDeTrabajosInvestigativos extends generalPage{
                         <source src="./images/trabajos-y-proyectos-investigativos/tiposDeTrabajosInvestigativos_MarcoTeorico.mp3" type="audio/mpeg">
                         Your browser does not support the audio tag.
                     </audio>
-                <h3>Marco Teórico.</h3>
-                <p>La realización del marco teórico nos permite responder a ¿Qué se conoce sobre el tema de investigación?. Es una parte del trabajo escrito y un paso fundamental de la investigación que hace referencia al conocimiento básico y especializado existente en torno al tema específico del proyecto, el cual orienta el proceso de investigación y en particular el análisis, interpretación y discusión de los resultados que se obtengan. Se constituye en la base o fundamentación científica y teórico-conceptual a partir de la cual se afronta el problema con la suficiencia requerida. (Castillo, 2004, pág. 60). En el marco teórico es indispensable redactar coherentemente los elementos técnicos y conceptuales fundamentales para soportar la investigación como tal.</p>
+                <h3>Marco Teórico</h3>
+                <p>La realización del marco teórico nos permite responder a ¿Qué se conoce sobre el tema de investigación? es una parte del trabajo escrito y un paso fundamental de la investigación que hace referencia al conocimiento básico y especializado existente en torno al tema específico del proyecto, el cual orienta el proceso de investigación y en particular el análisis, interpretación y discusión de los resultados que se obtengan. Se constituye en la base o fundamentación científica y teórico-conceptual a partir de la cual se afronta el problema con la suficiencia requerida (Castillo, 2004, pág. 60). En el marco teórico es indispensable redactar coherentemente los elementos técnicos y conceptuales fundamentales para soportar la investigación.</p>
                 </div>
             </div>
             <div class="cards-audio-container">
@@ -84,7 +84,7 @@ class station3ContentClass_tiposDeTrabajosInvestigativos extends generalPage{
                         <source src="./images/trabajos-y-proyectos-investigativos/tiposDeTrabajosInvestigativos_Datos-de-segundo-tipo.mp3" type="audio/mpeg">
                         Your browser does not support the audio tag.
                     </audio>
-                <h3>Datos de segundo tipo.</h3>
+                <h3>Datos de segundo tipo</h3>
                 <p>Estos datos ya existen, y tienen que ver con la información que otros autores nos brindan sobre el tema, los textos, artículos y libros que nos documentan sobre el tema investigado.</p>
                 </div>
             </div>
@@ -94,7 +94,7 @@ class station3ContentClass_tiposDeTrabajosInvestigativos extends generalPage{
                         <source src="./images/trabajos-y-proyectos-investigativos/tiposDeTrabajosInvestigativos_Analisis-de-datos.mp3" type="audio/mpeg">
                         Your browser does not support the audio tag.
                     </audio>
-                <h3>Análisis de datos.</h3>
+                <h3>Análisis de datos</h3>
                 <p>Luego de recolectar toda la información relevante para la investigación, se realiza un análisis de todo lo recolectado. Esto se hace teniendo en cuenta instrumentos de investigación con los que la información se organiza, clasifica, y dependiendo de la orientación docente, se utiliza el método de análisis nos conlleva a obtener las conclusiones.</p>
                 </div>
             </div>
