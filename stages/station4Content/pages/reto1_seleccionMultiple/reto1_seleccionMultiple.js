@@ -19,56 +19,56 @@ class station4ContentClass_reto1_seleccionMultiple extends generalPage{
               <label for="checkbox_1_station4ContentClass_reto1_seleccionMultiple">
                 <strong>a.</strong>
                 <input  class="input-checkbox" type="checkbox" id="checkbox_1_station4ContentClass_reto1_seleccionMultiple" value="1">
-                <span>Nombres y apellidos completos de quién(es) escribe(n) el artículo</span>
+                <span>Nombres y apellidos completos de quién(es) escribe(n) el artículo.</span>
               </label>
             </li>
             <li>
               <label for="checkbox_2_station4ContentClass_reto1_seleccionMultiple">
                 <strong>b.</strong>
                 <input  class="input-checkbox" type="checkbox" id="checkbox_2_station4ContentClass_reto1_seleccionMultiple" value="2" data-answer="true">
-                <span>Un nombre y un apellido de quién(es) escribe(n) el artículo </span>
+                <span>Un nombre y un apellido de quién(es) escribe(n) el artículo.</span>
               </label>
             </li>
             <li>
               <label for="checkbox_3_station4ContentClass_reto1_seleccionMultiple">
                 <strong>c.</strong>
                 <input  class="input-checkbox" type="checkbox" id="checkbox_3_station4ContentClass_reto1_seleccionMultiple" value="3" data-answer="true">
-                <span>Institución(es) a la(s) que pertenece(n) quién(es) escribe(n) el artículo</span>
+                <span>Institución(es) a la(s) que pertenece(n) quién(es) escribe(n) el artículo.</span>
               </label>
             </li>
             <li>
               <label for="checkbox_4_station4ContentClass_reto1_seleccionMultiple">
                 <strong>d.</strong>
                 <input  class="input-checkbox" type="checkbox" id="checkbox_4_station4ContentClass_reto1_seleccionMultiple" value="4"  >
-                <span>Institución a la que pertenece la revista o la fuente académica donde se publicará el artículo</span>
+                <span>Institución a la que pertenece la revista o la fuente académica donde se publicará el artículo.</span>
               </label>
             </li>
             <li>
               <label for="checkbox_5_station4ContentClass_reto1_seleccionMultiple">
                 <strong>e.</strong>
                 <input  class="input-checkbox" type="checkbox" id="checkbox_5_station4ContentClass_reto1_seleccionMultiple" value="5" data-answer="true">
-                <span>Breve información académica/laboral de quién(es) escribe(n) el artículo</span>
+                <span>Breve información académica/laboral de quién(es) escribe(n) el artículo.</span>
               </label>
             </li>
             <li>
               <label for="checkbox_6_station4ContentClass_reto1_seleccionMultiple">
                 <strong>f.</strong>
                 <input  class="input-checkbox" type="checkbox" id="checkbox_6_station4ContentClass_reto1_seleccionMultiple" value="6" >
-                <span>Completa información académica/laboral de quién(es) escribe(n) el artículo</span>
+                <span>Completa información académica/laboral de quién(es) escribe(n) el artículo.</span>
               </label>
             </li>
             <li>
               <label for="checkbox_7_station4ContentClass_reto1_seleccionMultiple">
                 <strong>g.</strong>
                 <input  class="input-checkbox" type="checkbox" id="checkbox_7_station4ContentClass_reto1_seleccionMultiple" value="7" data-answer="true">
-                <span>Correo electrónico de quién(es) escribe(n) el artículo</span>
+                <span>Correo electrónico de quién(es) escribe(n) el artículo.</span>
               </label>
             </li>
             <li>
               <label for="checkbox_8_station4ContentClass_reto1_seleccionMultiple">
                 <strong>h.</strong>
                 <input  class="input-checkbox" type="checkbox" id="checkbox_8_station4ContentClass_reto1_seleccionMultiple" value="8" >
-                <span>Número telefónico de quién(es) escribe(n) el artículo</span>
+                <span>Número telefónico de quién(es) escribe(n) el artículo.</span>
               </label>
             </li>
           </ul>

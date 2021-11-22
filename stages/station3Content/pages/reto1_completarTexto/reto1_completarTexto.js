@@ -12,7 +12,7 @@ class station3ContentClass_reto1_completarTexto extends generalPage{
       <div id="timer_station3ContentClass_reto1_completarTexto"></div>
       <div class="header-h2"><h2>Completar texto</h2></div>
       <div class="text-general list-select-for-text">
-          <p><strong>Tipo de pregunta:</strong> Seleccionar una opción de la lista para completar un texto</p>
+          <p><strong>Tipo de pregunta:</strong> Seleccionar una opción de la lista para completar un texto.</p>
           <p>Los profesores Esteban y Ana María dieron una breve introducción al desarrollo de trabajos investigativos en el video anterior. </p>
           <p>Teniendo en cuenta esa introducción, elige las palabras que completan el texto de manera correcta:</p>
           <div class="alltext-list-select-for-text">
@@ -31,7 +31,7 @@ class station3ContentClass_reto1_completarTexto extends generalPage{
               <option value="asunto">asunto</option>
               <option value="contexto">contexto</option>
               <option value="problema">problema</option>
-            </select></span> a resolver o una pregunta a contestar que se sustenta a partir de revisión previa sobre el tema a ser investigado. Para llevar a cabo el ejercicio investigativo que resuelve el problema o contesta la pregunta, se plantean unos <span class="span-select"><select class="text-option-to-move" onchange="stagePage.activity('listSelectOptionsForText',this);" data-answer="objetivos">
+            </select></span> a resolver o una pregunta a contestar que se sustenta a partir de una revisión previa sobre el tema a ser investigado. Para llevar a cabo el ejercicio investigativo que resuelve el problema o contesta la pregunta, se plantean unos <span class="span-select"><select class="text-option-to-move" onchange="stagePage.activity('listSelectOptionsForText',this);" data-answer="objetivos">
               <option value="">-Seleccionar-</option>
               <option value="objetivos">objetivos</option>
               <option value="pasos">pasos</option>

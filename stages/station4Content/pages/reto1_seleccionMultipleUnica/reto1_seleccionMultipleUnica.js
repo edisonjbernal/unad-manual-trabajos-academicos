@@ -12,7 +12,7 @@ class station4ContentClass_reto1_seleccionMultipleUnica extends generalPage{
       <div id="timer_station4ContentClass_reto1_seleccionMultipleUnica"></div>
       <div class="header-h2"><h2>Selección múltiple, única respuesta</h2></div>
       <div class="text-general multiple-selection-checkbox">
-          <p><strong>En cuál de las siguientes fuentes académicos NO es probable publicar tu artículo investigativo?</strong></p>
+          <p><strong>¿En cuál de las siguientes fuentes académicos NO es probable publicar tu artículo investigativo?</strong></p>
           <ul class="ul-selection">
             <li>
               <label for="checkbox_1_station4ContentClass_reto1_seleccionMultipleUnica">
