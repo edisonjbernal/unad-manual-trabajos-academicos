@@ -50,7 +50,7 @@ class station3ContentClass extends generalStage{
             <li>
               <a href="#reto1_completarTexto" >-- Completar texto</a>
             </li>
-            <li><strong>Anteproyecto de Trabajos y Trabajos Investigativos</strong></li>
+            <li><strong>Anteproyecto de Trabajos y Proyectos Investigativos</strong></li>
             <li>
               <a href="#explicacion" >Presentación</a>
             </li>
