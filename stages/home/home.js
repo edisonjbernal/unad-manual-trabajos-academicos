@@ -15,7 +15,7 @@ class stageHomeClass extends generalStage{
   </h1>
 
   <div class="cursor-hand">
-      <img src="./images/hand-down.png" alt="Manito apuntado abajo">
+      <img src="https://drive.google.com/file/d/1fv0EV7qrZ2ll7YymWuAXGaDDbGFxDAux" alt="Manito apuntado abajo">
   </div>
 
   <div class="introduction-select">
